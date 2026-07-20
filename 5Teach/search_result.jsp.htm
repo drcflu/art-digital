@@ -1,0 +1,1283 @@
+<html lang="zh-Tw"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- IP : 0.0 (s) 
+-->
+<!-- sysconfig finish : 0.0 (s) 
+-->
+<!-- query history finish : 0.0 (s) 
+-->
+<!--****** setSysConfigValue (before) 0.0 (s) 
+-->
+<!--****** setSysConfigValue (before2) 0.0010 (s) 
+-->
+<!--****** setSysConfigValue (before3) 0.0010 (s) 
+-->
+<!--****** setSysConfigValue (t) 0.0030 (s) 
+-->
+<!--****** request.getParameter (t) 0.0030 (s) 
+-->
+<!--query_str:[AD(0.0.1)=呂清夫][KW(0.0.1)=呂清夫][OR]
+-->
+<!--final_str:[AD(0.0.1)=呂清夫][KW(0.0.1)=呂清夫][OR][ST(0.0.0)=Y][AND]
+-->
+<!--Query Time : 0.285 sec. 
+-->
+<!--****** search finish 0.288 (s) 
+-->
+
+
+<!-- saved from url=(0056)http://m10.hyweb.com.tw/DATAS/samp/search_listresult.htm 
+
+-->
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>國家圖書館--全國博碩士論文資訊網 : 查詢結果</title>
+<style type="text/css">
+<!--
+@import url("../../../css/home.css");
+@import url("../../../css/search.css");
+@import url("../../../css/search_result.css");
+.style11 {font-size: 11px; font-family: Verdana, "新細明體"; }
+.style12 {	color: #FF0000;
+	font-weight: bold;
+}
+.style13 {	font-size: 13px;
+	font-family: Verdana, "新細明體";
+}
+.style14 {
+	font-size: 12px;
+	color: #666666;
+}
+.style16 {font-size: 13px}
+-->
+</style>
+<script language="JavaScript" type="text/JavaScript">
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+
+function MM_jumpMenu(targ,selObj,restore){ //v3.0
+  eval(targ+".location='"+selObj.options[selObj.selectedIndex].value+"'");
+  if (restore) selObj.selectedIndex=0;
+}
+function pageChange(value) {
+		goPage(value);
+	}
+function goPage(nPage) {
+	document.search.nowPage.value=nPage
+	document.search.submit();
+	//alert(nPage)
+	//document.location.href="../search_result.jsp?id=&rf_flag=&fuzzy_flag=0&show_query=%E5%91%82%E6%B8%85%E5%A4%AB&data_num=30&perPage=15&query_str=%5BAD%280.0.1%29%3D%E5%91%82%E6%B8%85%E5%A4%AB%5D%5BKW%280.0.1%29%3D%E5%91%82%E6%B8%85%E5%A4%AB%5D%5BOR%5D&sortField=YR&nowPage=" +nPage 
+}
+function go1page(value) {
+	if(value=="next")
+		document.search.nextPage.value="next"
+	else
+		document.search.prePage.value="pre"
+	document.search.submit();
+}
+function SortBy(value) {	
+	document.search.sortField.value=value
+	document.search.submit();
+		//document.location.href="../search_result.jsp?id=&rf_flag=&fuzzy_flag=0&show_query=%E5%91%82%E6%B8%85%E5%A4%AB&perPage=15&query_str=%5BAD%280.0.1%29%3D%E5%91%82%E6%B8%85%E5%A4%AB%5D%5BKW%280.0.1%29%3D%E5%91%82%E6%B8%85%E5%A4%AB%5D%5BOR%5D&nowPage=1&sortField="+value
+}
+function perPageChange(value) {
+	document.search.perPage.value=value
+	document.search.nowPage.value=1		
+	document.search.submit();
+		//document.location.href=
+		//"search_result.jsp?id=&rf_flag=&fuzzy_flag=0&show_query=%E5%91%82%E6%B8%85%E5%A4%AB&data_num=30&nowPage=1&query_str=%5BAD%280.0.1%29%3D%E5%91%82%E6%B8%85%E5%A4%AB%5D%5BKW%280.0.1%29%3D%E5%91%82%E6%B8%85%E5%A4%AB%5D%5BOR%5D&sortField=YR&perPage=" + value 
+}
+function OpenURL(atitle, title, author) {
+    		//window.open("http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=openurl.htm&sid=hyweb:ncl3&genre=datas&atitle="+atitle+
+    	//"&author="+author)
+    	while (atitle.indexOf("+") > 0)
+    	  atitle = atitle.replace("+","%20");
+    		window.open("http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle="+atitle+
+    	"&author="+author)
+	}
+function OpenURL1(ft,id) {
+  window.open("../../service/say.jsp?FT="+ft+"&id="+id)
+	/*if(ft=="Y")
+    	window.open("../../service/ft_result.jsp?FT=Y&id="+id)
+	else									
+		window.open("../../service/ft_result.jsp?id="+id)*/
+}	
+function OpenNew() {
+    	
+    	window.open('opem.htm','','width=300,height=100')
+	}	
+	
+function submitForm(index)
+{
+   //alert(index)
+   document.detail.id_index.value=index
+   //alert(document.detail.id_num.value)   
+   document.detail.submit();
+}
+function clearAll()
+{
+	var iend = document.print_file.elements.length;
+	for (var i = iend - 1; i >= 0; i--) {
+		var elm = document.print_file.elements[i];
+		if (elm.type == "checkbox") elm.checked = false;
+	}
+}
+
+function selectAll() {
+  var iend = document.print_file.elements.length;
+	for (var i = iend - 1; i >= 0; i--) {
+		var elm = document.print_file.elements[i];
+		if (elm.type == "checkbox") elm.checked = true;
+	}
+}
+function submitForm1(method){
+	var cc=0
+	document.print_file.method.value=method	
+	for(cnt=0;cnt<document.print_file.elements.length;cnt++) {
+		if(document.print_file.elements[cnt].type=="checkbox" && document.print_file.elements[cnt].checked==true)
+			cc=1		
+	}
+	if(cc==0)
+		alert("請至少勾選一筆資料")
+	else if(document.print_file.file_type.value=="notype")
+		alert("請下拉選擇轉出檔案型態")
+	else if(document.print_file.method.value=="email"){
+		var mm=document.print_file.mail_address.value
+		if(mm!="" && mm.indexOf("@")>=0)
+			document.print_file.submit();
+		else
+			alert("mail_address格式錯誤")			
+	}	
+	else {  		
+   		document.print_file.submit();   		
+   	}
+	
+}
+
+function chooseField(){	
+		window.open('chooseField.jsp','','width=350,height=350');
+}					
+
+</script>
+</head><body>
+<p align="right">
+<!----------------------------------------------------- 共用導覽列 
+
+-->
+
+
+
+
+<!--  -->
+<!--  -->
+
+
+<img border="0" src="小夫大合照.jpg" width="320" height="237" align="right"><div class="base_top">
+    <div class="Accesskey"><b><font face="新細明體">
+		<a href="http://etds.ncl.edu.tw/theabs/sitemap.jsp" style="text-decoration: none">
+		<font color="#000000">以下為拷貝自中央圖書館的資料，</font></a>欲看論文還請直接上網到央圖</font></b><p>&nbsp;</div>
+    
+	    <img src="../old_edition/search_result.jsp_files/icon_home.gif" alt="本站首頁" 
+align="absmiddle" border="0" width="14" height="10">
+	    <a href="http://etds.ncl.edu.tw/theabs/index.jsp">本站首頁 </a>
+    
+    <img src="../old_edition/search_result.jsp_files/icon_about.gif" alt="關於本站" 
+align="absmiddle" width="12" height="12">
+    <a href="http://etds.ncl.edu.tw/theabs/about.jsp" target="_blank">關於
+本站 </a>
+    <img src="../old_edition/search_result.jsp_files/icon_sitemap.gif" alt="網站地圖" 
+align="absmiddle" width="14" height="10">
+    <a href="http://etds.ncl.edu.tw/theabs/sitemap.jsp" target="_blank">網
+站地圖 </a>
+    <img src="../old_edition/search_result.jsp_files/icon_contact.gif" alt="意見箱" 
+align="absmiddle" width="14" height="14">
+    <a href="http://etds.ncl.edu.tw/theabs/contact.jsp" target="_blank">聯
+絡我們</a> 
+ 	
+	    <img src="../old_edition/search_result.jsp_files/icon_english.gif" alt="英文版" 
+align="absmiddle" width="11" height="11">
+	    <a 
+href="http://etds.ncl.edu.tw/theabs/english_site/search_simple_eng.jsp">English</a>
+    
+    <!--<img src="/theabs/images/icon_goindex.gif" alt="系統舊網頁" align="absmiddle">
+
+    <a href="http://datas.ncl.edu.tw" target="_blank">系統舊網頁 </a>    -->
+    <img src="../old_edition/search_result.jsp_files/icon_goindex.gif" alt="國圖首頁" 
+align="absmiddle" width="12" height="12">
+    <a href="http://www.ncl.edu.tw/" target="_blank">國圖首頁 </a>    
+</div>
+
+
+<div class="top_banner"></div>
+
+<div class="main_item">  
+
+			<a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/search_simple.jsp?isme=1282546241126">簡
+易查詢 </a> 
+		
+			<a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/search_adv.jsp?isme=1282546241126">進
+階查詢 </a> 
+		
+			<a 
+href="http://etds.ncl.edu.tw/theabs/site/browse_subject2.jsp?isme=1282546241126">瀏
+覽查詢 </a> 
+		
+			<a 
+href="http://etds.ncl.edu.tw/theabs/site/qa/vps.jsp?isme=1282546241126">常
+見問題 </a> 
+		
+			<a 
+href="http://etds.ncl.edu.tw/theabs/site/html/onlineerr.jsp?isme=1282546241126">線
+上勘誤 </a> 
+		
+			<a href="http://etds.ncl.edu.tw/theabs/help.htm?isme=1282546241126" 
+target="_blank">操作說明 </a> 
+		
+			<a 
+href="http://etds.ncl.edu.tw/theabs/site/html/tech.jsp?isme=1282546241126"
+ target="_blank">線上教學 </a> 
+		
+			<a 
+href="http://search.ncl.edu.tw/LISP/hypage.cgi?HYPAGE=datas.htm&amp;isme=1282546241126"
+ target="_blank">相關網站 </a>
+		
+			<a 
+href="http://search1.ncl.edu.tw/LISP/hypage.cgi?HYPAGE=hyQuery/SearchBasic2.asp&amp;db_id=113"
+ target="_blank">整合查詢 </a>
+		
+			<a href="http://etds.ncl.edu.tw/theabs/login.jsp">登入 </a>
+		
+
+
+</div>
+
+<!--------------------------------------------- 論文檢索 進階檢索 
+
+-->
+<div class="ColumnE">
+    <div class="Accesskey"><a title="中間主要內容區" accesskey="C" 
+href="http://etds.ncl.edu.tw/theabs/sitemap.jsp">:::</a></div>    
+<div class="Search">
+
+	<div class="Head">查詢結果</div>
+<div class="Body">
+<span class="style13">
+
+	          	         
+          	         	
+       	  ◎ 檢索結果共 30 筆資料</span>         	
+
+	，查詢關鍵詞 <span class="style12">呂清夫</span>
+	          	                	   	
+<p>&nbsp;</p>
+	          	                	   	
+<form name="search" action="../search_result.jsp" method="post">
+        
+		<input name="bb" value="0" type="hidden">
+
+
+
+		<input name="rc" value="0" type="hidden">
+		<input name="fuzzy_flag" value="0" type="hidden">
+		<input name="show_query" value="呂清夫" type="hidden">
+		<input name="rf_flag" value="" type="hidden">
+		<input name="id" value="" type="hidden">
+		<input name="sortField" value="YR" type="hidden">
+		<input name="data_num" value="30" type="hidden">
+		<input name="query_str" value="[AD(0.0.1)=呂清夫][KW(0.0.1)=呂清夫][OR]" 
+type="hidden">
+		<input name="nowPage" value="1" type="hidden">
+		<input name="perPage" value="15" type="hidden">
+		<input name="prePage" value="" type="hidden">
+
+
+
+		<input name="nextPage" value="" type="hidden">
+		<table class="table_text" border="0" cellpadding="0" cellspacing="0" 
+width="100%">
+      <tbody><tr><td>
+          <noscript class="noscript">
+      很抱歉!您的瀏覽器不支援javascript !!<br/>請按此按扭<input type="submit" name="submitt" value="送出">  進行排序
+      </noscript>
+      </td></tr>
+</tbody></table>
+</form>
+
+<form name="search_kmap" action="../search_kmap.jsp" method="post">
+	<input name="data_num" value="30" type="hidden">
+	<input name="query_str" value="[AD(0.0.1)=呂清夫][KW(0.0.1)=呂清夫][OR]" 
+type="hidden">
+</form>
+
+<form name="detail" action="../detail_result.jsp" method="post">
+
+			<input name="id0" value="098SCC01186001" type="hidden">
+
+			<input name="id1" value="097NTNU5233017" type="hidden">
+
+			<input name="id2" value="097NTNU5233011" type="hidden">
+
+			<input name="id3" value="097NTNU5233025" type="hidden">
+
+			<input name="id4" value="097NTNU5233060" type="hidden">
+
+			<input name="id5" value="097NTNU5233092" type="hidden">
+
+			<input name="id6" value="097NTNU5233102" type="hidden">
+
+			<input name="id7" value="097NTNU5233100" type="hidden">
+
+			<input name="id8" value="097NTNU5233082" type="hidden">
+
+			<input name="id9" value="097NTNU5233096" type="hidden">
+
+			<input name="id10" value="097NTNU5233081" type="hidden">
+
+			<input name="id11" value="096NTNU5233037" type="hidden">
+
+			<input name="id12" value="096NTNU5233035" type="hidden">
+
+			<input name="id13" value="096NTNU5233030" type="hidden">
+
+			<input name="id14" value="096NTNU5233028" type="hidden">
+        
+ 
+
+ 
+
+        	<input name="id_index" value="" type="hidden">
+        	<input name="show_query" value="呂清夫" type="hidden">
+       		<input name="id_num" value="15" type="hidden">
+    <input name="dperPage" value="15" type="hidden">
+		<input name="dnowPage" value="1" type="hidden">		
+		<input name="dquery_str" value="[AD(0.0.1)=呂清夫][KW(0.0.1)=呂清夫][OR]" 
+type="hidden">		
+		<input name="ddata_num" value="30" type="hidden">
+		<input name="dsortField" value="YR" type="hidden">
+		<input name="did" value="" type="hidden">
+		<input name="drf_flag" value="" type="hidden">
+		<input name="dshow_query" value="呂清夫" type="hidden">
+		<input name="dfuzzy_flag" value="0" type="hidden">	
+		<input name="drc" value="0" type="hidden">
+		<input name="dbb" value="0" type="hidden">
+</form>
+
+
+	
+ <form name="print_file" action="../print_file.jsp" method="post" 
+target="print_file1">
+
+<div id="SearchList">
+<ol>
+			
+			<span class="SearchListTitle">1.
+			<input name="id0" value="0000726664" type="checkbox">
+             
+             <a href="javascript:submitForm('0')">美麗與哀愁的悸動 
+—以自我憂鬱轉化之時尚創作設計</a>  <a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=098SCC01186001">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=098SCC01186001" title="論文詳目" target="_blank">美麗與哀愁的悸動 —以自我憂鬱轉化之時尚創作設計</a>
+             </noscript>
+              <p>實踐大學/時尚與媒體設計研究所碩士在職專班/98/碩士/098SCC01186001</p>
+              <p>研究生：<em>黃振生</em>
+              指導教授：<em><span class="style12">呂清夫</span></em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('%AC%FC%C4%52%BB%50%AB%73%B7%54%AA%BA%B1%AA%B0%CA+%A1%58%A5%48%A6%DB%A7%DA%BC%7E%C6%7B%C2%E0%A4%C6%A4%A7%AE%C9%A9%7C%B3%D0%A7%40%B3%5D%AD%70','',
+ '%B6%C0%AE%B6%A5%CD')" onkeypress="            
+('%AC%FC%C4%52%BB%50%AB%73%B7%54%AA%BA%B1%AA%B0%CA+%A1%58%A5%48%A6%DB%A7%DA%BC%7E%C6%7B%C2%E0%A4%C6%A4%A7%AE%C9%A9%7C%B3%D0%A7%40%B3%5D%AD%70','',
+ '%B6%C0%AE%B6%A5%CD')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=%AC%FC%C4%52%BB%50%AB%73%B7%54%AA%BA%B1%AA%B0%CA+%A1%58%A5%48%A6%DB%A7%DA%BC%7E%C6%7B%C2%E0%A4%C6%A4%A7%AE%C9%A9%7C%B3%D0%A7%40%B3%5D%AD%70&author=%B6%C0%AE%B6%A5%CD" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:有
+-->
+<!--DocFinal:N
+-->
+<!--ReleaseScope:不開放
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:SCC01
+-->
+<!--userip:61.62.139.97
+-->
+			
+			<hr size="1">			
+			
+			<span class="SearchListTitle">2.
+			<input name="id1" value="0000618034" type="checkbox">
+             
+             <a href="javascript:submitForm('1')">2003年至2007年台灣新媒體藝術於拍賣市
+場成交成功關鍵要素之研究</a>  <a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=097NTNU5233017">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=097NTNU5233017" title="論文詳目" target="_blank">2003年至2007年台灣新媒體藝術於拍賣市場成交成功關鍵要素之研究</a>
+             </noscript>
+              <p>國立臺灣師範大學/美術學系在職進修碩士班/97/碩士(Master)/097NTNU5233017</p>
+              <p>研究生：<em>施耘心</em>
+              指導教授：<em><span class="style12">呂清夫</span></em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('2003%A6%7E%A6%DC2007%A6%7E%A5%78%C6%57%B7%73%B4%43%C5%E9%C3%C0%B3%4E%A9%F3%A9%E7%BD%E6%A5%AB%B3%F5%A6%A8%A5%E6%A6%A8%A5%5C%C3%F6%C1%E4%AD%6E%AF%C0%A4%A7%AC%E3%A8%73','',
+ '%AC%49%AF%D0%A4%DF')" onkeypress="            
+('2003%A6%7E%A6%DC2007%A6%7E%A5%78%C6%57%B7%73%B4%43%C5%E9%C3%C0%B3%4E%A9%F3%A9%E7%BD%E6%A5%AB%B3%F5%A6%A8%A5%E6%A6%A8%A5%5C%C3%F6%C1%E4%AD%6E%AF%C0%A4%A7%AC%E3%A8%73','',
+ '%AC%49%AF%D0%A4%DF')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=2003%A6%7E%A6%DC2007%A6%7E%A5%78%C6%57%B7%73%B4%43%C5%E9%C3%C0%B3%4E%A9%F3%A9%E7%BD%E6%A5%AB%B3%F5%A6%A8%A5%E6%A6%A8%A5%5C%C3%F6%C1%E4%AD%6E%AF%C0%A4%A7%AC%E3%A8%73&author=%AC%49%AF%D0%A4%DF" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:有
+-->
+<!--DocFinal:Y
+-->
+<!--ReleaseScope:網際網路
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:NTNU5
+-->
+<!--userip:61.62.139.97
+-->
+
+			<!--a href="javascript:OpenNew()"><img src="../../images/openpaper.gif" alt="電子全文" align="absmiddle" border="0">電子全文</a-->
+            <a href="http://etds.ncl.edu.tw/theabs/site/sh/opem.htm" 
+target="_blank"><img src="../old_edition/search_result.jsp_files/openpaper.gif" 
+alt="電子全文" align="absmiddle" border="0" width="21" height="18">電子全文</a>
+			
+			<hr size="1">			
+			
+			<span class="SearchListTitle">3.
+			<input name="id2" value="0000617982" type="checkbox">
+             
+             <a href="javascript:submitForm('2')">蒲添生孫中山立像研究</a>  <a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=097NTNU5233011">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=097NTNU5233011" title="論文詳目" target="_blank">蒲添生孫中山立像研究</a>
+             </noscript>
+              <p>國立臺灣師範大學/美術學系在職進修碩士班/97/碩士(Master)/097NTNU5233011</p>
+              <p>研究生：<em>林英斌</em>
+              指導教授：<em><span class="style12">呂清夫</span></em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('%BB%5A%B2%4B%A5%CD%AE%5D%A4%A4%A4%73%A5%DF%B9%B3%AC%E3%A8%73','',
+ '%AA%4C%AD%5E%D9%79')" onkeypress="            
+('%BB%5A%B2%4B%A5%CD%AE%5D%A4%A4%A4%73%A5%DF%B9%B3%AC%E3%A8%73','', 
+'%AA%4C%AD%5E%D9%79')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=%BB%5A%B2%4B%A5%CD%AE%5D%A4%A4%A4%73%A5%DF%B9%B3%AC%E3%A8%73&author=%AA%4C%AD%5E%D9%79" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:有
+-->
+<!--DocFinal:Y
+-->
+<!--ReleaseScope:網際網路
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:NTNU5
+-->
+<!--userip:61.62.139.97
+-->
+
+			<!--a href="javascript:OpenNew()"><img src="../../images/openpaper.gif" alt="電子全文" align="absmiddle" border="0">電子全文</a-->
+            <a href="http://etds.ncl.edu.tw/theabs/site/sh/opem.htm" 
+target="_blank"><img src="../old_edition/search_result.jsp_files/openpaper.gif" 
+alt="電子全文" align="absmiddle" border="0" width="21" height="18">電子全文</a>
+			
+			<hr size="1">			
+			
+			<span class="SearchListTitle">4.
+			<input name="id3" value="0000618073" type="checkbox">
+             
+             <a href="javascript:submitForm('3')">臺北市政府文化局所屬藝文館所委外經營模式之研
+究-以市長官邸藝文沙龍為例</a>  <a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=097NTNU5233025">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=097NTNU5233025" title="論文詳目" target="_blank">臺北市政府文化局所屬藝文館所委外經營模式之研究-以市長官邸藝文沙龍為例</a>
+             </noscript>
+              <p>國立臺灣師範大學/美術學系在職進修碩士班/97/碩士(Master)/097NTNU5233025</p>
+              <p>研究生：<em>傅彗倫</em>
+              指導教授：<em><span class="style12">呂清夫</span></em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('%BB%4F%A5%5F%A5%AB%AC%46%A9%B2%A4%E5%A4%C6%A7%BD%A9%D2%C4%DD%C3%C0%A4%E5%C0%5D%A9%D2%A9%65%A5%7E%B8%67%C0%E7%BC%D2%A6%A1%A4%A7%AC%E3%A8%73-%A5%48%A5%AB%AA%F8%A9%78%AA%F3%C3%C0%A4%E5%A8%46%C0%73%AC%B0%A8%D2','',
+ '%B3%C5%B1%6B%AD%DB')" onkeypress="            
+('%BB%4F%A5%5F%A5%AB%AC%46%A9%B2%A4%E5%A4%C6%A7%BD%A9%D2%C4%DD%C3%C0%A4%E5%C0%5D%A9%D2%A9%65%A5%7E%B8%67%C0%E7%BC%D2%A6%A1%A4%A7%AC%E3%A8%73-%A5%48%A5%AB%AA%F8%A9%78%AA%F3%C3%C0%A4%E5%A8%46%C0%73%AC%B0%A8%D2','',
+ '%B3%C5%B1%6B%AD%DB')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=%BB%4F%A5%5F%A5%AB%AC%46%A9%B2%A4%E5%A4%C6%A7%BD%A9%D2%C4%DD%C3%C0%A4%E5%C0%5D%A9%D2%A9%65%A5%7E%B8%67%C0%E7%BC%D2%A6%A1%A4%A7%AC%E3%A8%73-%A5%48%A5%AB%AA%F8%A9%78%AA%F3%C3%C0%A4%E5%A8%46%C0%73%AC%B0%A8%D2&author=%B3%C5%B1%6B%AD%DB" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:無
+-->
+<!--DocFinal:N
+-->
+<!--ReleaseScope:網際網路
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:NTNU5
+-->
+<!--userip:61.62.139.97
+-->
+			
+			<hr size="1">			
+			
+			<span class="SearchListTitle">5.
+			<input name="id4" value="0000675056" type="checkbox">
+             
+             <a href="javascript:submitForm('4')">全球化下台灣動畫產業發展與策略之研究</a>
+  <a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=097NTNU5233060">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=097NTNU5233060" title="論文詳目" target="_blank">全球化下台灣動畫產業發展與策略之研究</a>
+             </noscript>
+              <p>國立臺灣師範大學/美術學系/97/碩士(Master)/097NTNU5233060</p>
+              <p>研究生：<em>蔡承汀</em>
+              指導教授：<em><span class="style12">呂清夫</span>;周立倫;施令紅</em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('%A5%FE%B2%79%A4%C6%A4%55%A5%78%C6%57%B0%CA%B5%65%B2%A3%B7%7E%B5%6F%AE%69%BB%50%B5%A6%B2%A4%A4%A7%AC%E3%A8%73','',
+ '%BD%B2%A9%D3%A5%C5')" onkeypress="            
+('%A5%FE%B2%79%A4%C6%A4%55%A5%78%C6%57%B0%CA%B5%65%B2%A3%B7%7E%B5%6F%AE%69%BB%50%B5%A6%B2%A4%A4%A7%AC%E3%A8%73','',
+ '%BD%B2%A9%D3%A5%C5')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=%A5%FE%B2%79%A4%C6%A4%55%A5%78%C6%57%B0%CA%B5%65%B2%A3%B7%7E%B5%6F%AE%69%BB%50%B5%A6%B2%A4%A4%A7%AC%E3%A8%73&author=%BD%B2%A9%D3%A5%C5" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:有
+-->
+<!--DocFinal:Y
+-->
+<!--ReleaseScope:網際網路
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:NTNU5
+-->
+<!--userip:61.62.139.97
+-->
+
+			<!--a href="javascript:OpenNew()"><img src="../../images/openpaper.gif" alt="電子全文" align="absmiddle" border="0">電子全文</a-->
+            <a href="http://etds.ncl.edu.tw/theabs/site/sh/opem.htm" 
+target="_blank"><img src="../old_edition/search_result.jsp_files/openpaper.gif" 
+alt="電子全文" align="absmiddle" border="0" width="21" height="18">電子全文</a>
+			
+			<hr size="1">			
+			
+			<span class="SearchListTitle">6.
+			<input name="id5" value="0000675347" type="checkbox">
+             
+             <a href="javascript:submitForm('5')">台灣政府扶植動畫產業之政策研究與分析</a>
+  <a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=097NTNU5233092">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=097NTNU5233092" title="論文詳目" target="_blank">台灣政府扶植動畫產業之政策研究與分析</a>
+             </noscript>
+              <p>國立臺灣師範大學/美術學系/97/碩士(Master)/097NTNU5233092</p>
+              <p>研究生：<em>黃貞維</em>
+              指導教授：<em><span class="style12">呂清夫</span>;鄧有立</em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('%A5%78%C6%57%AC%46%A9%B2%A7%DF%B4%D3%B0%CA%B5%65%B2%A3%B7%7E%A4%A7%AC%46%B5%A6%AC%E3%A8%73%BB%50%A4%C0%AA%52','',
+ '%B6%C0%AD%73%BA%FB')" onkeypress="            
+('%A5%78%C6%57%AC%46%A9%B2%A7%DF%B4%D3%B0%CA%B5%65%B2%A3%B7%7E%A4%A7%AC%46%B5%A6%AC%E3%A8%73%BB%50%A4%C0%AA%52','',
+ '%B6%C0%AD%73%BA%FB')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=%A5%78%C6%57%AC%46%A9%B2%A7%DF%B4%D3%B0%CA%B5%65%B2%A3%B7%7E%A4%A7%AC%46%B5%A6%AC%E3%A8%73%BB%50%A4%C0%AA%52&author=%B6%C0%AD%73%BA%FB" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:有
+-->
+<!--DocFinal:Y
+-->
+<!--ReleaseScope:網際網路
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:NTNU5
+-->
+<!--userip:61.62.139.97
+-->
+			
+			<hr size="1">			
+			
+			<span class="SearchListTitle">7.
+			<input name="id6" value="0000675404" type="checkbox">
+             
+             <a href="javascript:submitForm('6')">~Devouring 
+Love~以動態線條表達焦慮情緒之實驗動畫創作</a>  <a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=097NTNU5233102">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=097NTNU5233102" title="論文詳目" target="_blank">~Devouring Love~以動態線條表達焦慮情緒之實驗動畫創作</a>
+             </noscript>
+              <p>國立臺灣師範大學/美術學系/97/碩士(Master)/097NTNU5233102</p>
+              <p>研究生：<em>吳識鴻</em>
+              指導教授：<em><span class="style12">呂清夫</span></em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('%7EDevouring+Love%7E%A5%48%B0%CA%BA%41%BD%75%B1%F8%AA%ED%B9%46%B5%4A%BC%7B%B1%A1%BA%FC%A4%A7%B9%EA%C5%E7%B0%CA%B5%65%B3%D0%A7%40','',
+ '%A7%64%C3%D1%C2%45')" onkeypress="            
+('%7EDevouring+Love%7E%A5%48%B0%CA%BA%41%BD%75%B1%F8%AA%ED%B9%46%B5%4A%BC%7B%B1%A1%BA%FC%A4%A7%B9%EA%C5%E7%B0%CA%B5%65%B3%D0%A7%40','',
+ '%A7%64%C3%D1%C2%45')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=%7EDevouring+Love%7E%A5%48%B0%CA%BA%41%BD%75%B1%F8%AA%ED%B9%46%B5%4A%BC%7B%B1%A1%BA%FC%A4%A7%B9%EA%C5%E7%B0%CA%B5%65%B3%D0%A7%40&author=%A7%64%C3%D1%C2%45" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:有
+-->
+<!--DocFinal:Y
+-->
+<!--ReleaseScope:網際網路
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:NTNU5
+-->
+<!--userip:61.62.139.97
+-->
+
+			<!--a href="javascript:OpenNew()"><img src="../../images/openpaper.gif" alt="電子全文" align="absmiddle" border="0">電子全文</a-->
+            <a href="http://etds.ncl.edu.tw/theabs/site/sh/opem.htm" 
+target="_blank"><img src="../old_edition/search_result.jsp_files/openpaper.gif" 
+alt="電子全文" align="absmiddle" border="0" width="21" height="18">電子全文</a>
+			
+			<hr size="1">			
+			
+			<span class="SearchListTitle">8.
+			<input name="id7" value="0000675391" type="checkbox">
+             
+             <a href="javascript:submitForm('7')">台灣漫畫博覽會舉辦之初探-以參觀者觀點</a>
+  <a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=097NTNU5233100">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=097NTNU5233100" title="論文詳目" target="_blank">台灣漫畫博覽會舉辦之初探-以參觀者觀點</a>
+             </noscript>
+              <p>國立臺灣師範大學/美術學系/97/碩士(Master)/097NTNU5233100</p>
+              <p>研究生：<em>林靜宜</em>
+              指導教授：<em><span class="style12">呂清夫</span></em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('%A5%78%C6%57%BA%A9%B5%65%B3%D5%C4%FD%B7%7C%C1%7C%BF%EC%A4%A7%AA%EC%B1%B4-%A5%48%B0%D1%C6%5B%AA%CC%C6%5B%C2%49','',
+ '%AA%4C%C0%52%A9%79')" onkeypress="            
+('%A5%78%C6%57%BA%A9%B5%65%B3%D5%C4%FD%B7%7C%C1%7C%BF%EC%A4%A7%AA%EC%B1%B4-%A5%48%B0%D1%C6%5B%AA%CC%C6%5B%C2%49','',
+ '%AA%4C%C0%52%A9%79')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=%A5%78%C6%57%BA%A9%B5%65%B3%D5%C4%FD%B7%7C%C1%7C%BF%EC%A4%A7%AA%EC%B1%B4-%A5%48%B0%D1%C6%5B%AA%CC%C6%5B%C2%49&author=%AA%4C%C0%52%A9%79" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:有
+-->
+<!--DocFinal:Y
+-->
+<!--ReleaseScope:網際網路
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:NTNU5
+-->
+<!--userip:61.62.139.97
+-->
+
+			<!--a href="javascript:OpenNew()"><img src="../../images/openpaper.gif" alt="電子全文" align="absmiddle" border="0">電子全文</a-->
+            <a href="http://etds.ncl.edu.tw/theabs/site/sh/opem.htm" 
+target="_blank"><img src="../old_edition/search_result.jsp_files/openpaper.gif" 
+alt="電子全文" align="absmiddle" border="0" width="21" height="18">電子全文</a>
+			
+			<hr size="1">			
+			
+			<span class="SearchListTitle">9.
+			<input name="id8" value="0000675247" type="checkbox">
+             
+             <a href="javascript:submitForm('8')">「夢魘」-動畫的黑色美學</a>  <a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=097NTNU5233082">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=097NTNU5233082" title="論文詳目" target="_blank">「夢魘」-動畫的黑色美學</a>
+             </noscript>
+              <p>國立臺灣師範大學/美術學系/97/碩士(Master)/097NTNU5233082</p>
+              <p>研究生：<em>徐書璟</em>
+              指導教授：<em><span class="style12">呂清夫</span></em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('%A1%75%B9%DA%C6%4C%A1%76-%B0%CA%B5%65%AA%BA%B6%C2%A6%E2%AC%FC%BE%C7','',
+ '%AE%7D%AE%D1%BF%5B')" onkeypress="            
+('%A1%75%B9%DA%C6%4C%A1%76-%B0%CA%B5%65%AA%BA%B6%C2%A6%E2%AC%FC%BE%C7','',
+ '%AE%7D%AE%D1%BF%5B')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=%A1%75%B9%DA%C6%4C%A1%76-%B0%CA%B5%65%AA%BA%B6%C2%A6%E2%AC%FC%BE%C7&author=%AE%7D%AE%D1%BF%5B" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:有
+-->
+<!--DocFinal:Y
+-->
+<!--ReleaseScope:網際網路
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:NTNU5
+-->
+<!--userip:61.62.139.97
+-->
+			
+			<hr size="1">			
+			
+			<span class="SearchListTitle">10.
+			<input name="id9" value="0000675378" type="checkbox">
+             
+             <a href="javascript:submitForm('9')">漫畫的視覺戲劇性與分格表現之探討</a>  <a
+ 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=097NTNU5233096">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=097NTNU5233096" title="論文詳目" target="_blank">漫畫的視覺戲劇性與分格表現之探討</a>
+             </noscript>
+              <p>國立臺灣師範大學/美術學系/97/碩士(Master)/097NTNU5233096</p>
+              <p>研究生：<em>藍聖傑</em>
+              指導教授：<em><span class="style12">呂清夫</span></em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('%BA%A9%B5%65%AA%BA%B5%F8%C4%B1%C0%B8%BC%40%A9%CA%BB%50%A4%C0%AE%E6%AA%ED%B2%7B%A4%A7%B1%B4%B0%51','',
+ '%C2%C5%B8%74%B3%C7')" onkeypress="            
+('%BA%A9%B5%65%AA%BA%B5%F8%C4%B1%C0%B8%BC%40%A9%CA%BB%50%A4%C0%AE%E6%AA%ED%B2%7B%A4%A7%B1%B4%B0%51','',
+ '%C2%C5%B8%74%B3%C7')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=%BA%A9%B5%65%AA%BA%B5%F8%C4%B1%C0%B8%BC%40%A9%CA%BB%50%A4%C0%AE%E6%AA%ED%B2%7B%A4%A7%B1%B4%B0%51&author=%C2%C5%B8%74%B3%C7" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:無
+-->
+<!--DocFinal:N
+-->
+<!--ReleaseScope:網際網路
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:NTNU5
+-->
+<!--userip:61.62.139.97
+-->
+			
+			<hr size="1">			
+			
+			<span class="SearchListTitle">11.
+			<input name="id10" value="0000675243" type="checkbox">
+             
+             <a href="javascript:submitForm('10')">〈荷〉生命意象－中國工筆繪畫在動畫創作之應
+用</a>  <a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=097NTNU5233081">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=097NTNU5233081" title="論文詳目" target="_blank">〈荷〉生命意象－中國工筆繪畫在動畫創作之應用</a>
+             </noscript>
+              <p>國立臺灣師範大學/美術學系/97/碩士(Master)/097NTNU5233081</p>
+              <p>研究生：<em>管育伶</em>
+              指導教授：<em><span class="style12">呂清夫</span>;黃興芳</em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('%A1%71%B2%FC%A1%72%A5%CD%A9%52%B7%4E%B6%48%A1%D0%A4%A4%B0%EA%A4%75%B5%A7%C3%B8%B5%65%A6%62%B0%CA%B5%65%B3%D0%A7%40%A4%A7%C0%B3%A5%CE','',
+ '%BA%DE%A8%7C%A7%44')" onkeypress="            
+('%A1%71%B2%FC%A1%72%A5%CD%A9%52%B7%4E%B6%48%A1%D0%A4%A4%B0%EA%A4%75%B5%A7%C3%B8%B5%65%A6%62%B0%CA%B5%65%B3%D0%A7%40%A4%A7%C0%B3%A5%CE','',
+ '%BA%DE%A8%7C%A7%44')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=%A1%71%B2%FC%A1%72%A5%CD%A9%52%B7%4E%B6%48%A1%D0%A4%A4%B0%EA%A4%75%B5%A7%C3%B8%B5%65%A6%62%B0%CA%B5%65%B3%D0%A7%40%A4%A7%C0%B3%A5%CE&author=%BA%DE%A8%7C%A7%44" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:有
+-->
+<!--DocFinal:Y
+-->
+<!--ReleaseScope:網際網路
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:NTNU5
+-->
+<!--userip:61.62.139.97
+-->
+
+			<!--a href="javascript:OpenNew()"><img src="../../images/openpaper.gif" alt="電子全文" align="absmiddle" border="0">電子全文</a-->
+            <a href="http://etds.ncl.edu.tw/theabs/site/sh/opem.htm" 
+target="_blank"><img src="../old_edition/search_result.jsp_files/openpaper.gif" 
+alt="電子全文" align="absmiddle" border="0" width="21" height="18">電子全文</a>
+			
+			<hr size="1">			
+			
+			<span class="SearchListTitle">12.
+			<input name="id11" value="0000592934" type="checkbox">
+             
+             <a href="javascript:submitForm('11')">雕塑中的負空間與失序性：瑞秋．懷特雷的作品
+研究</a>  <a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=096NTNU5233037">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=096NTNU5233037" title="論文詳目" target="_blank">雕塑中的負空間與失序性：瑞秋．懷特雷的作品研究</a>
+             </noscript>
+              <p>國立臺灣師範大學/美術學系/96/碩士(Master)/096NTNU5233037</p>
+              <p>研究生：<em>黃慕怡</em>
+              指導教授：<em><span class="style12">呂清夫</span></em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('%C0%4A%B6%EC%A4%A4%AA%BA%AD%74%AA%C5%B6%A1%BB%50%A5%A2%A7%C7%A9%CA%A1%47%B7%E7%AC%EE%A1%44%C3%68%AF%53%B9%70%AA%BA%A7%40%AB%7E%AC%E3%A8%73','',
+ '%B6%C0%BC%7D%A9%C9')" onkeypress="            
+('%C0%4A%B6%EC%A4%A4%AA%BA%AD%74%AA%C5%B6%A1%BB%50%A5%A2%A7%C7%A9%CA%A1%47%B7%E7%AC%EE%A1%44%C3%68%AF%53%B9%70%AA%BA%A7%40%AB%7E%AC%E3%A8%73','',
+ '%B6%C0%BC%7D%A9%C9')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=%C0%4A%B6%EC%A4%A4%AA%BA%AD%74%AA%C5%B6%A1%BB%50%A5%A2%A7%C7%A9%CA%A1%47%B7%E7%AC%EE%A1%44%C3%68%AF%53%B9%70%AA%BA%A7%40%AB%7E%AC%E3%A8%73&author=%B6%C0%BC%7D%A9%C9" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:有
+-->
+<!--DocFinal:Y
+-->
+<!--ReleaseScope:網際網路
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:NTNU5
+-->
+<!--userip:61.62.139.97
+-->
+
+			<!--a href="javascript:OpenNew()"><img src="../../images/openpaper.gif" alt="電子全文" align="absmiddle" border="0">電子全文</a-->
+            <a href="http://etds.ncl.edu.tw/theabs/site/sh/opem.htm" 
+target="_blank"><img src="../old_edition/search_result.jsp_files/openpaper.gif" 
+alt="電子全文" align="absmiddle" border="0" width="21" height="18">電子全文</a>
+			
+			<hr size="1">			
+			
+			<span class="SearchListTitle">13.
+			<input name="id12" value="0000592883" type="checkbox">
+             
+             <a href="javascript:submitForm('12')">現代人的生活與焦慮– Han 
+Hoogerbrugge網路互動動畫藝術之研究</a>  <a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=096NTNU5233035">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=096NTNU5233035" title="論文詳目" target="_blank">現代人的生活與焦慮– Han Hoogerbrugge網路互動動畫藝術之研究</a>
+             </noscript>
+              <p>國立臺灣師範大學/美術學系/96/碩士(Master)/096NTNU5233035</p>
+              <p>研究生：<em>薛孟珊</em>
+              指導教授：<em><span class="style12">呂清夫</span> 博士</em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('%B2%7B%A5%4E%A4%48%AA%BA%A5%CD%AC%A1%BB%50%B5%4A%BC%7B%A1%56+Han+Hoogerbrugge%BA%F4%B8%F4%A4%AC%B0%CA%B0%CA%B5%65%C3%C0%B3%4E%A4%A7%AC%E3%A8%73','',
+ '%C1%A7%A9%73%AC%C0')" onkeypress="            
+('%B2%7B%A5%4E%A4%48%AA%BA%A5%CD%AC%A1%BB%50%B5%4A%BC%7B%A1%56+Han+Hoogerbrugge%BA%F4%B8%F4%A4%AC%B0%CA%B0%CA%B5%65%C3%C0%B3%4E%A4%A7%AC%E3%A8%73','',
+ '%C1%A7%A9%73%AC%C0')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=%B2%7B%A5%4E%A4%48%AA%BA%A5%CD%AC%A1%BB%50%B5%4A%BC%7B%A1%56+Han+Hoogerbrugge%BA%F4%B8%F4%A4%AC%B0%CA%B0%CA%B5%65%C3%C0%B3%4E%A4%A7%AC%E3%A8%73&author=%C1%A7%A9%73%AC%C0" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:有
+-->
+<!--DocFinal:Y
+-->
+<!--ReleaseScope:網際網路
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:NTNU5
+-->
+<!--userip:61.62.139.97
+-->
+
+			<!--a href="javascript:OpenNew()"><img src="../../images/openpaper.gif" alt="電子全文" align="absmiddle" border="0">電子全文</a-->
+            <a href="http://etds.ncl.edu.tw/theabs/site/sh/opem.htm" 
+target="_blank"><img src="../old_edition/search_result.jsp_files/openpaper.gif" 
+alt="電子全文" align="absmiddle" border="0" width="21" height="18">電子全文</a>
+			
+			<hr size="1">			
+			
+			<span class="SearchListTitle">14.
+			<input name="id13" value="0000592693" type="checkbox">
+             
+             <a href="javascript:submitForm('13')">盛期文藝復興《最後晚餐》之繪畫比較研究</a>
+  <a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=096NTNU5233030">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=096NTNU5233030" title="論文詳目" target="_blank">盛期文藝復興《最後晚餐》之繪畫比較研究</a>
+             </noscript>
+              <p>國立臺灣師範大學/美術學系在職進修碩士班/96/碩士(Master)/096NTNU5233030</p>
+              <p>研究生：<em>鍾美月</em>
+              指導教授：<em><span class="style12">呂清夫</span></em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('%B2%B1%B4%C1%A4%E5%C3%C0%B4%5F%BF%B3%A1%6D%B3%CC%AB%E1%B1%DF%C0%5C%A1%6E%A4%A7%C3%B8%B5%65%A4%F1%B8%FB%AC%E3%A8%73','',
+ '%C1%E9%AC%FC%A4%EB')" onkeypress="            
+('%B2%B1%B4%C1%A4%E5%C3%C0%B4%5F%BF%B3%A1%6D%B3%CC%AB%E1%B1%DF%C0%5C%A1%6E%A4%A7%C3%B8%B5%65%A4%F1%B8%FB%AC%E3%A8%73','',
+ '%C1%E9%AC%FC%A4%EB')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=%B2%B1%B4%C1%A4%E5%C3%C0%B4%5F%BF%B3%A1%6D%B3%CC%AB%E1%B1%DF%C0%5C%A1%6E%A4%A7%C3%B8%B5%65%A4%F1%B8%FB%AC%E3%A8%73&author=%C1%E9%AC%FC%A4%EB" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:無
+-->
+<!--DocFinal:N
+-->
+<!--ReleaseScope:網際網路
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:NTNU5
+-->
+<!--userip:61.62.139.97
+-->
+			
+			<hr size="1">			
+			
+			<span class="SearchListTitle">15.
+			<input name="id14" value="0000592646" type="checkbox">
+             
+             <a href="javascript:submitForm('14')">虛構之家──分析普普藝術中的新家居意象(以
+David Hockney和Tom Wesselmann為例)</a>  <a 
+href="http://etds.ncl.edu.tw/theabs/site/sh/detail_result2.jsp?id=096NTNU5233028">。</a></span>
+             <noscript><br>很抱歉!您的瀏覽器不支援javascript !!請由此觀看詳目
+             <a href="../detail_result.jsp?id=096NTNU5233028" title="論文詳目" target="_blank">虛構之家──分析普普藝術中的新家居意象(以David Hockney和Tom Wesselmann為例)</a>
+             </noscript>
+              <p>國立臺灣師範大學/美術學系/96/碩士(Master)/096NTNU5233028</p>
+              <p>研究生：<em>江凌青</em>
+              指導教授：<em><span class="style12">呂清夫</span>;<span 
+class="style12">呂清夫</span></em> 
+
+			被引用次數：<em>0</em></p>
+
+            <a href="#" 
+onclick="OpenURL('%B5%EA%BA%63%A4%A7%AE%61%A2%77%A2%77%A4%C0%AA%52%B4%B6%B4%B6%C3%C0%B3%4E%A4%A4%AA%BA%B7%73%AE%61%A9%7E%B7%4E%B6%48%28%A5%48David+Hockney%A9%4DTom+Wesselmann%AC%B0%A8%D2%29','',
+ '%A6%BF%AD%E2%AB%43')" onkeypress="            
+('%B5%EA%BA%63%A4%A7%AE%61%A2%77%A2%77%A4%C0%AA%52%B4%B6%B4%B6%C3%C0%B3%4E%A4%A4%AA%BA%B7%73%AE%61%A9%7E%B7%4E%B6%48%28%A5%48David+Hockney%A9%4DTom+Wesselmann%AC%B0%A8%D2%29','',
+ '%A6%BF%AD%E2%AB%43')"><img 
+src="../old_edition/search_result.jsp_files/extensearch.gif" 
+alt="../../images/extensearch.gif" border="0" width="21" height="18">延伸查
+詢</a>
+            <noscript>
+                <a href="http://search1.ncl.edu.tw/OpenURL/hypage.cgi?HYPAGE=datas.htm&genre=datas&sid=hyweb:ncl3&atitle=%B5%EA%BA%63%A4%A7%AE%61%A2%77%A2%77%A4%C0%AA%52%B4%B6%B4%B6%C3%C0%B3%4E%A4%A4%AA%BA%B7%73%AE%61%A9%7E%B7%4E%B6%48%28%A5%48David+Hockney%A9%4DTom+Wesselmann%AC%B0%A8%D2%29&author=%A6%BF%AD%E2%AB%43" title="延伸查詢" target="_blank">很抱歉!您的瀏覽器不支援javascript !!請按此 延伸查詢</a>
+            </noscript>
+<!--Img:無
+-->
+<!--Doc:有
+-->
+<!--DocFinal:Y
+-->
+<!--ReleaseScope:網際網路
+-->
+<!--isForeign:false
+-->
+<!--foreign_download:1
+-->
+<!--isIntranet:false
+-->
+<!--SchoolID:NTNU5
+-->
+<!--userip:61.62.139.97
+-->
+
+			<!--a href="javascript:OpenNew()"><img src="../../images/openpaper.gif" alt="電子全文" align="absmiddle" border="0">電子全文</a-->
+            <a href="http://etds.ncl.edu.tw/theabs/site/sh/opem.htm" 
+target="_blank"><img src="../old_edition/search_result.jsp_files/openpaper.gif" 
+alt="電子全文" align="absmiddle" border="0" width="21" height="18">電子全文</a>
+			
+			<hr size="1">			
+ 
+</ol></div>
+
+<div class="pagelist">
+	<span width="100%"> 
+	<input name="selectall" value="全選" onclick="selectAll()" 
+onkeypress="selectAll()" class="FormButton" type="button">
+  <input name="clear" value="清除" class="FormButton" onclick="clearAll()"
+ onkeypress="clearAll()" type="button">
+  <br>
+	<img src="../old_edition/search_result.jsp_files/icon_100.gif" 
+alt="../../images/icon_100.gif" align="absbottom" vspace="2" hspace="5" width="14" height="14">將
+勾選項目匯出成：
+	<input name="file_format" value="detail" checked="checked" type="radio">詳
+目<input name="file_format" value="simp" type="radio">簡目<input 
+name="file_format" value="self" type="radio"><a href="#" 
+onclick="chooseField()" onkeypress="chooseField()">自訂欄位</a>
+	<input name="charset_format" value="Big5" checked="checked" 
+type="radio">Big5<input name="charset_format" value="UTF-8" type="radio">UTF-8
+
+   	   </span>
+       <span width="30%">
+       <select class="button2" name="file_type">
+       		  <option selected="selected" value="notype">請選擇</option>	
+              <option value="excel">Excel</option>
+              <option value="html">Html</option>
+              <option value="xml">Xml</option>
+              <option value="txt">Txt</option>
+              
+                      
+       </select>
+                     
+        <input value="列印/存檔" onclick="submitForm1('download')" 
+onkeypress="submitForm1('download')" class="button" type="button">
+		
+	   </span><br>&nbsp;&nbsp;
+        <span width="40%">
+        Email&nbsp;<input name="mail_address" size="25" type="text"> 
+        <input value="寄出" onclick="submitForm1('email')" 
+onkeypress="submitForm1('email')" class="button" type="button">
+        </span>
+      
+        <input name="id_num" value="15" type="hidden">
+        <input name="method" value="" type="hidden">
+       <iframe src="" name="print_file1" title="PrintFile" width="0" 
+height="0"></iframe>
+              
+ 
+
+	
+	</div> 
+	查詢回應時間 : 0.285 秒.
+
+	
+	
+	       
+        <table border="0" cellpadding="3" cellspacing="0" width="100%"> 
+ 
+          <tbody><tr>
+            <td valign="bottom" height="30">
+            <div style="font-size: 12px;" align="right">
+              
+              <img src="../old_edition/search_result.jsp_files/next.gif" 
+alt="../../images/next.gif" width="7" height="8">              
+              <a href="javascript:go1page('next')">下一頁</a>
+
+                           
+            <a href="#top"><img src="../old_edition/search_result.jsp_files/top.gif" 
+alt="../../images/top.gif" border="0" width="82" height="16"></a>       
+     
+
+             <noscript class="noscript">
+                <br/>很抱歉!您的瀏覽器不支援javascript !!請按此換頁<a href="../search_result.jsp?nextPage=next&prePage=&perPage=15&nowPage=1&query_str=%5BAD%280.0.1%29%3D%E5%91%82%E6%B8%85%E5%A4%AB%5D%5BKW%280.0.1%29%3D%E5%91%82%E6%B8%85%E5%A4%AB%5D%5BOR%5D&data_num=30&sortField=YR&id=&rf_flag=&show_query=%E5%91%82%E6%B8%85%E5%A4%AB&fuzzy_flag=0&rc=0&bb=0">下一頁</a>
+              </noscript>
+
+
+            </div>
+
+            </td>
+          </tr>
+   </tbody></table>
+      
+
+</form></div>
+<div class="Foot"></div></div>
+</div>
+
+<div class="Base">
+	<span class="style8">
+		
+
+
+
+ 
+
+
+
+	<div>
+		本系統（web1）共收集： 論文全文：<span>151,963</span> 筆、博士全文影像（限館內使用）：<span>16,012</span>
+ 筆、摘要：<span>571,812</span> 筆<br>
+		目前上線人數：<font color="green">4,218</font> ／ 檢索人次（自94年3月）：471,850,015 ／ 
+訪客人次（自94年3月）：24,183,118 ／ 指導單位： <a 
+href="http://www.edu.tw/university/index.htm">教育部高等教育司 </a><br>
+		國家圖書館著作權聲明Copyright©2005 All rights reserved. 本館地址：100 
+臺北市中山南路20號。總機：(02)23619132<br>
+		本網站最佳瀏覽解析度為1024*768, 建議使用IE5.0或Nescape5.0(含)以上版本瀏覽器（61.62.139.97）<p>&nbsp;</p>
+		<p align="center"><a href="javascript:history.back()"><b>回前頁</b></a><b><span style="font-family: 新細明體" lang="EN-US">&nbsp;&nbsp;
+</span><span style="font-family: 細明體" lang="EN-US">
+<a tppabs="http://210.70.95.210/city/default.htm" href="../index.htm">回首頁</a></span></b>&nbsp;
+</div>
+		
+
+
+
+	</span>
+</div>
+<!--****** logQ.commit 0.0 (s) 
+-->
+<!--****** logQ.commit (t) 0.3 (s) 
+-->
+<!--****** end 0.3 (s) 
+-->
+
+
+</body></html>

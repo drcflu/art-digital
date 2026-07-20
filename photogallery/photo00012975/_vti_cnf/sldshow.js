@@ -1,0 +1,11 @@
+vti_encoding:SR|utf8-nl
+vti_timelastmodified:TW|12 May 2012 04:43:03 -0000
+vti_author:SR|YOUR-D1A3678096\\FUJITSU
+vti_modifiedby:SR|YOUR-D1A3678096\\FUJITSU
+vti_nexttolasttimemodified:TW|12 May 2012 04:43:03 -0000
+vti_timecreated:TR|12 May 2012 05:18:05 -0000
+vti_cacheddtm:TX|12 May 2012 05:18:05 -0000
+vti_filesize:IR|4651
+vti_extenderversion:SR|6.0.2.8161
+vti_backlinkinfo:VX|photogallery/photo00012975/real.htm
+vti_syncwith_210.70.95.210\:80/city2:TW|12 May 2012 04:43:03 -0000
