@@ -1,0 +1,208 @@
+/* #meta.css Launch: 04/07/08 # Revise: 04/09/08 */
+
+/*  meta dtd & Xml Scheme --- upload */
+#div-metartf{
+width:100%;
+border: 2px solid rgb(7,104,169);
+text-align:center;
+}
+
+#div-metartf .title{
+font-size:18px;
+padding: 5px 0 0 20px;
+text-align:left;
+}
+
+#div-metartf .save{
+text-align:left;
+padding: 5px 0 0 20px;
+}
+
+#div-metartf .link .link:active, .link:link, .link:visited, .link:hover{
+    text-decoration: none;
+    color: rgb(7,104,169);
+}
+
+
+.metartf_table{
+  border-color:ivory; font:11pt "Times New Roman";font-size: 12px; width:95%;
+}
+
+#div-metafmt{
+width:100%;
+border: 2px solid rgb(7,104,169);
+text-align:center;
+padding: 0 0 10 0px;
+}
+
+#div-metafmt .title{
+font-size:18px;
+padding: 5px 0 0px 20px;
+text-align:left;
+}
+
+
+#div-dtddc{
+width:100%;
+border: 2px solid rgb(7,104,169);
+text-align:left;
+padding: 0px 10px 10px 10px;
+}
+
+#div-dtddc .title{
+font-size:18px;
+padding: 5px 0 0px 20px;
+text-align:left;
+}
+
+table#treetabledisp{
+    border: rgb(117,117,117) 2px solid;
+    color: rgb(10,9,5);
+    width: 70%;
+    border-collapse: collapse;
+}
+
+table#treetabledisp caption {
+    text-align: left;
+}
+
+table#treetabledisp th {
+    background-color: rgb(185,185,185);
+    vertical-align: middle;
+    border: rgb(117,117,117) 1px solid;
+    margin: 3px;
+    padding: 3px;
+}
+
+table#treetabledisp td {
+    border: rgb(117,117,117) 1px solid;
+    background-color: rgb(255,255,255);
+    margin: 3px;
+    padding: 3px;
+    text-align:center;
+}
+
+table#treetabledisp tr.highlighted td {
+        background-color: rgb(236,234,244);
+}
+
+/*  _meta_rec_upload.htm */
+
+#div-meta-rec-upload{
+width:100%;
+border: 2px solid rgb(7,104,169);
+text-align:center;
+padding: 0 0 10 0px;
+}
+
+#div-meta-rec-upload .title{
+font-size:18px;
+padding: 5px 0 0px 20px;
+text-align:left;
+}
+
+table#meta-rec-table{
+    border: rgb(117,117,117) 2px solid;
+    color: rgb(10,9,5);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table#meta-rec-table caption {
+    text-align: left;
+}
+
+table#meta-rec-table th {
+    background-color: rgb(185,185,185);
+    vertical-align: middle;
+    border: rgb(117,117,117) 1px solid;
+    margin: 3px;
+    padding: 3px;
+}
+
+table#meta-rec-table td {
+    border: rgb(117,117,117) 1px solid;
+    background-color: rgb(255,255,255);
+    margin: 3px;
+    padding: 3px;
+    text-align:center;
+}
+
+table#meta-rec-table tr.highlighted td {
+        background-color: rgb(236,234,244);
+}
+
+table#meta-rec-table-up{
+margin-top:20px;
+padding: 3px;
+width:80%;
+}
+
+/*  metaloadrecp.htm */
+
+#div-meta-rec-disp{
+width:100%;
+border: 2px solid rgb(7,104,169);
+text-align:center;
+padding: 0 0 10 0px;
+}
+
+#div-meta-rec-disp .title{
+font-size:18px;
+padding: 5px 0 0px 20px;
+text-align:left;
+}
+
+#datadisp{
+    border: rgb(117,117,117) 2px solid;
+    color: rgb(10,9,5);
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#datadisp caption {
+    text-align: left;
+}
+
+#datadisp th {
+    background-color: rgb(185,185,185);
+    vertical-align: middle;
+    border: rgb(117,117,117) 1px solid;
+    margin: 3px;
+    padding: 3px;
+}
+
+#datadisp td {
+    border: rgb(117,117,117) 1px solid;
+    background-color: rgb(255,255,255);
+    margin: 3px;
+    padding: 3px;
+    text-align:center;
+}
+
+#datadisp tr.highlighted td {
+        background-color: rgb(236,234,244);
+}
+
+#datadispdown{
+    border: rgb(117,117,117) 2px solid;
+    color: rgb(10,9,5);
+    border-collapse: collapse;
+    width:200px;
+}
+
+#datadispdown th {
+    background-color: rgb(185,185,185);
+    vertical-align: middle;
+    border: rgb(117,117,117) 1px solid;
+    margin: 3px;
+    padding: 3px;
+}
+
+#datadispdown td {
+    border: rgb(117,117,117) 1px solid;
+    background-color: rgb(255,255,255);
+    margin: 3px;
+    padding: 3px;
+    text-align:center;
+}

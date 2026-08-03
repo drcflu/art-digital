@@ -1,0 +1,108 @@
+﻿<html>
+<head>
+    <title>Aesthetic Measurement</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--
+http://www.sanwebe.com/2013/03/addremove-input-fields-dynamically-with-jquery 
+http://jsfiddle.net/drx7K/
+-->
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript"> 
+$(document).ready(function(){var e=20,o=$(".input_fields_wrap"),a=$(".add_field_button"),l=0;$(a).click(function(i){i.preventDefault(),e>l+1&&(l++,$(o).append("                <div>"+(l+1)+')                  <input type="text" class="hue'+l+'" size=3>                  <select class="hueclass'+l+'">                    <option value="0">Y</option>                    <option value="10">GY</option>                    <option value="20">G</option>                    <option value="30">BG</option>                    <option value="40">B</option>                    <option value="50">PB</option>                    <option value="60">P</option>                    <option value="70">RP</option>                    <option value="80">R</option>                    <option value="90">YR</option>                    <option value="-1">N</option>                  </select>                  <input type="text" class="value'+l+'" size=3>/                  <input type="text" class="Chroma'+l+'" size=3>                </div>'))}),$("#getButtonValue").click(function(){O=0,C=0,M=0,HuePair=0,ValuePair=0,ChromaPair=0;var e=new Array,o=new Array;for(ODiff=0,console.log("count="+l),i=0;i<l;i++){for(j=i+1;j<=l;j++){tempOi=+$(".hue"+i).val()+ +$(".hueclass"+i).val(),tempOj=+$(".hue"+j).val()+ +$(".hueclass"+j).val();var a=0;c1=+$(".Chroma"+i).val(),c2=+$(".Chroma"+j).val(),ODiff=O,-1==$(".hueclass"+i).val()&&-1==$(".hueclass"+j).val()?O+=1:-1!=$(".hueclass"+i).val()&&-1!=$(".hueclass"+j).val()&&(a=Math.abs(tempOi-tempOj),a>0&&HuePair++,a>50&&(a=100-a),a>=28&&50>=a?O+=1.7:a>=12&&28>a?O+=.7:a>=7&&12>a?O+=1.1:a>=0&&a<2/(c1+c2)&&(O+=1.5)),console.log("HDiff="+a+",O="+(+O-+ODiff)),v1=+$(".value"+i).val(),v2=+$(".value"+j).val(),VDiff=Math.abs(v1-v2),VDiff>0&&ValuePair++,ODiff=O,VDiff>=2.5&&VDiff<=10?O+=3.7:VDiff>=1.5&&VDiff<2.5?O-=.2:VDiff>=.5&&VDiff<1.5?O+=.7:VDiff>=.05&&VDiff<.5?O-=1:VDiff>=0&&VDiff<.05&&(O-=1.3),console.log("VDiff="+VDiff+",O="+(+O-+ODiff)),c1=+$(".Chroma"+i).val(),c2=+$(".Chroma"+j).val(),CDiff=Math.abs(c1-c2),CDiff>0&&ChromaPair++,ODiff=O,CDiff>=7?O+=.4:CDiff>=3&&CDiff<5?O+=.1:CDiff>=0&&CDiff<.1&&(O+=.8),console.log("CDiff="+CDiff+",O="+(+O-+ODiff)+"\n")}c=+$(".Chroma"+i).val(),v=+$(".value"+i).val(),e[i]=Math.sqrt(c*c+64*(v-5)*(v-5)),console.log("R"+i+"="+e[i]),o[i]=1/(v*c),console.log("MunsellArray"+i+"="+o[i])}c=+$(".Chroma"+l).val(),v=+$(".value"+l).val(),e[l]=Math.sqrt(c*c+64*(v-5)*(v-5)),console.log("R"+l+"="+e[l]),o[l]=1/(v*c),console.log("MunsellArray"+i+"="+o[i]);var n="";for(CSum=+l+1+HuePair+ValuePair+ChromaPair,console.log("count="+(+l+1)+",HuePair="+HuePair+",ValuePair="+ValuePair+",ChromaPair="+ChromaPair),n+="O = "+O.toFixed(3),n+="\nC = "+CSum,n+="\nM = "+(O/CSum).toFixed(3),n+="\n\nSpace ratio (area ratio):\n",index=0;index<l;index++)n+="S"+(index+1)+":";for(n+="S"+(l+1)+" = 1",index=1;index<=l;index++)n+=" :"+(e[0]/e[index]).toFixed(3);for(n+="\n\nMunsell method:\n",index=0;index<l;index++)n+="S"+(index+1)+":";for(n+="S"+(l+1)+" = 1",index=1;index<=l;index++)n+=" :"+(o[index]/o[0]).toFixed(3);n=n.replace(/((?:(?:^|[\n\r]+)[\t ]*-[\t ]*[^\n\r]*)+)/g,"\n<ul>\n$1\n</ul>"),n=n.replace(/[\n\r]+[\t ]*-[\t ]*([^\n\r]*)/g,"\n  <li>$1</li>"),$("#output").html("<hr><h2>Results:</h2>"),$("#output").append(n)}),$(o).on("click",".remove_field",function(i){i.preventDefault(),$(this).parent("div").remove(),x--})});</SCRIPT>
+</head>
+
+<body background="粉彩.jpg">
+<h1><font face="新細明體" size="5"><i>配色美度 </i></font>Aesthetic Measurement</h1>
+<hr>
+<form class="input_fields_wrap">
+    <button class="add_field_button">Add More Fields</button>
+    <input type='button' value='Get Value' id='getButtonValue'></P>
+    <div> 1)
+        <input type="text" class="hue0" size=3>
+        <select class="hueclass0">
+          <option value="0">Y</option>
+          <option value="10">GY</option>
+          <option value="20">G</option>
+          <option value="30">BG</option>
+          <option value="40">B</option>
+          <option value="50">PB</option>                    
+          <option value="60">P</option>
+          <option value="70">RP</option>
+          <option value="80">R</option>
+          <option value="90">YR</option>
+          <option value="-1">N</option>
+        </select>
+        <input type="text" class="value0" size=3>/
+        <input type="text" class="Chroma0" size=3>
+    </div>
+</form>
+<pre id="output"></pre>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+                        <p style="margin-top: 0; margin-bottom: 0" align="center">
+                          <font face="Times New Roman"> <a href="#top" style="color: white; text-decoration: none">
+                              <font color="#0000FF" size="4">Top</font></a><font
+                              size="4"><font color="#0000FF">&nbsp; </font> <a
+                                href="javascript:history.back()" style="color: white; text-decoration: none"><font
+                                  color="#0000FF">Back</font></a></font></font><span
+                            style="font-family: Times New Roman" lang="EN-US"><font
+                              size="4"><font color="#0000FF"> </font> 
+							<a tppabs="http://www.art-digital.net/index.htm"
+                                style="color: white; text-decoration: none" href="../index.htm"><font
+                                  color="#0000FF">Home</font></a></font></span></p>
+                        <div align="center">
+                          <table id="table1" border="0" width="659">
+                            <tbody>
+                              <tr>
+                                <td width="164">
+                                  <p style="margin-top: 0; margin-bottom: 0" align="center">
+                                    <a href="../DigiSurrealism/DigiSurrealism_home.htm"
+                                      style="cursor: pointer; color: #1a0dab; font-family: arial,sans-serif; text-decoration:none">
+                                      <img src="../index/buttonA.gif" border="0" height="30"
+                                        width="150"></a></p>
+                                </td>
+                                <td width="164"> 
+								<a href="../animated_gif/animated_gif_home.htm" style="color: white; text-decoration: none">
+                                    <img src="../index/buttonB.gif" border="0" height="32"
+                                      width="160"></a></td>
+                                <td width="164"> 
+								<a href="DrcfluPainter.html"
+                                    style="cursor: pointer; color: #1a0dab; font-family: arial,sans-serif; text-decoration:none">
+                                    <img src="../index/buttonC.gif" border="0" height="32"
+                                      width="160"></a></td>
+                                <td width="165"> 
+								<a href="../DigiCollage/DigiCollage_home.htm"
+                                    style="cursor: pointer; color: #1a0dab; font-family: arial,sans-serif; text-decoration:none">
+                                    <img src="../index/buttonD.gif" border="0" height="32"
+                                      width="160"></a></td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      <p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</body>
+</html>

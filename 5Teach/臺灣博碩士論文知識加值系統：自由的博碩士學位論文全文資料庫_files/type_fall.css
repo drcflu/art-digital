@@ -1,0 +1,28 @@
+.title_bg{background: url(../image/etds_cc_a03.gif) repeat-x top;height: 42px;}
+h3.title_n1{font-size:1.2em;font-weight:700;color:#297580;background:url(../image/etds_dd_a03.gif) no-repeat left top;display: block;height: 42px;padding-left: 33px;padding-top: 7px;line-height: 1.5em;}
+.title_bg2{background: url(../image/etds_dd_a03.gif) repeat-x top;height: 42px;}
+h3.title_n2{font-size:1.2em;font-weight:700;color:#4b5b1b;background:url(../image/etds_dd_a03.gif) no-repeat left top;display: block;height: 42px;padding-left: 33px;padding-top: 7px;line-height: 1.5em;}
+.helper{color:#0e6470;display: block;float: right;line-height: 1em;padding-top: 12px;padding-right: 15px;padding-left: 10px;background: url(../image/etds_icon_a.gif) no-repeat right bottom;margin-right: 10px;}
+.helper2{color:#0e6470;display: block;float: right;line-height: 1em;padding-top: 12px;padding-left: 10px;margin-right: 10px;}
+.helper a:link,.helper a:visited,.helper2 a:link,.helper2 a:visited{color:#0e6470; text-decoration:none;}
+.helper a:hover,.helper2 a:hover{color:#fff; text-decoration:none;}
+
+.cc_bar{height: 21px;background-image: url(../image/etds_navtag03.gif);background-repeat: no-repeat;background-position: right;margin-right: 20px;clear: both;}
+.cc_bar ul{width:125px;float:right;}
+.cc_bar li{float:left;margin-top: 3px;margin-right: 3px;margin-left: 3px;}
+.nav{height: 34px;background-image: url(../image/etds_navbg03.gif);background-repeat: repeat-x;}
+.schfunc,.schfunc a:link,.schfunc a:visited{color:#0e6470;}
+.schfunc a:hover{color:#fff;}
+
+.etds_mainct{background:#f1f1f1 left top no-repeat url(../image/background_03.jpg);min-width:750px;min-height:600px;vertical-align: top;}
+.subnav{ float:right;margin-top:10px;margin-right:16px;_margin-right:8px;color:#DE4747;}
+.subnav a:link,.subnav a:visited{color:#000000;text-decoration:none;}
+.subnav a:hover{color:#DE4747; text-decoration:underline;}
+.fontsize_control{text-align: right;color: #000000;margin:8px 20px;_margin:8px 10px;}
+.user_div,.user_div a:link,.user_div a:visited,.user_div a:hover{color: #000000;text-decoration: none;}
+.user_div a:hover{color: #000000;text-decoration: underline;}
+
+
+.user_area,.user_area a:link,.user_area a:visited,.user_area a:hover{color: #000000;text-decoration: none;}
+.user_area a:hover{color: #057F8A;text-decoration: underline;}
+.user_area font{color:#000000;}

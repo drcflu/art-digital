@@ -1,0 +1,516 @@
+<xml xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+ xmlns:oa="urn:schemas-microsoft-com:office:activation">
+ <p:presentation sizeof="screen" gridspacingx="46448" gridspacingy="46448">
+  <p:master id="6" slidesn="0,0" type="main" href="master06.htm"
+   xmlhref="master06.xml" template="7_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="8" slidesn="0,0" type="main" href="master08.htm"
+   xmlhref="master08.xml" template="8_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="724" slidesn="0,0" type="main" href="master724.htm"
+   xmlhref="master724.xml" template="9_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="1086" slidesn="0,0" type="main" href="master1086.htm"
+   xmlhref="master1086.xml" template="10_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="1631" slidesn="0,0" type="main" href="master1631.htm"
+   xmlhref="master1631.xml" template="11_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="1632" slidesn="0,0" type="main" href="master1632.htm"
+   xmlhref="master1632.xml" template="12_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="1633" slidesn="0,0" type="main" href="master1633.htm"
+   xmlhref="master1633.xml" template="13_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="1634" slidesn="0,0" type="main" href="master1634.htm"
+   xmlhref="master1634.xml" template="14_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="1635" slidesn="0,0" type="main" href="master1635.htm"
+   xmlhref="master1635.xml" template="15_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="1636" slidesn="0,0" type="main" href="master1636.htm"
+   xmlhref="master1636.xml" template="16_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="1637" slidesn="0,0" type="main" href="master1637.htm"
+   xmlhref="master1637.xml" template="17_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="1638" slidesn="0,0" type="main" href="master1638.htm"
+   xmlhref="master1638.xml" template="18_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="1639" slidesn="0,0" type="main" href="master1639.htm"
+   xmlhref="master1639.xml" template="19_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="1640" slidesn="0,0" type="main" href="master1640.htm"
+   xmlhref="master1640.xml" template="20_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="1641" slidesn="0,0" type="main" href="master1641.htm"
+   xmlhref="master1641.xml" template="21_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+  </p:master>
+  <p:master id="1" slidesn="1CF2CA3,9D4EC3F0" type="notes" href="master01.htm"
+   layout="notes" slots="header,dateTime,slideImage,body,footer,slideNumber"/>
+  <p:master id="2" slidesn="1CF2CA3,9D537EE0" type="handout" href="master02.htm"
+   layout="handout" slots="header,dateTime,footer,slideNumber"/>
+  <p:slide id="1250" slidesn="0,0" href="slide1250.htm"/>
+  <p:viewstate type="slideView" scale="66" sorterscale="100" restoredleft="166"
+   restoredtop="946" horizbarstate="2" manualadjustleft="t" manualadjusttop="t"
+   hideoutlineicons="t"/>
+  <p:tag name="___PPT12" type="binary" datasize="9" dataoffset="0"/>
+  <p:font name="Arial" charset="0" type="4" family="34"/>
+  <p:font name="新細明體" charset="136" type="4" family="18"/>
+  <p:font name="Arial Black" charset="0" type="4" family="34"/>
+  <p:font name="華康儷粗黑" charset="136" type="4" family="49"/>
+  <p:font name="Times New Roman" charset="0" type="4" family="18"/>
+  <p:font name="華康新儷粗黑" charset="136" type="4" family="34"/>
+  <p:headersfooters nouserdate="t" nofooter="t" noheader="t" nodate="t"
+   todaydate="t"/>
+  <p:headersfooters notes="t" nouserdate="t" nofooter="t" noheader="t"
+   nodate="t" todaydate="t"/>
+  <p:pptdocumentsettings framecolors="WhiteTextOnBlack" hideslideanimation="t"
+   browsersupport="v4"/>
+ </p:presentation>
+ <o:shapedefaults v:ext="edit" spidmax="584708" style='mso-wrap-style:none;
+  v-text-anchor:middle' fill="f">
+  <v:fill on="f"/>
+  <v:stroke weight="1.5pt"/>
+  <v:shadow on="t" type="perspective" opacity=".5" origin=".5,.5" offset="0,0"
+   matrix=",-92680f,,,,-95367431641e-17"/>
+  <o:colormru v:ext="edit" colors="#ccecff,yellow,#969696,#33f,blue,white,#ffc,black"/>
+  <o:colormenu v:ext="edit" shadowcolor="none"/>
+ </o:shapedefaults></xml>

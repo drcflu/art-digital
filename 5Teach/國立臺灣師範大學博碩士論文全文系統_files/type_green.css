@@ -1,0 +1,24 @@
+@charset "utf-8";
+/* CSS Document */
+body{background:url(../image/bg_2.gif) top repeat-x #fff;font-family: Verdana, Arial, Helvetica, sans-serif;line-height:1.7em;color:#555;}
+.etds_mainct{background:left top no-repeat url(../image/top_2.jpg);width:990px; height:auto;min-height:600px;  _height:600px;margin:0; padding:0;vertical-align: top;}
+
+.helper{color:#4b5b1b;display: block;float: right;line-height: 1em;padding-top: 12px;padding-right: 15px;padding-left: 10px;background: url(../image/etds_icon_b.gif) no-repeat right bottom;margin-right: 10px;}
+.helper2{color:#4b5b1b;display: block;float: right;line-height: 1em;padding-top: 12px;padding-left: 10px;margin-right: 10px;}
+.helper a:link,.helper a:visited,.helper2 a:link,.helper2 a:visited{color: #39C;text-decoration:none;}
+.helper a:hover,.helper2 a:hover{color: #C69; text-decoration:none;}
+
+
+.schfunc,.schfunc a:link,.schfunc a:visited{color:#4b5b1b;}
+.schfunc a:hover{color:#fff;}
+
+.footnav{ font-size:13px; line-height:30px;color:#444; background: url(../image/bg_2_f.gif) center top no-repeat;height:30px;}
+.footnav a:link,.footnav a:visited{color:#333; text-decoration:none;}
+.footnav a:hover{color: #690;text-decoration:none;}
+
+.cc_bar{ position:absolute; top:148px; right:15px; visibility:visible; z-index:100;}
+.cc_bar li{float:left; padding:0; margin:0;}
+.cc_bar img { border:1px solid #9ccc56;margin:2px ;}
+
+.cc_bar a:hover  img{ border:1px solid #fff}
+.cc_bar img:hover{ border:1px solid #fff}

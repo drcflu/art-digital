@@ -1,0 +1,633 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+xmlns:oa="urn:schemas-microsoft-com:office:activation"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=big5">
+<meta name=ProgId content=PowerPoint.Slide>
+<meta name=Generator content="Microsoft PowerPoint 11">
+<link id=Main-File rel=Main-File href="../MindMap2.htm">
+<link rel=Preview href=preview.wmf>
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+p\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+v\:textbox {display:none;}
+</style>
+<![endif]-->
+<title>投影片 1</title>
+<meta name=Description content="2016/10/26">
+<link rel=Stylesheet href="master05_stylesheet.css">
+<![if !ppt]>
+<style media=print>
+<!--.sld
+	{left:0px !important;
+	width:6.0in !important;
+	height:4.5in !important;
+	font-size:103% !important;}
+-->
+</style>
+<script><!--
+function LoadSld()
+{
+	var sld=GetObj("SlideObj")
+	if( !g_supportsPPTHTML ) {		
+		sld.style.visibility="visible"
+		return
+	}
+
+	if( MakeNotesVis() ) return
+
+	runAnimations = _InitAnimations();
+	
+	if( IsWin("PPTSld") )
+		parent.SldUpdated(GetSldId())
+	g_origSz=parseInt(SlideObj.style.fontSize)
+	g_origH=sld.style.posHeight
+	g_origW=sld.style.posWidth
+	g_scaleHyperlinks=(document.all.tags("AREA").length>0)
+	if( g_scaleHyperlinks )
+		InitHLinkArray()
+	if( g_scaleInFrame||(IsWin("PPTSld") && parent.IsFullScrMode() ) )
+		document.body.scroll="no"
+	_RSW()
+	if( IsWin("PPTSld") && parent.IsFullScrMode() )
+		FullScrInit();
+	
+	MakeSldVis();
+	
+	if( runAnimations )
+	{
+		if( document.all("NSPlay") )
+			document.all("NSPlay").autoStart = false;
+
+		if( sld.filters && sld.filters.revealtrans )
+			setTimeout( "document.body.start()", sld.filters.revealtrans.duration * 1000 );
+		else
+			document.body.start();
+	}
+}
+
+function MakeSldVis() 
+{
+	var fTrans=g_showAnimation && SldHasTrans()
+	if( fTrans )	
+	{
+		if( g_bgSound ) {
+			idx=g_bgSound.indexOf(",");
+			pptSound.src=g_bgSound.substr( 0, idx );
+			pptSound.loop= -(parseInt(g_bgSound.substr(idx+1)));
+		}
+		SlideObj.filters.revealtrans.Apply()	
+    }
+	SlideObj.style.visibility="visible"
+	if( fTrans )
+		SlideObj.filters.revealtrans.Play()
+}
+function MakeNotesVis() 
+{
+	if( !IsNts() ) return false 
+	SlideObj.style.display="none"
+	nObj = document.all.item("NotesObj")
+	parent.SetHasNts(0)
+	if( nObj ) { 
+		nObj.style.display=""
+		parent.SetHasNts(1)
+	}
+	return 1
+}
+function ChkAutoAdv()
+{
+	if(SldHasTrans())
+		SlideObj.onfilterchange=AutoAdv
+	else
+		AutoAdv()
+}
+function AutoAdv()
+{
+	if(!IsWin("PPTSld") || !gUseSldTimings )return
+	var sld=GetCurSld()
+	if( (sld.mAdvDelay>0) && !parent.IsFramesMode() )
+		setTimeout("parent.GoToNextSld()",sld.mAdvDelay)
+}
+function GetObj(id)
+{
+	if(g_supportsPPTHTML) return document.all(id);
+	else return document.getElementById(id);
+}
+function SldHasTrans() { return SlideObj.style.filter != ""; }
+function GetSldId() 
+{
+	var regExp = /file:\/\/\//i
+	var pos = location.href.search(regExp)
+	if (MHTMLPrefix != "" && pos != -1)
+		sId = location.href.substring(pos)
+	else
+	{
+		sId = RemoveFilePrefixFromHref(location.href);
+		var regExp = /\//
+		var fixedHref = sId
+		var pos = -1
+	
+		pos = fixedHref.search(regExp)
+		while (pos != -1)
+		{
+			fixedHref = fixedHref.replace(regExp, "\\")
+			pos = fixedHref.search(regExp)
+		}
+	
+		if (g_fBaseHyperlink == true)
+			sId = "file:///" + fixedHref;
+		else
+			sId = fixedHref.substring(fixedHref.lastIndexOf('\\') + 1)
+	}
+	
+	return sId
+}
+function HideMenu() { if( frames["PPTSld"] && PPTSld.document.all.item("ctxtmenu") && PPTSld.ctxtmenu.style.display!="none" ) { PPTSld.ctxtmenu.style.display='none'; return true } return false }
+function IsWin( name ) { return window.name == name }
+function IsNts() { return IsWin("PPTNts") }
+function IsSldOrNts() { return( IsWin("PPTSld")||IsWin("PPTNts") ) }
+function SupportsPPTAnimation() { return( navigator.platform == "Win32" && navigator.appVersion.indexOf("Windows")>0 ) }
+function SupportsPPTHTML()
+{
+	var appVer=navigator.appVersion, msie=appVer.indexOf("MSIE "), ver=0
+	if( msie >= 0 )
+		ver=parseFloat( appVer.substring( msie+5, appVer.indexOf(";",msie) ) )
+	else
+		ver=parseInt(appVer)
+
+	return( ver >= 4 && msie >= 0 )
+}
+function _RSW()
+{
+	if( !g_supportsPPTHTML || IsNts() ||
+	  ( !g_scaleInFrame && (!IsWin("PPTSld") || !parent.IsFullScrMode()) ) )
+		return
+
+        var padding=0;
+        if( IsWin("PPTSld") && parent.IsFramesMode() ) padding=6
+
+	cltWidth=document.body.clientWidth-padding
+	cltHeight=document.body.clientHeight-padding
+	factor=(1.0*cltWidth)/g_origW
+	if( cltHeight < g_origH*factor )
+		factor=(1.0*cltHeight)/g_origH
+
+	newSize = g_origSz * factor
+	if( newSize < 1 ) newSize=1
+
+	s=SlideObj.style
+	s.fontSize=newSize+"px"
+	s.posWidth=g_origW*factor
+	s.posHeight=g_origH*factor
+	s.posLeft=(cltWidth-s.posWidth+padding)/2
+	s.posTop=(cltHeight-s.posHeight+padding)/2
+
+	if( g_scaleHyperlinks )
+		ScaleHyperlinks( factor )
+}
+function _InitAnimations()
+{
+	animRuntimeInstalled = ''+document.body.localTime != 'undefined';
+	isFullScreen = (window.name == "PPTSld") && !parent.IsFramesMode();
+	g_animUseRuntime = g_showAnimation && animRuntimeInstalled && !(isFullScreen && parent.IsSldVisited());
+	if( g_animUseRuntime ) {
+		collSeq = document.all.tags("seq");
+		if( collSeq != null ) {
+			for(ii=0;ii<collSeq.length;ii++) {
+				if( collSeq[ii].getAttribute( "p:nodeType" ) == "mainSeq" ) {
+					g_animMainSequence = collSeq[ii];
+					break;
+				}
+			}
+		}
+	
+		if( g_animItemsToHide && document.body.playAnimations != false ) {
+			for(jj = 0; jj < g_animItemsToHide.length; jj++) {
+				if( hideObj = GetObj(g_animItemsToHide[jj]) )
+					hideObj.runtimeStyle.visibility="hidden";
+			}
+		}
+
+		if( g_animInteractiveItems ){
+			for(jj = 0; jj < g_animInteractiveItems.length; jj++) {
+				if( triggerObj = GetObj(g_animInteractiveItems[jj]) )
+					triggerObj.runtimeStyle.cursor="hand";
+			}
+		}
+		
+		if( gUseSldTimings && ''+g_animSlideTime != 'undefined' ) {
+			adjustedTime = document.body.calculateAutoAdvanceTimes( g_animSlideTime, g_animEffectTimings );
+			if( IsWin("PPTSld") && adjustedTime != g_animSlideTime ) {
+			   var sld = GetCurSld();
+			   sld.mAdvDelay = adjustedTime * 1000;
+			}
+		}
+	}
+
+	return g_animUseRuntime;
+}
+
+var g_HLinkArray = new Array();
+ 
+function IMapAreaObj( areaObj, coords )
+{
+  this.areaObj = areaObj;
+  this.coords = coords;
+}
+
+function InitHLinkArray()
+{
+  var appVer = navigator.appVersion;
+  var msie = appVer.indexOf ( "MSIE " )
+  var ver = 0;
+  if ( msie >= 0 )
+    ver = parseInt ( appVer.substring( msie+5 ) );
+
+  linkNum = 0;
+
+  for (i=0; i<document.all.tags("AREA").length; i++) {
+    areaObj = document.all.tags("AREA").item(i);
+    if( ( areaObj.id != "pptxscale" ) || ( ver > 4 ) )
+      g_HLinkArray[linkNum++] = new IMapAreaObj( areaObj, ParseCoords( areaObj.coords ) );
+  }
+}
+
+function ScaleHyperlinks( factor )
+{   
+  for ( ii=0; ii< g_HLinkArray.length; ii++) {
+    coordsStr="";
+    imaObj = g_HLinkArray[ii];
+    for ( jj=0; jj < imaObj.coords.length-1; jj++ )
+  	  coordsStr += (imaObj.coords[jj]*factor) + ",";
+    coordsStr += (imaObj.coords[jj]*factor);
+    imaObj.areaObj.coords = coordsStr;
+  }
+}
+
+function ParseCoords( coordsStr )
+{
+  var numArray = new Array();
+  var i = curPos = commaPos = 0;
+
+  while ( ( commaPos = coordsStr.indexOf(",", curPos) ) != -1 ) { 
+    numArray[i++] = parseInt( coordsStr.substr( curPos, commaPos ) );
+    curPos = commaPos + 1;
+  }
+  numArray[i] = parseInt( coordsStr.substr( curPos ) );
+
+  return numArray;
+}
+
+
+
+var g_supportsPPTHTML = SupportsPPTHTML(), g_scaleInFrame = 1, gId="", g_bgSound="",
+    g_scaleHyperlinks = false, g_allowAdvOnClick = 1, g_showInBrowser = 0, gLoopCont = 0, gUseSldTimings = 1;
+var g_showAnimation = g_supportsPPTHTML && SupportsPPTAnimation() && g_showInBrowser;
+var g_animManager = null;
+var g_animUseRuntime = false;
+var g_animItemsToHide, g_animInteractiveItems, g_animSlideTime;
+var g_animMainSequence = null;
+
+//--></script><!--[if vml]><script>g_vml = 1;
+</script><![endif]--><![endif]>
+</head>
+
+<body lang=ZH-TW style='margin:0px;background-color:#EBF1F7' onresize="_RSW()"
+onload="LoadSld()">
+
+<div id=SlideObj class=sld style='position:absolute;top:0px;left:0px;
+width:554px;height:415px;font-size:16px;background-color:#9999FF;clip:rect(0%, 101%, 101%, 0%);
+visibility:hidden'><p:slide coordsize="720,540"
+ colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"
+ masterhref="master05.xml" href="slide0002.xml">
+ <p:shaperange href="master05.xml#_x0000_s9217"/><![if !vml]><img
+ src="master05_background.gif" v:shapes="_x0000_s9217" style='position:absolute;
+ top:0%;left:0%;width:100.0%;height:100.0%'><![endif]><![if !ppt]><p:shaperange
+  href="master05.xml#Rectangle_x0020_4"/><p:shaperange
+  href="master05.xml#Rectangle_x0020_5"/><p:shaperange
+  href="master05.xml#Text_x0020_Box_x0020_7"/><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3074"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3074,_x0000_s3075,_x0000_s3076,_x0000_s3077,_x0000_s3078,_x0000_s3079,_x0000_s3080,_x0000_s3081,_x0000_s3082,_x0000_s3083"
+ src="slide0002_image001.gif" style='position:absolute;top:-.24%;left:1.08%;
+ width:98.19%;height:99.03%'><![endif]>
+ <div v:shape="_x0000_s3080" class=O style='text-align:center;position:absolute;
+ top:19.03%;left:3.42%;width:12.81%;height:3.85%'><span
+ style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ </span></div>
+ <p:shaperange href="slide0002.xml#Picture_x0020_32"/><![if !vml]><map
+ name="map_s12"></map><![endif]><![if !vml]><img border=0
+ v:shapes="Picture_x0020_32" src="slide0002_image002.gif" usemap="#map_s12"
+ alt="Beijing bronze lion with two tigers" style='position:absolute;top:14.21%;
+ left:87.36%;width:10.64%;height:10.36%'><![endif]><p:shaperange
+  href="slide0002.xml#Picture_x0020_28"/><![if !vml]><map name="map_s13"></map><![endif]><![if !vml]><img
+ border=0 v:shapes="Picture_x0020_28" src="slide0002_image003.gif"
+ usemap="#map_s13" alt=A-special-conductor-in-orchestra style='position:absolute;
+ top:39.03%;left:72.02%;width:10.64%;height:10.6%'><![endif]><p:shaperange
+  href="slide0002.xml#Picture_x0020_26"/><![if !vml]><map name="map_s14"></map><![endif]><![if !vml]><img
+ border=0 v:shapes="Picture_x0020_26" src="slide0002_image004.gif"
+ usemap="#map_s14" alt=Merlion-and-Dragon style='position:absolute;top:61.44%;
+ left:83.93%;width:12.27%;height:9.15%'><![endif]><p:shaperange
+  href="slide0002.xml#Picture_x0020_24"/><![if !vml]><map name="map_s15"></map><![endif]><![if !vml]><img
+ border=0 v:shapes="Picture_x0020_24" src="slide0002_image005.gif"
+ usemap="#map_s15" alt="Venus &amp; Qin Dynasty's Terra-cotta Warriors"
+ style='position:absolute;top:51.08%;left:84.65%;width:10.64%;height:10.6%'><![endif]><p:shaperange
+  href="slide0002.xml#Picture_x0020_30"/><![if !vml]><map name="map_s16"><area
+ href="http://giphy.com/gifs/3oEduOHs2izyNnBgn6" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 61, 44"></map><![endif]><![if !vml]><img border=0
+ v:shapes="Picture_x0020_30" src="slide0002_image006.gif" usemap="#map_s16"
+ alt="Dragon_Boat in Venice" style='position:absolute;top:76.38%;left:27.97%;
+ width:11.01%;height:10.6%'><![endif]><p:shaperange
+  href="slide0002.xml#Picture_x0020_34"/><![if !vml]><map name="map_s17"><area
+ href="http://giphy.com/gifs/3oEduJbA5XsJKHlzAQ" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 53, 59"></map><![endif]><![if !vml]><img border=0
+ v:shapes="Picture_x0020_34" src="slide0002_image007.gif" usemap="#map_s17"
+ alt=Great-Shift1b style='position:absolute;top:77.34%;left:2.7%;width:9.38%;
+ height:14.21%'><![endif]><p:shaperange href="slide0002.xml#Picture_x0020_20"/><![if !vml]><map
+ name="map_s18"><area href="http://giphy.com/gifs/3o85xLdA7s5TEW06VW"
+ target="_parent" onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 60, 46"></map><![endif]><![if !vml]><img border=0
+ v:shapes="Picture_x0020_20" src="slide0002_image008.gif" usemap="#map_s18"
+ alt=Pop-culture1b style='position:absolute;top:42.65%;left:16.06%;width:10.64%;
+ height:11.08%'><![endif]><p:shaperange href="slide0002.xml#_x0000_s3091"/><![if !vml]><map
+ name="map_s19"><area href="http://giphy.com/gifs/3o85xJLJ0vtJ5do2bu"
+ target="_parent" onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 69, 46"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3091" src="slide0002_image009.gif" usemap="#map_s19"
+ style='position:absolute;top:28.91%;left:3.06%;width:12.27%;height:10.84%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3092"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3092" src="slide0002_image010.gif" style='position:absolute;
+ top:13.97%;left:25.27%;width:12.27%;height:9.15%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3094"/><![if !ppt]>
+ <div style='position:absolute;top:90.12%;left:1.26%;width:12.27%;height:5.78%'><![endif]>
+ <div v:shape="_x0000_s3094" class=O style='text-align:center;position:absolute;
+ top:20.83%;left:0%;width:98.52%;height:62.5%'><span style='font-family:新細明體;
+ mso-fareast-font-family:新細明體;color:black'>建築錯置</span></div>
+ <![if !ppt]></div>
+ <![endif]><p:shaperange href="slide0002.xml#_x0000_s3095"/><![if !ppt]>
+ <div style='position:absolute;top:70.84%;left:19.31%;width:12.27%;height:5.78%'><![endif]>
+ <div v:shape="_x0000_s3095" class=O style='text-align:center;position:absolute;
+ top:20.83%;left:0%;width:98.52%;height:62.5%'><span style='font-family:新細明體;
+ mso-fareast-font-family:新細明體;color:black'>活動錯置</span></div>
+ <![if !ppt]></div>
+ <![endif]><p:shaperange href="slide0002.xml#_x0000_s3096"/><![if !ppt]>
+ <div style='position:absolute;top:74.21%;left:53.79%;width:12.27%;height:5.78%'><![endif]>
+ <div v:shape="_x0000_s3096" class=O style='text-align:center;position:absolute;
+ top:20.83%;left:0%;width:98.52%;height:62.5%'><span style='font-family:新細明體;
+ mso-fareast-font-family:新細明體;color:black'>動靜錯置</span></div>
+ <![if !ppt]></div>
+ <![endif]><p:shaperange href="slide0002.xml#_x0000_s3097"/><![if !ppt]>
+ <div style='position:absolute;top:62.89%;left:72.02%;width:12.27%;height:5.78%'><![endif]>
+ <div v:shape="_x0000_s3097" class=O style='text-align:center;mso-line-spacing:
+ "100 20 0";position:absolute;top:20.83%;left:0%;width:98.52%;height:62.5%'><span
+ style='font-family:新細明體;mso-fareast-font-family:新細明體;color:black'>藝品錯置</span><span
+ style='font-family:新細明體;mso-fareast-font-family:新細明體;mso-special-format:lastCR;
+ display:none'>&#13;</span></div>
+ <![if !ppt]></div>
+ <![endif]><p:shaperange href="slide0002.xml#_x0000_s3099"/><![if !ppt]>
+ <div style='position:absolute;top:26.74%;left:74.36%;width:12.27%;height:5.78%'><![endif]>
+ <div v:shape="_x0000_s3099" class=O style='text-align:center;position:absolute;
+ top:20.83%;left:0%;width:98.52%;height:62.5%'><span style='font-family:新細明體;
+ mso-fareast-font-family:新細明體;color:black'>走獸錯置</span></div>
+ <![if !ppt]></div>
+ <![endif]><p:shaperange href="slide0002.xml#_x0000_s3100"/><![if !ppt]>
+ <div style='position:absolute;top:22.65%;left:25.81%;width:12.27%;height:5.78%'><![endif]>
+ <div v:shape="_x0000_s3100" class=O style='text-align:center;position:absolute;
+ top:20.83%;left:0%;width:98.52%;height:62.5%'><span style='font-family:新細明體;
+ mso-fareast-font-family:新細明體;color:black'>乾溼錯置</span></div>
+ <![if !ppt]></div>
+ <![endif]><p:shaperange href="slide0002.xml#_x0000_s3101"/><![if !vml]><map
+ name="map_s29"><area
+ href="https://www.facebook.com/drcflu/posts/1004736299652192?pnref=story"
+ target="_parent" onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 53, 66"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3101" src="slide0002_image011.gif" usemap="#map_s29"
+ style='position:absolute;top:2.65%;left:40.97%;width:9.38%;height:15.66%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3102"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3102" src="slide0002_image012.gif" style='position:absolute;
+ top:1.44%;left:40.43%;width:20.93%;height:31.56%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3103"/><![if !ppt]>
+ <div style='position:absolute;top:17.34%;left:46.02%;width:12.27%;height:5.78%'><![endif]>
+ <div v:shape="_x0000_s3103" class=O style='text-align:center;position:absolute;
+ top:20.83%;left:0%;width:98.52%;height:62.5%'><span style='font-family:新細明體;
+ mso-fareast-font-family:新細明體;color:black'>真假錯置</span></div>
+ <![if !ppt]></div>
+ <![endif]><p:shaperange href="slide0002.xml#_x0000_s3104"/><![if !vml]><map
+ name="map_s32"><area
+ href="http://giphy.com/gifs/moving-hokusai-katsushika-thirty-six-sceneries-of-mt-fuji-d3EzZ6Sh9mHWeps4"
+ target="_parent" onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 68, 46"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3104" src="slide0002_image013.gif" usemap="#map_s32"
+ style='position:absolute;top:85.78%;left:74.36%;width:12.27%;height:11.08%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3105"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3105" src="slide0002_image014.gif" style='position:absolute;
+ top:83.13%;left:87.0%;width:8.66%;height:15.18%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3106"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3106" src="slide0002_image015.gif" style='position:absolute;
+ top:3.85%;left:51.62%;width:10.28%;height:13.73%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3107"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3107" src="slide0002_image016.gif" style='position:absolute;
+ top:32.04%;left:33.39%;width:32.31%;height:34.45%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3108"/><![if !vml]><map name="map_s36"><area
+ href="https://www.facebook.com/drcflu/posts/985744338218055?pnref=story"
+ target="_parent" onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 75, 42"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3108" src="slide0002_image017.gif" usemap="#map_s36"
+ style='position:absolute;top:42.65%;left:1.98%;width:13.35%;height:10.12%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3109"/><![if !vml]><map name="map_s37"><area
+ href="https://www.facebook.com/drcflu/posts/961715020620987" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 59, 45"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3109" src="slide0002_image018.gif" usemap="#map_s37"
+ style='position:absolute;top:86.74%;left:16.6%;width:10.64%;height:10.6%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3110"/><![if !vml]><map name="map_s38"><area
+ href="https://www.facebook.com/drcflu/posts/962947453831077" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 60, 45"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3110" src="slide0002_image019.gif" usemap="#map_s38"
+ style='position:absolute;top:86.74%;left:63.35%;width:10.64%;height:10.6%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3111"/><![if !vml]><map name="map_s39"><area
+ href="https://www.facebook.com/drcflu/posts/957818264343996" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 45, 68"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3111" src="slide0002_image020.gif" usemap="#map_s39"
+ style='position:absolute;top:.72%;left:4.33%;width:8.12%;height:16.14%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3112"/><![if !vml]><map name="map_s40"><area
+ href="https://www.facebook.com/drcflu/posts/960585307400625" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 68, 38"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3112" src="slide0002_image021.gif" usemap="#map_s40"
+ style='position:absolute;top:77.34%;left:15.34%;width:12.27%;height:9.15%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3113"/><![if !vml]><map name="map_s41"><area
+ href="https://www.facebook.com/drcflu/posts/957085081083981" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 59, 44"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3113" src="slide0002_image022.gif" usemap="#map_s41"
+ style='position:absolute;top:66.74%;left:1.98%;width:10.64%;height:10.36%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3114"/><![if !vml]><map name="map_s42"><area
+ href="https://www.facebook.com/drcflu/posts/956585864467236" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 68, 41"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3114" src="slide0002_image023.gif" usemap="#map_s42"
+ style='position:absolute;top:18.07%;left:3.61%;width:12.27%;height:9.87%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3115"/><![if !vml]><map name="map_s43"><area
+ href="https://www.facebook.com/drcflu/posts/954028078056348" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 57, 57"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3115" src="slide0002_image024.gif" usemap="#map_s43"
+ style='position:absolute;top:73.01%;left:64.25%;width:10.28%;height:13.49%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3116"/><![if !vml]><map name="map_s44"><area
+ href="https://www.facebook.com/drcflu/posts/951070111685478" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 47, 67"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3116" src="slide0002_image025.gif" usemap="#map_s44"
+ style='position:absolute;top:79.51%;left:54.15%;width:8.48%;height:16.14%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3117"/><![if !vml]><map name="map_s45"><area
+ href="http://giphy.com/gifs/eiffel-tower-with-a-walking-pelican-3oCWtlZUJGcuVfnmFy"
+ target="_parent" onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 68, 46"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3117" src="slide0002_image026.gif" usemap="#map_s45"
+ style='position:absolute;top:39.03%;left:83.03%;width:12.27%;height:10.84%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3118"/><![if !vml]><map name="map_s46"><area
+ href="https://www.facebook.com/drcflu/posts/918989218226901" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 69, 51"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3118" src="slide0002_image027.gif" usemap="#map_s46"
+ style='position:absolute;top:.96%;left:24.72%;width:12.27%;height:12.04%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3120"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3120" src="slide0002_image028.gif" alt=1 style='position:
+ absolute;top:27.22%;left:70.03%;width:3.24%;height:7.95%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3121"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3121,_x0000_s3122" src="slide0002_image029.gif"
+ style='position:absolute;top:37.34%;left:67.32%;width:4.15%;height:21.68%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3123"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3123" src="slide0002_image030.gif" alt=4 style='position:
+ absolute;top:67.95%;left:57.94%;width:3.24%;height:7.95%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3124"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3124" src="slide0002_image031.gif" alt=5 style='position:
+ absolute;top:68.91%;left:29.96%;width:3.24%;height:7.95%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3125"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3125" src="slide0002_image032.gif" alt=6 style='position:
+ absolute;top:66.98%;left:14.62%;width:3.24%;height:7.95%'><![endif]><p:shaperange
+  href="slide0002.xml#Picture_x0020_22"/><![if !vml]><map name="map_s54"></map><![endif]><![if !vml]><img
+ border=0 v:shapes="Picture_x0020_22" src="slide0002_image033.gif"
+ usemap="#map_s54" alt=Pop-culture3b style='position:absolute;top:5.78%;
+ left:63.35%;width:11.73%;height:11.8%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3127"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3127" src="slide0002_image034.gif" style='position:absolute;
+ top:3.61%;left:62.45%;width:23.28%;height:28.91%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3128"/><![if !ppt]>
+ <div style='position:absolute;top:17.34%;left:62.63%;width:12.27%;height:5.78%'><![endif]>
+ <div v:shape="_x0000_s3128" class=O style='text-align:center;position:absolute;
+ top:20.83%;left:0%;width:98.52%;height:62.5%'><span style='font-family:新細明體;
+ mso-fareast-font-family:新細明體;color:black'>人物錯置</span></div>
+ <![if !ppt]></div>
+ <![endif]><p:shaperange href="slide0002.xml#_x0000_s3129"/><![if !ppt]><img
+ border=0 v:shapes="_x0000_s3129" src="slide0002_image035.gif" alt="文字方塊: 質感錯置"
+ style='position:absolute;top:4.09%;left:13.71%;width:5.23%;height:16.14%'><![endif]>
+ <div v:shape="_x0000_s3129" class=O style='text-align:center;position:absolute;
+ top:10.84%;left:10.28%;width:12.09%;height:3.61%;visibility:hidden'><span
+ style='font-family:新細明體;mso-fareast-font-family:新細明體;color:black'>質感錯置</span></div>
+ <p:shaperange href="slide0002.xml#_x0000_s3130"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3130" src="slide0002_image036.gif" alt=7 style='position:
+ absolute;top:39.51%;left:27.61%;width:3.24%;height:7.95%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3131"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3131" src="slide0002_image037.gif" alt=8 style='position:
+ absolute;top:25.78%;left:16.96%;width:3.24%;height:7.95%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3132"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3132" src="slide0002_image038.gif" alt=9 style='position:
+ absolute;top:11.08%;left:20.57%;width:3.24%;height:7.95%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3133"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3133,_x0000_s3134" src="slide0002_image039.gif"
+ style='position:absolute;top:22.65%;left:47.29%;width:18.23%;height:7.95%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3137"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3137" src="slide0002_image040.gif" style='position:absolute;
+ top:52.04%;left:71.29%;width:11.37%;height:11.32%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3139"/><![if !vml]><map name="map_s67"><area
+ href="https://www.facebook.com/drcflu/posts/984138365045319?pnref=story"
+ target="_parent" onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 68, 39"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3139" src="slide0002_image041.gif" usemap="#map_s67"
+ style='position:absolute;top:4.81%;left:86.64%;width:12.27%;height:9.15%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3141"/><![if !vml]><map name="map_s69"><area
+ href="https://www.facebook.com/drcflu/posts/981800658612423?pnref=story"
+ target="_parent" onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 63, 48"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3141" src="slide0002_image042.gif" usemap="#map_s69"
+ style='position:absolute;top:53.01%;left:3.61%;width:11.37%;height:11.56%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3143"/><![if !vml]><map name="map_s71"><area
+ href="https://www.facebook.com/drcflu/posts/958549867604169" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 49, 66"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3143" src="slide0002_image043.gif" usemap="#map_s71"
+ style='position:absolute;top:4.81%;left:75.81%;width:8.84%;height:15.66%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3145"/><![if !vml]><map name="map_s73"><area
+ href="https://www.facebook.com/drcflu/posts/951953811597108" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 57, 55"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3145" src="slide0002_image044.gif" usemap="#map_s73"
+ style='position:absolute;top:84.09%;left:42.96%;width:10.28%;height:13.01%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3147"/><![if !vml]><map name="map_s75"><area
+ href="https://www.facebook.com/drcflu/posts/946000478859108" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 59, 49"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3147" src="slide0002_image045.gif" usemap="#map_s75"
+ style='position:absolute;top:73.01%;left:75.27%;width:10.64%;height:11.56%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3149"/><![if !vml]><map name="map_s77"><area
+ href="https://www.facebook.com/drcflu/posts/943927629066393" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 64, 42"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3149" src="slide0002_image046.gif" usemap="#map_s77"
+ style='position:absolute;top:73.49%;left:42.05%;width:11.37%;height:10.12%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3151"/><![if !vml]><map name="map_s79"><area
+ href="https://www.facebook.com/drcflu/posts/938903466235476" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 64, 36"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3151" src="slide0002_image047.gif" usemap="#map_s79"
+ style='position:absolute;top:87.71%;left:27.97%;width:11.37%;height:8.43%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3153"/><![if !vml]><map name="map_s81"><area
+ href="https://www.facebook.com/drcflu/posts/916659811793175" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 59, 45"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3153" src="slide0002_image048.gif" usemap="#map_s81"
+ style='position:absolute;top:72.04%;left:87.0%;width:10.64%;height:10.6%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3157"/><![if !vml]><map name="map_s85"><area
+ href="https://www.facebook.com/drcflu/posts/916662411792915" target="_parent"
+ onclick="window.event.cancelBubble=true;" shape=rect
+ coords="0, 0, 59, 44"></map><![endif]><![if !vml]><img border=0
+ v:shapes="_x0000_s3157" src="slide0002_image049.gif" usemap="#map_s85"
+ style='position:absolute;top:54.21%;left:15.34%;width:10.64%;height:10.6%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3158"/><![if !ppt]><img border=0
+ v:shapes="_x0000_s3158" src="slide0002_image050.gif" alt="文字方塊: 景觀錯置"
+ style='position:absolute;top:49.39%;left:26.35%;width:5.23%;height:16.14%'><![endif]>
+ <div v:shape="_x0000_s3158" class=O style='text-align:center;position:absolute;
+ top:55.9%;left:22.92%;width:12.09%;height:3.61%;visibility:hidden'><span
+ style='font-family:新細明體;mso-fareast-font-family:新細明體;mso-hansi-font-family:
+ 新細明體;color:black'>景觀錯置</span></div>
+ <p:shaperange href="slide0002.xml#_x0000_s3160"/><![if !vml]><img border=0
+ v:shapes="_x0000_s3160" src="slide0002_image051.gif" style='position:absolute;
+ top:24.81%;left:87.36%;width:10.64%;height:10.6%'><![endif]><p:shaperange
+  href="slide0002.xml#_x0000_s3161"/><![if !ppt]><img border=0
+ v:shapes="_x0000_s3161" src="slide0002_image052.gif" alt="文字方塊: 禽鳥錯置"
+ style='position:absolute;top:35.66%;left:95.3%;width:5.23%;height:16.14%'><![endif]>
+ <div v:shape="_x0000_s3161" class=O style='text-align:center;position:absolute;
+ top:42.16%;left:91.87%;width:12.09%;height:3.61%;visibility:hidden'><span
+ style='font-family:新細明體;mso-fareast-font-family:新細明體;mso-hansi-font-family:
+ 新細明體;color:black'>禽鳥錯置</span></div>
+ <p:shaperange href="slide0002.xml#_x0000_s3162"/>
+ <div v:shape="_x0000_s3162" class=O style='text-align:center;position:absolute;
+ top:62.4%;left:43.14%;width:21.11%;height:3.85%'><span style='font-family:
+ 華康新儷粗黑;mso-fareast-font-family:華康新儷粗黑;color:yellow'>錯置藝術心智圖</span></div>
+</p:slide>
+</div>
+
+</body>
+
+</html>

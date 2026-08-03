@@ -1,0 +1,759 @@
+<xml xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+ xmlns:oa="urn:schemas-microsoft-com:office:activation">
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="3"/>
+  <o:rules v:ext="edit">
+   <o:r id="V:Rule1" type="callout" idref="#_x0000_s3074"/>
+   <o:r id="V:Rule2" type="callout" idref="#_x0000_s3075"/>
+   <o:r id="V:Rule3" type="callout" idref="#_x0000_s3076"/>
+   <o:r id="V:Rule4" type="callout" idref="#_x0000_s3077"/>
+   <o:r id="V:Rule5" type="callout" idref="#_x0000_s3079"/>
+   <o:r id="V:Rule6" type="callout" idref="#_x0000_s3080"/>
+   <o:r id="V:Rule7" type="callout" idref="#_x0000_s3081"/>
+   <o:r id="V:Rule8" type="callout" idref="#_x0000_s3082"/>
+   <o:r id="V:Rule9" type="callout" idref="#_x0000_s3083"/>
+   <o:r id="V:Rule10" type="callout" idref="#_x0000_s3102"/>
+   <o:r id="V:Rule11" type="callout" idref="#_x0000_s3127"/>
+  </o:rules>
+ </o:shapelayout><p:shaperange id="_x0000_s3074">
+  <v:shapetype id="_x0000_t62" coordsize="21600,21600" o:spt="62" adj="1350,25920"
+   path="m3600,qx,3600l0@8@12@24,0@9,,18000qy3600,21600l@6,21600@15@27@7,21600,18000,21600qx21600,18000l21600@9@18@30,21600@8,21600,3600qy18000,l@7,0@21@33@6,xe">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="sum 10800 0 #0"/>
+    <v:f eqn="sum 10800 0 #1"/>
+    <v:f eqn="sum #0 0 #1"/>
+    <v:f eqn="sum @0 @1 0"/>
+    <v:f eqn="sum 21600 0 #0"/>
+    <v:f eqn="sum 21600 0 #1"/>
+    <v:f eqn="if @0 3600 12600"/>
+    <v:f eqn="if @0 9000 18000"/>
+    <v:f eqn="if @1 3600 12600"/>
+    <v:f eqn="if @1 9000 18000"/>
+    <v:f eqn="if @2 0 #0"/>
+    <v:f eqn="if @3 @10 0"/>
+    <v:f eqn="if #0 0 @11"/>
+    <v:f eqn="if @2 @6 #0"/>
+    <v:f eqn="if @3 @6 @13"/>
+    <v:f eqn="if @5 @6 @14"/>
+    <v:f eqn="if @2 #0 21600"/>
+    <v:f eqn="if @3 21600 @16"/>
+    <v:f eqn="if @4 21600 @17"/>
+    <v:f eqn="if @2 #0 @6"/>
+    <v:f eqn="if @3 @19 @6"/>
+    <v:f eqn="if #1 @6 @20"/>
+    <v:f eqn="if @2 @8 #1"/>
+    <v:f eqn="if @3 @22 @8"/>
+    <v:f eqn="if #0 @8 @23"/>
+    <v:f eqn="if @2 21600 #1"/>
+    <v:f eqn="if @3 21600 @25"/>
+    <v:f eqn="if @5 21600 @26"/>
+    <v:f eqn="if @2 #1 @8"/>
+    <v:f eqn="if @3 @8 @28"/>
+    <v:f eqn="if @4 @8 @29"/>
+    <v:f eqn="if @2 #1 0"/>
+    <v:f eqn="if @3 @31 0"/>
+    <v:f eqn="if #1 0 @32"/>
+    <v:f eqn="val #0"/>
+    <v:f eqn="val #1"/>
+   </v:formulas>
+   <v:path o:connecttype="custom" o:connectlocs="10800,0;0,10800;10800,21600;21600,10800;@34,@35"
+    textboxrect="791,791,20809,20809"/>
+   <v:handles>
+    <v:h position="#0,#1"/>
+   </v:handles>
+  </v:shapetype><v:shape id="_x0000_s3074" type="#_x0000_t62" style='position:absolute;
+   left:292pt;top:389.125pt;width:419.5pt;height:141.75pt;v-text-anchor:middle'
+   adj="3456,-3752" filled="f" fillcolor="#b2c7d6 [4]" strokecolor="#369 [1]"
+   strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow type="perspective" color="#005a58 [2]" opacity=".5" origin=".5,.5"
+    offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+  </v:shape><v:shape id="_x0000_s3075" type="#_x0000_t62" style='position:absolute;
+   left:513.125pt;top:207.625pt;width:175.75pt;height:62.375pt;v-text-anchor:middle'
+   adj="-4778,13982" filled="f" fillcolor="#b2c7d6 [4]" strokecolor="#369 [1]"
+   strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow type="perspective" color="#005a58 [2]" opacity=".5" origin=".5,.5"
+    offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+  </v:shape><v:shape id="_x0000_s3076" type="#_x0000_t62" style='position:absolute;
+   left:620.875pt;top:14.875pt;width:90.625pt;height:181.375pt;v-text-anchor:middle'
+   adj="-35662,21555" filled="f" fillcolor="#b2c7d6 [4]" strokecolor="#369 [1]"
+   strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow type="perspective" color="#005a58 [2]" opacity=".5" origin=".5,.5"
+    offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+  </v:shape><v:shape id="_x0000_s3077" type="#_x0000_t62" style='position:absolute;
+   left:501.75pt;top:275.625pt;width:204.125pt;height:107.75pt;v-text-anchor:middle'
+   adj="-2857,10725" filled="f" fillcolor="#b2c7d6 [4]" strokecolor="#369 [1]"
+   strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow type="perspective" color="#005a58 [2]" opacity=".5" origin=".5,.5"
+    offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+  </v:shape><v:shapetype id="_x0000_t97" coordsize="21600,21600" o:spt="97"
+   adj="2700" path="m@5,qx@1@2l@1@0@2@0qx0@7@2,21600l@9,21600qx@10@7l@10@1@11@1qx21600@2@11,xem@5,nfqx@6@2@5@1@4@3@5@2l@6@2em@5@1nfl@10@1em@2,21600nfqx@1@7l@1@0em@2@0nfqx@3@8@2@7l@1@7e">
+   <v:formulas>
+    <v:f eqn="sum height 0 #0"/>
+    <v:f eqn="val #0"/>
+    <v:f eqn="prod @1 1 2"/>
+    <v:f eqn="prod @1 3 4"/>
+    <v:f eqn="prod @1 5 4"/>
+    <v:f eqn="prod @1 3 2"/>
+    <v:f eqn="prod @1 2 1"/>
+    <v:f eqn="sum height 0 @2"/>
+    <v:f eqn="sum height 0 @3"/>
+    <v:f eqn="sum width 0 @5"/>
+    <v:f eqn="sum width 0 @1"/>
+    <v:f eqn="sum width 0 @2"/>
+    <v:f eqn="val height"/>
+    <v:f eqn="prod height 1 2"/>
+    <v:f eqn="prod width 1 2"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" limo="10800,10800" o:connecttype="custom"
+    o:connectlocs="@14,0;@1,@13;@14,@12;@10,@13" o:connectangles="270,180,90,0"
+    textboxrect="@1,@1,@10,@7"/>
+   <v:handles>
+    <v:h position="topLeft,#0" yrange="0,5400"/>
+   </v:handles>
+   <o:complex v:ext="view"/>
+  </v:shapetype><v:shape id="_x0000_s3078" type="#_x0000_t97" style='position:absolute;
+   left:263.625pt;top:179.25pt;width:181.375pt;height:124.75pt;
+   mso-wrap-style:none;v-text-anchor:middle' filled="f" fillcolor="#b2c7d6 [4]"
+   strokecolor="#369 [1]" strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow type="perspective" color="#005a58 [2]" opacity=".5" origin=".5,.5"
+    offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+  </v:shape><v:shape id="_x0000_s3079" type="#_x0000_t62" style='position:absolute;
+   left:172.875pt;top:0;width:107.625pt;height:150.875pt;v-text-anchor:middle'
+   adj="18665,25251" filled="f" fillcolor="#b2c7d6 [4]" strokecolor="#369 [1]"
+   strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow type="perspective" color="#005a58 [2]" opacity=".5" origin=".5,.5"
+    offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+  </v:shape><v:shape id="_x0000_s3080" type="#_x0000_t62" style='position:absolute;
+   left:13.5pt;top:6pt;width:114.625pt;height:213pt;v-text-anchor:middle'
+   adj="42022,18089" filled="f" fillcolor="#b2c7d6 [4]" strokecolor="#369 [1]"
+   strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow type="perspective" color="#005a58 [2]" opacity=".5" origin=".5,.5"
+    offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+  </v:shape><v:shape id="_x0000_s3081" type="#_x0000_t62" style='position:absolute;
+   left:8.5pt;top:224.625pt;width:187.125pt;height:130.375pt;v-text-anchor:middle'
+   adj="26578,2133" filled="f" fillcolor="#b2c7d6 [4]" strokecolor="#369 [1]"
+   strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow type="perspective" color="#005a58 [2]" opacity=".5" origin=".5,.5"
+    offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+  </v:shape><v:shape id="_x0000_s3082" type="#_x0000_t62" style='position:absolute;
+   left:8.5pt;top:355pt;width:90.625pt;height:158.75pt;v-text-anchor:middle'
+   adj="53896,-1735" filled="f" fillcolor="#b2c7d6 [4]" strokecolor="#369 [1]"
+   strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow type="perspective" color="#005a58 [2]" opacity=".5" origin=".5,.5"
+    offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+  </v:shape><v:shape id="_x0000_s3083" type="#_x0000_t62" style='position:absolute;
+   left:104.875pt;top:405.875pt;width:181.125pt;height:125pt;v-text-anchor:middle'
+   adj="26430,-6199" filled="f" fillcolor="#b2c7d6 [4]" strokecolor="#369 [1]"
+   strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow type="perspective" color="#005a58 [2]" opacity=".5" origin=".5,.5"
+    offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="Picture_x0020_32">
+  <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+   o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+   <v:stroke joinstyle="miter"/>
+   <v:formulas>
+    <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+    <v:f eqn="sum @0 1 0"/>
+    <v:f eqn="sum 0 0 @1"/>
+    <v:f eqn="prod @2 1 2"/>
+    <v:f eqn="prod @3 21600 pixelWidth"/>
+    <v:f eqn="prod @3 21600 pixelHeight"/>
+    <v:f eqn="sum @0 0 1"/>
+    <v:f eqn="prod @6 1 2"/>
+    <v:f eqn="prod @7 21600 pixelWidth"/>
+    <v:f eqn="sum @8 21600 0"/>
+    <v:f eqn="prod @7 21600 pixelHeight"/>
+    <v:f eqn="sum @10 21600 0"/>
+   </v:formulas>
+   <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+   <o:lock v:ext="edit" aspectratio="t"/>
+  </v:shapetype><v:shape id="Picture_x0020_32" o:spid="_x0000_s3084" type="#_x0000_t75"
+   alt="Beijing bronze lion with two tigers"
+   href="http://giphy.com/gifs/beijing-bronze-lion-with-two-tigers-26AxNS6IjubDXNlDO"
+   target="_parent" style='position:absolute;left:629.375pt;top:77.375pt;
+   width:76.5pt;height:56.5pt;visibility:visible'>
+   <v:fill o:detectmouseclick="t"/>
+   <v:imagedata src="slide0002_image002.gif" o:title="Beijing bronze lion with two tigers"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="Picture_x0020_28">
+  <v:shape id="Picture_x0020_28" o:spid="_x0000_s3085" type="#_x0000_t75"
+   alt="A-special-conductor-in-orchestra"
+   href="http://www.art-digital.net/DigiSurrealism/DigiSurrealism2.htm"
+   target="_parent" style='position:absolute;left:518.75pt;top:211.25pt;
+   width:76.5pt;height:57.375pt;visibility:visible'>
+   <v:fill o:detectmouseclick="t"/>
+   <v:imagedata src="slide0002_image003.gif" o:title="A-special-conductor-in-orchestra"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="Picture_x0020_26">
+  <v:shape id="Picture_x0020_26" o:spid="_x0000_s3086" type="#_x0000_t75"
+   alt="Merlion-and-Dragon"
+   href="http://www.art-digital.net/DigiSurrealism/DigiSurrealism2.htm"
+   target="_parent" style='position:absolute;left:603.75pt;top:332.375pt;
+   width:87.875pt;height:49.5pt;visibility:visible'>
+   <v:fill o:detectmouseclick="t"/>
+   <v:imagedata src="slide0002_image004.gif" o:title="Merlion-and-Dragon"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="Picture_x0020_24">
+  <v:shape id="Picture_x0020_24" o:spid="_x0000_s3087" type="#_x0000_t75"
+   alt="Venus &amp; Qin Dynasty's Terra-cotta Warriors"
+   href="http://www.art-digital.net/DigiSurrealism/DigiSurrealism2.htm"
+   target="_parent" style='position:absolute;left:609.5pt;top:275.625pt;
+   width:76.5pt;height:57.375pt;visibility:visible'>
+   <v:fill o:detectmouseclick="t"/>
+   <v:imagedata src="slide0002_image005.gif" o:title="Venus &amp; Qin Dynasty's Terra-cotta Warriors"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="Picture_x0020_30">
+  <v:shape id="Picture_x0020_30" o:spid="_x0000_s3088" type="#_x0000_t75"
+   alt="Dragon_Boat in Venice" href="http://giphy.com/gifs/3oEduOHs2izyNnBgn6"
+   target="_parent" style='position:absolute;left:201.25pt;top:411.875pt;
+   width:79.375pt;height:57.375pt;visibility:visible'>
+   <v:fill o:detectmouseclick="t"/>
+   <v:imagedata src="slide0002_image006.gif" o:title="Dragon_Boat in Venice"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="Picture_x0020_34">
+  <v:shape id="Picture_x0020_34" o:spid="_x0000_s3089" type="#_x0000_t75"
+   alt="Great-Shift1b" href="http://giphy.com/gifs/3oEduJbA5XsJKHlzAQ"
+   target="_parent" style='position:absolute;left:19.75pt;top:417.375pt;
+   width:68pt;height:76.75pt;visibility:visible'>
+   <v:fill o:detectmouseclick="t"/>
+   <v:imagedata src="slide0002_image007.gif" o:title="Great-Shift1b"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="Picture_x0020_20">
+  <v:shape id="Picture_x0020_20" o:spid="_x0000_s3090" type="#_x0000_t75"
+   alt="Pop-culture1b" href="http://giphy.com/gifs/3o85xLdA7s5TEW06VW"
+   target="_parent" style='position:absolute;left:116.25pt;top:230.25pt;
+   width:76.5pt;height:59.375pt;visibility:visible'>
+   <v:fill o:detectmouseclick="t"/>
+   <v:imagedata src="slide0002_image008.gif" o:title="Pop-culture1b"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3091">
+  <v:shape id="_x0000_s3091" type="#_x0000_t75" alt=""
+   href="http://giphy.com/gifs/3o85xJLJ0vtJ5do2bu" target="_parent" style='position:absolute;
+   left:22.625pt;top:156.625pt;width:87.875pt;height:58.5pt'>
+   <v:imagedata src="slide0002_image009.gif" o:title="The-age-of-chaos"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3092">
+  <v:shape id="_x0000_s3092" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/849676041824886" target="_parent"
+   style='position:absolute;left:181.5pt;top:74.875pt;width:87.875pt;height:49.875pt'>
+   <v:imagedata src="slide0002_image010.gif" o:title="Fountains-behind-the-Pyramid"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3094">
+  <v:shape id="_x0000_s3094" type="#_x0000_t202" style='position:absolute;
+   left:8.5pt;top:487.25pt;width:86.5pt;height:28.875pt;mso-wrap-style:none;
+   v-text-anchor:top-baseline' filled="f" fillcolor="#b2c7d6 [4]" stroked="f"
+   strokecolor="#369 [1]" strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow on="t" type="perspective" color="#005a58 [2]" opacity=".5"
+    origin=".5,.5" offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3095">
+  <v:shape id="_x0000_s3095" type="#_x0000_t202" style='position:absolute;
+   left:138.875pt;top:382.875pt;width:86.5pt;height:28.875pt;mso-wrap-style:none;
+   v-text-anchor:top-baseline' filled="f" fillcolor="#b2c7d6 [4]" stroked="f"
+   strokecolor="#369 [1]" strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow on="t" type="perspective" color="#005a58 [2]" opacity=".5"
+    origin=".5,.5" offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3096">
+  <v:shape id="_x0000_s3096" type="#_x0000_t202" style='position:absolute;
+   left:386.875pt;top:400.375pt;width:86.5pt;height:28.875pt;mso-wrap-style:none;
+   v-text-anchor:top-baseline' filled="f" fillcolor="#b2c7d6 [4]" stroked="f"
+   strokecolor="#369 [1]" strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow on="t" type="perspective" color="#005a58 [2]" opacity=".5"
+    origin=".5,.5" offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3097">
+  <v:shape id="_x0000_s3097" type="#_x0000_t202" style='position:absolute;
+   left:518.75pt;top:339.75pt;width:86.5pt;height:28.875pt' filled="f"
+   fillcolor="#b2c7d6 [4]" stroked="f" strokecolor="#369 [1]" strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow on="t" type="perspective" color="#005a58 [2]" opacity=".5"
+    origin=".5,.5" offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3099">
+  <v:shape id="_x0000_s3099" type="#_x0000_t202" style='position:absolute;
+   left:535.75pt;top:144.75pt;width:86.5pt;height:28.875pt;mso-wrap-style:none;
+   v-text-anchor:top-baseline' filled="f" fillcolor="#b2c7d6 [4]" stroked="f"
+   strokecolor="#369 [1]" strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow on="t" type="perspective" color="#005a58 [2]" opacity=".5"
+    origin=".5,.5" offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3100">
+  <v:shape id="_x0000_s3100" type="#_x0000_t202" style='position:absolute;
+   left:186.375pt;top:122pt;width:86.5pt;height:28.875pt;mso-wrap-style:none;
+   v-text-anchor:top-baseline' filled="f" fillcolor="#b2c7d6 [4]" stroked="f"
+   strokecolor="#369 [1]" strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow on="t" type="perspective" color="#005a58 [2]" opacity=".5"
+    origin=".5,.5" offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3101">
+  <v:shape id="_x0000_s3101" type="#_x0000_t75" alt=""
+   href="http://doctorarts.blogspot.tw/" target="_parent" style='position:absolute;
+   left:371.375pt;top:14.875pt;width:68pt;height:85pt'>
+   <v:imagedata src="slide0002_image011.gif" o:title="Butterfly3"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3102">
+  <v:shape id="_x0000_s3102" type="#_x0000_t62" style='position:absolute;
+   left:292pt;top:9.125pt;width:147.375pt;height:113.5pt;v-text-anchor:middle'
+   adj="15554,31710" filled="f" fillcolor="#b2c7d6 [4]" strokecolor="#369 [1]"
+   strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow type="perspective" color="#005a58 [2]" opacity=".5" origin=".5,.5"
+    offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3103">
+  <v:shape id="_x0000_s3103" type="#_x0000_t202" style='position:absolute;
+   left:331.625pt;top:94.25pt;width:86.5pt;height:28.875pt;mso-wrap-style:none;
+   v-text-anchor:top-baseline' filled="f" fillcolor="#b2c7d6 [4]" stroked="f"
+   strokecolor="#369 [1]" strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow on="t" type="perspective" color="#005a58 [2]" opacity=".5"
+    origin=".5,.5" offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3104">
+  <v:shape id="_x0000_s3104" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/862134790579011" target="_parent"
+   style='position:absolute;left:535.75pt;top:462.75pt;width:87.875pt;height:59.625pt'>
+   <v:imagedata src="slide0002_image013.gif" o:title="%25E8%2591%259B%25E9%25A3%25BE-%25E5%258C%2597%25E6%2596%258E3"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3105">
+  <v:shape id="_x0000_s3105" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/865167210275769" target="_parent"
+   style='position:absolute;left:626.5pt;top:448.5pt;width:62pt;height:82.375pt'>
+   <v:imagedata src="slide0002_image014.gif" o:title="Jed-Henry-new"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3106">
+  <v:shape id="_x0000_s3106" type="#_x0000_t75" alt=""
+   href="http://giphy.com/gifs/the-illusion-in-front-of-image-museum-xT8qB2rnqaMJhsWEX6"
+   target="_parent" style='position:absolute;left:292pt;top:20.5pt;width:73.625pt;
+   height:73.625pt'>
+   <v:imagedata src="slide0002_image015.gif" o:title="Framinco4"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3107">
+  <v:shape id="_x0000_s3107" type="#_x0000_t75" alt="" style='position:absolute;
+   left:240.875pt;top:173.625pt;width:232.5pt;height:186pt'>
+   <v:imagedata src="slide0002_image016.gif" o:title="LU"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3108">
+  <v:shape id="_x0000_s3108" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/985744338218055?pnref=story"
+   target="_parent" style='position:absolute;left:14.125pt;top:230.25pt;
+   width:96.375pt;height:54.25pt'>
+   <v:imagedata src="slide0002_image017.gif" o:title="%25E9%259B%25B2%25E4%25B8%25AD%25E5%2588%2597%25E8%25BB%258A3"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3109">
+  <v:shape id="_x0000_s3109" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/961715020620987" target="_parent"
+   style='position:absolute;left:119.125pt;top:468.5pt;width:76.5pt;height:57.375pt'>
+   <v:imagedata src="slide0002_image018.gif" o:title="Torre_of_pisa"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3110">
+  <v:shape id="_x0000_s3110" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/962947453831077" target="_parent"
+   style='position:absolute;left:456.375pt;top:468.5pt;width:76.5pt;height:57.375pt'>
+   <v:imagedata src="slide0002_image019.gif" o:title="Maitreya"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3111">
+  <v:shape id="_x0000_s3111" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/957818264343996" target="_parent"
+   style='position:absolute;left:31.125pt;top:9.125pt;width:58.375pt;height:87.625pt'>
+   <v:imagedata src="slide0002_image020.gif" o:title="Eiffel-Tower"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3112">
+  <v:shape id="_x0000_s3112" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/960585307400625" target="_parent"
+   style='position:absolute;left:110.5pt;top:417.375pt;width:87.875pt;height:49.5pt'>
+   <v:imagedata src="slide0002_image021.gif" o:title="Brave-Troops-from-the-Sky2"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3113">
+  <v:shape id="_x0000_s3113" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/957085081083981" target="_parent"
+   style='position:absolute;left:14.125pt;top:360.75pt;width:76.5pt;height:56pt'>
+   <v:imagedata src="slide0002_image022.gif" o:title="101"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3114">
+  <v:shape id="_x0000_s3114" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/956585864467236" target="_parent"
+   style='position:absolute;left:25.5pt;top:99.875pt;width:87.875pt;height:53.75pt'>
+   <v:imagedata src="slide0002_image023.gif" o:title="Hippo"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3115">
+  <v:shape id="_x0000_s3115" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/954028078056348" target="_parent"
+   style='position:absolute;left:462.125pt;top:394.875pt;width:73.625pt;
+   height:72.625pt'>
+   <v:imagedata src="slide0002_image024.gif" o:title="%25E7%25A7%258B%25E5%25BA%25AD%25E6%2588%25B2%25E5%25AC%25B02"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3116">
+  <v:shape id="_x0000_s3116" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/951070111685478" target="_parent"
+   style='position:absolute;left:390.125pt;top:428.75pt;width:60.625pt;
+   height:87.75pt'>
+   <v:imagedata src="slide0002_image025.gif" o:title="%25E6%2599%25AE%25E6%2599%25AE%25E6%2596%2587%25E5%258C%2596"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3117">
+  <v:shape id="_x0000_s3117" type="#_x0000_t75" alt=""
+   href="http://giphy.com/gifs/eiffel-tower-with-a-walking-pelican-3oCWtlZUJGcuVfnmFy"
+   target="_parent" style='position:absolute;left:598.125pt;top:211.25pt;
+   width:87.875pt;height:58.75pt'>
+   <v:imagedata src="slide0002_image026.gif" o:title="Eiffel%2Btower%2Bwith%2Ba%2Bwalking%2Bpelican"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3118">
+  <v:shape id="_x0000_s3118" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/918989218226901" target="_parent"
+   style='position:absolute;left:178.625pt;top:5.625pt;width:87.875pt;height:65.5pt'>
+   <v:imagedata src="slide0002_image027.gif" o:title="A%2BSong%2Bof%2BWater%2Band%2BFire"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3120">
+  <v:shapetype id="_x0000_t136" coordsize="21600,21600" o:spt="136" adj="10800"
+   path="m@7,l@8,m@5,21600l@6,21600e">
+   <v:formulas>
+    <v:f eqn="sum #0 0 10800"/>
+    <v:f eqn="prod #0 2 1"/>
+    <v:f eqn="sum 21600 0 @1"/>
+    <v:f eqn="sum 0 0 @2"/>
+    <v:f eqn="sum 21600 0 @3"/>
+    <v:f eqn="if @0 @3 0"/>
+    <v:f eqn="if @0 21600 @1"/>
+    <v:f eqn="if @0 0 @2"/>
+    <v:f eqn="if @0 @4 21600"/>
+    <v:f eqn="mid @5 @6"/>
+    <v:f eqn="mid @8 @5"/>
+    <v:f eqn="mid @7 @8"/>
+    <v:f eqn="mid @6 @7"/>
+    <v:f eqn="sum @6 0 @5"/>
+   </v:formulas>
+   <v:path textpathok="t" o:connecttype="custom" o:connectlocs="@9,0;@10,10800;@11,21600;@12,10800"
+    o:connectangles="270,180,90,0"/>
+   <v:textpath on="t" fitshape="t"/>
+   <v:handles>
+    <v:h position="#0,bottomRight" xrange="6629,14971"/>
+   </v:handles>
+   <o:lock v:ext="edit" text="t" shapetype="t"/>
+  </v:shapetype><v:shape id="_x0000_s3120" type="#_x0000_t136" style='position:absolute;
+   left:504.875pt;top:146.5pt;width:19.5pt;height:38.5pt;mso-wrap-style:none;
+   v-text-anchor:middle' fillcolor="yellow" stroked="f">
+   <v:fill color2="#f93" angle="-135" focusposition=".5,.5" focussize=""
+    focus="100%" type="gradientRadial">
+    <o:fill v:ext="view" type="gradientCenter"/>
+   </v:fill>
+   <v:shadow on="t" color="silver" opacity="52429f"/>
+   <v:textpath style='font-family:"華康新儷粗黑";v-text-reverse:t;v-text-kern:t'
+    trim="t" fitpath="t" string="1"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3121">
+  <v:shape id="_x0000_s3121" type="#_x0000_t136" style='position:absolute;
+   left:484.75pt;top:202pt;width:19.5pt;height:38.5pt;mso-wrap-style:none;
+   v-text-anchor:middle' fillcolor="yellow" stroked="f">
+   <v:fill color2="#f93" angle="-135" focusposition=".5,.5" focussize=""
+    focus="100%" type="gradientRadial">
+    <o:fill v:ext="view" type="gradientCenter"/>
+   </v:fill>
+   <v:shadow on="t" color="silver" opacity="52429f"/>
+   <v:textpath style='font-family:"華康新儷粗黑";v-text-reverse:t;v-text-kern:t'
+    trim="t" fitpath="t" string="2"/>
+  </v:shape><v:shape id="_x0000_s3122" type="#_x0000_t136" style='position:absolute;
+   left:490.375pt;top:276.875pt;width:19.5pt;height:38.5pt;mso-wrap-style:none;
+   v-text-anchor:middle' fillcolor="yellow" stroked="f">
+   <v:fill color2="#f93" angle="-135" focusposition=".5,.5" focussize=""
+    focus="100%" type="gradientRadial">
+    <o:fill v:ext="view" type="gradientCenter"/>
+   </v:fill>
+   <v:shadow on="t" color="silver" opacity="52429f"/>
+   <v:textpath style='font-family:"華康新儷粗黑";v-text-reverse:t;v-text-kern:t'
+    trim="t" fitpath="t" string="3"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3123">
+  <v:shape id="_x0000_s3123" type="#_x0000_t136" style='position:absolute;
+   left:416.75pt;top:366.375pt;width:19.5pt;height:38.5pt;mso-wrap-style:none;
+   v-text-anchor:middle' fillcolor="yellow" stroked="f">
+   <v:fill color2="#f93" angle="-135" focusposition=".5,.5" focussize=""
+    focus="100%" type="gradientRadial">
+    <o:fill v:ext="view" type="gradientCenter"/>
+   </v:fill>
+   <v:shadow on="t" color="silver" opacity="52429f"/>
+   <v:textpath style='font-family:"華康新儷粗黑";v-text-reverse:t;v-text-kern:t'
+    trim="t" fitpath="t" string="4"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3124">
+  <v:shape id="_x0000_s3124" type="#_x0000_t136" style='position:absolute;
+   left:215.75pt;top:372pt;width:19.5pt;height:38.5pt;mso-wrap-style:none;
+   v-text-anchor:middle' fillcolor="yellow" stroked="f">
+   <v:fill color2="#f93" angle="-135" focusposition=".5,.5" focussize=""
+    focus="100%" type="gradientRadial">
+    <o:fill v:ext="view" type="gradientCenter"/>
+   </v:fill>
+   <v:shadow on="t" color="silver" opacity="52429f"/>
+   <v:textpath style='font-family:"華康新儷粗黑";v-text-reverse:t;v-text-kern:t'
+    trim="t" fitpath="t" string="5"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3125">
+  <v:shape id="_x0000_s3125" type="#_x0000_t136" style='position:absolute;
+   left:104.875pt;top:361.875pt;width:19.5pt;height:38.5pt;mso-wrap-style:none;
+   v-text-anchor:middle' fillcolor="yellow" stroked="f">
+   <v:fill color2="#f93" angle="-135" focusposition=".5,.5" focussize=""
+    focus="100%" type="gradientRadial">
+    <o:fill v:ext="view" type="gradientCenter"/>
+   </v:fill>
+   <v:shadow on="t" color="silver" opacity="52429f"/>
+   <v:textpath style='font-family:"華康新儷粗黑";v-text-reverse:t;v-text-kern:t'
+    trim="t" fitpath="t" string="6"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="Picture_x0020_22">
+  <v:shape id="Picture_x0020_22" o:spid="_x0000_s3126" type="#_x0000_t75"
+   alt="Pop-culture3b"
+   href="http://www.art-digital.net/DigiSurrealism/DigiSurrealism1.htm"
+   target="_parent" style='position:absolute;left:456.375pt;top:31.875pt;
+   width:85pt;height:63.75pt;visibility:visible'>
+   <v:fill o:detectmouseclick="t"/>
+   <v:imagedata src="slide0002_image033.gif" o:title="Pop-culture3b"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3127">
+  <v:shape id="_x0000_s3127" type="#_x0000_t62" style='position:absolute;
+   left:450.75pt;top:20.5pt;width:164.375pt;height:102pt;v-text-anchor:middle'
+   adj="1314,31924" filled="f" fillcolor="#b2c7d6 [4]" strokecolor="#369 [1]"
+   strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow type="perspective" color="#005a58 [2]" opacity=".5" origin=".5,.5"
+    offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3128">
+  <v:shape id="_x0000_s3128" type="#_x0000_t202" style='position:absolute;
+   left:450.75pt;top:93.75pt;width:86.5pt;height:28.875pt;mso-wrap-style:none;
+   v-text-anchor:top-baseline' filled="f" fillcolor="#b2c7d6 [4]" stroked="f"
+   strokecolor="#369 [1]" strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow on="t" type="perspective" color="#005a58 [2]" opacity=".5"
+    origin=".5,.5" offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3129">
+  <v:shape id="_x0000_s3129" type="#_x0000_t202" style='position:absolute;
+   left:99.125pt;top:26.375pt;width:36.125pt;height:79.25pt;mso-wrap-style:none;
+   v-text-anchor:top-baseline' filled="f" fillcolor="#b2c7d6 [4]" stroked="f"
+   strokecolor="#369 [1]" strokeweight="1.5pt">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow on="t" type="perspective" color="#005a58 [2]" opacity=".5"
+    origin=".5,.5" offset="0,0" matrix=",-92680f,,,,-95367431641e-17"/>
+   <v:textbox style='layout-flow:vertical-ideographic;mso-fit-shape-to-text:t'/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3130">
+  <v:shape id="_x0000_s3130" type="#_x0000_t136" style='position:absolute;
+   left:198.75pt;top:213.25pt;width:19.5pt;height:38.5pt;mso-wrap-style:none;
+   v-text-anchor:middle' fillcolor="yellow" stroked="f">
+   <v:fill color2="#f93" angle="-135" focusposition=".5,.5" focussize=""
+    focus="100%" type="gradientRadial">
+    <o:fill v:ext="view" type="gradientCenter"/>
+   </v:fill>
+   <v:shadow on="t" color="silver" opacity="52429f"/>
+   <v:textpath style='font-family:"華康新儷粗黑";v-text-reverse:t;v-text-kern:t'
+    trim="t" fitpath="t" string="7"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3131">
+  <v:shape id="_x0000_s3131" type="#_x0000_t136" style='position:absolute;
+   left:121.875pt;top:139.625pt;width:19.5pt;height:38.5pt;mso-wrap-style:none;
+   v-text-anchor:middle' fillcolor="yellow" stroked="f">
+   <v:fill color2="#f93" angle="-135" focusposition=".5,.5" focussize=""
+    focus="100%" type="gradientRadial">
+    <o:fill v:ext="view" type="gradientCenter"/>
+   </v:fill>
+   <v:shadow on="t" color="silver" opacity="52429f"/>
+   <v:textpath style='font-family:"華康新儷粗黑";v-text-reverse:t;v-text-kern:t'
+    trim="t" fitpath="t" string="8"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3132">
+  <v:shape id="_x0000_s3132" type="#_x0000_t136" style='position:absolute;
+   left:147.75pt;top:60.25pt;width:19.5pt;height:38.5pt;mso-wrap-style:none;
+   v-text-anchor:middle' fillcolor="yellow" stroked="f">
+   <v:fill color2="#f93" angle="-135" focusposition=".5,.5" focussize=""
+    focus="100%" type="gradientRadial">
+    <o:fill v:ext="view" type="gradientCenter"/>
+   </v:fill>
+   <v:shadow on="t" color="silver" opacity="52429f"/>
+   <v:textpath style='font-family:"華康新儷粗黑";v-text-reverse:t;v-text-kern:t'
+    trim="t" fitpath="t" string="9"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3133">
+  <v:shape id="_x0000_s3133" type="#_x0000_t136" style='position:absolute;
+   left:340.5pt;top:122.625pt;width:39pt;height:38.5pt;mso-wrap-style:none;
+   v-text-anchor:middle' fillcolor="yellow" stroked="f">
+   <v:fill color2="#f93" angle="-135" focusposition=".5,.5" focussize=""
+    focus="100%" type="gradientRadial">
+    <o:fill v:ext="view" type="gradientCenter"/>
+   </v:fill>
+   <v:shadow on="t" color="silver" opacity="52429f"/>
+   <v:textpath style='font-family:"華康新儷粗黑";v-text-reverse:t;v-text-kern:t'
+    trim="t" fitpath="t" string="10"/>
+  </v:shape><v:shape id="_x0000_s3134" type="#_x0000_t136" style='position:absolute;
+   left:428pt;top:122.625pt;width:39pt;height:38.5pt;mso-wrap-style:none;
+   v-text-anchor:middle' fillcolor="yellow" stroked="f">
+   <v:fill color2="#f93" angle="-135" focusposition=".5,.5" focussize=""
+    focus="100%" type="gradientRadial">
+    <o:fill v:ext="view" type="gradientCenter"/>
+   </v:fill>
+   <v:shadow on="t" color="silver" opacity="52429f"/>
+   <v:textpath style='font-family:"華康新儷粗黑";v-text-reverse:t;v-text-kern:t'
+    trim="t" fitpath="t" string="11"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3137">
+  <v:shape id="_x0000_s3137" type="#_x0000_t75" alt=""
+   href="http://giphy.com/gifs/hsinchu-east-gate-rhapsody-3o7qDEzkPnIWJ5odm8"
+   target="_parent" style='position:absolute;left:513.125pt;top:281.375pt;
+   width:82.25pt;height:61.625pt'>
+   <v:imagedata src="slide0002_image040.gif" o:title="Hsinchu%2BEast%2BGate%2BFantasy2"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3139">
+  <v:shape id="_x0000_s3139" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/984138365045319?pnref=story"
+   target="_parent" style='position:absolute;left:623.625pt;top:26.25pt;
+   width:87.875pt;height:49.5pt'>
+   <v:imagedata src="slide0002_image041.gif" o:title="%25E6%25A1%2583%25E5%259C%2592%25E7%2581%25AB%25E8%25BB%258A3Barking%2Btrain"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3141">
+  <v:shape id="_x0000_s3141" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/981800658612423?pnref=story"
+   target="_parent" style='position:absolute;left:25.5pt;top:285.75pt;width:82.125pt;
+   height:62.625pt'>
+   <v:imagedata src="slide0002_image042.gif" o:title="%25E7%25AA%2597%25E5%25A4%2596%25E4%25BF%25AE%25E8%25B7%25AF"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3143">
+  <v:shape id="_x0000_s3143" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/958549867604169" target="_parent"
+   style='position:absolute;left:545.75pt;top:26.25pt;width:63.75pt;height:85pt'>
+   <v:imagedata src="slide0002_image043.gif" o:title="%25E6%2583%25B3%25E9%25A3%259B2"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3145">
+  <v:shape id="_x0000_s3145" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/951953811597108" target="_parent"
+   style='position:absolute;left:309pt;top:454.25pt;width:73.625pt;height:70.875pt'>
+   <v:imagedata src="slide0002_image044.gif" o:title="Skull2"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3147">
+  <v:shape id="_x0000_s3147" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/946000478859108" target="_parent"
+   style='position:absolute;left:541.5pt;top:394.75pt;width:76.5pt;height:62.375pt'>
+   <v:imagedata src="slide0002_image045.gif" o:title="%25E8%25B3%25A2%25E5%2593%2589%25E5%25BE%2590%25E6%25AF%258D_sign"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3149">
+  <v:shape id="_x0000_s3149" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/943927629066393" target="_parent"
+   style='position:absolute;left:303.25pt;top:396.625pt;width:82.125pt;
+   height:54.875pt'>
+   <v:imagedata src="slide0002_image046.gif" o:title="Eva2"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3151">
+  <v:shape id="_x0000_s3151" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/938903466235476" target="_parent"
+   style='position:absolute;left:201.25pt;top:473.5pt;width:82.125pt;height:46pt'>
+   <v:imagedata src="slide0002_image047.gif" o:title="sketeboard-Danshui2"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3153">
+  <v:shape id="_x0000_s3153" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/916659811793175" target="_parent"
+   style='position:absolute;left:626.5pt;top:389.125pt;width:76.5pt;height:57.375pt'>
+   <v:imagedata src="slide0002_image048.gif" o:title="ROBOT%2BANGEL%25E5%25AE%2588%25E8%25AD%25B7%25E5%25A4%25A9%25E4%25BD%25BF%2B%25E6%25A9%259F%25E6%25A2%25B0%25E7%258D%25B8"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3157">
+  <v:shape id="_x0000_s3157" type="#_x0000_t75" alt=""
+   href="https://www.facebook.com/drcflu/posts/916662411792915" target="_parent"
+   style='position:absolute;left:110.5pt;top:292.625pt;width:76.5pt;height:57.375pt'>
+   <v:imagedata src="slide0002_image049.gif" o:title="Hsilo%2BBridge"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3158">
+  <v:shape id="_x0000_s3158" type="#_x0000_t202" style='position:absolute;
+   left:189.875pt;top:270.125pt;width:36.125pt;height:79.25pt;mso-wrap-style:none;
+   mso-wrap-distance-left:0;mso-wrap-distance-right:0;v-text-anchor:top-baseline'
+   filled="f" fillcolor="#b2c7d6 [4]" stroked="f" strokecolor="#369 [1]">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow color="#005a58 [2]"/>
+   <v:textbox style='layout-flow:vertical-ideographic;mso-fit-shape-to-text:t'/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3160">
+  <v:shape id="_x0000_s3160" type="#_x0000_t75" alt=""
+   href="http://giphy.com/gifs/cruelly-oppress-3oCWtJD2f153gQ5fmo"
+   target="_parent" style='position:absolute;left:629.25pt;top:133.875pt;
+   width:76.625pt;height:57.5pt'>
+   <v:imagedata src="slide0002_image051.gif" o:title="016laydown-dog"/>
+   <o:lock v:ext="edit" cropping="t"/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3161">
+  <v:shape id="_x0000_s3161" type="#_x0000_t202" style='position:absolute;
+   left:686.75pt;top:196.375pt;width:36.125pt;height:79.25pt;mso-wrap-style:none;
+   mso-wrap-distance-left:0;mso-wrap-distance-right:0;v-text-anchor:top-baseline'
+   filled="f" fillcolor="#b2c7d6 [4]" stroked="f" strokecolor="#369 [1]">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow color="#005a58 [2]"/>
+   <v:textbox style='layout-flow:vertical-ideographic;mso-fit-shape-to-text:t'/>
+  </v:shape></p:shaperange>
+ <p:shaperange id="_x0000_s3162">
+  <v:shape id="_x0000_s3162" type="#_x0000_t202" style='position:absolute;
+   left:315.875pt;top:331.875pt;width:140.5pt;height:28.875pt;mso-wrap-style:none;
+   mso-wrap-distance-left:0;mso-wrap-distance-right:0;v-text-anchor:top-baseline'
+   filled="f" fillcolor="#b2c7d6 [4]" stroked="f" strokecolor="#369 [1]">
+   <v:fill color2="#ebf1f7 [0]"/>
+   <v:shadow color="#005a58 [2]"/>
+   <v:textbox style='mso-fit-shape-to-text:t'/>
+  </v:shape></p:shaperange>
+</xml>

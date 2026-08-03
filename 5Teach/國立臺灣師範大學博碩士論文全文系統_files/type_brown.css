@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+.title_bg{background: url(../image/etds_cc_g2.gif) right  top no-repeat  ;height: 42px; overflow:hidden}
+h3.title_n1{font-size:1.2em;font-weight:700;color:#fff;background:url(../image/etds_cc_g1.gif) no-repeat left top;display: block;height: 42px;padding:7px 0 0 10px;padding-top: 7px;line-height: 1.5em;}
+.title_bg2{background: url(../image/etds_cc_c2.gif) repeat-x top;height: 42px;}
+h3.title_n2{font-size:1.2em;font-weight:700;color:#fff;background:url(../image/etds_cc_g1.gif) no-repeat left top;display: block;height: 42px;padding-left: 33px;padding-top: 7px;line-height: 1.5em;}
+.helper{color:#553c17;display: block;float: right;line-height: 1em;padding-top: 12px;padding-right: 15px;padding-left: 10px;background: url(../image/etds_icon_g.gif) no-repeat right bottom;margin-right: 10px;}
+.helper2{color:#553c17;display: block;float: right;line-height: 1em;padding-top: 12px;padding-left: 10px;margin-right: 10px;}
+.helper a:link,.helper a:visited,.helper2 a:link,.helper2 a:visited{color: #639;text-decoration:none;}
+.helper a:hover,.helper2 a:hover{color: #99C; text-decoration:none;}
+
+.cc_bar{ position:absolute; top:8px; right:0px;}
+.cc_bar li{float:left;margin-top: 3px;margin-right: 3px;margin-left: 3px;}
+.nav{height: 34px;background-image: url(../image/etds_navbg5.gif);background-repeat: repeat-x;}
+.schfunc,.schfunc a:link,.schfunc a:visited{color:#553c17;}
+.schfunc a:hover{color:#fff;}

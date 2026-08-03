@@ -1,0 +1,1795 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0068)http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/result -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- GlobalShare 3.2, Copyright 2005 FlySheet Information Services, Inc. -->
+
+
+<title>國立臺灣師範大學博碩士論文全文系統</title>
+
+<!--[if lt IE 7.]>
+<script defer type="text/javascript" src="/gs32/stdcdr_ntnu/pngfix.js"></script>
+<![endif]-->
+
+<meta http-equiv="imagetoolbar" content="no">
+<meta http-equiv="Content-Language" content="zh-TW">
+<meta name="Distribution" content="Taiwan">
+<meta name="Robots" content="INDEX,NOFOLLOW">
+<meta name="robots" content="noarchive">
+<meta name="keywords" content="碩博士論文，博碩士論文，論文下載，學位論文系統，國立台灣師範大學博碩士論文知識加值系統，論文">
+<meta name="description" content="國立臺灣師範大學博碩士論文系統">
+
+
+
+
+
+
+<!-- _initscript.htm -->
+
+
+<!-- yui's js prototype.js bbfix.js showcontext.js /gs32/webform.js flyjs.js >> all.js -->
+<!-- template2/_js_combine.htm -->
+
+
+<!-- flybase's combine js file-->
+<script type="text/javascript" src="./國立臺灣師範大學博碩士論文全文系統_files/all.js"></script>
+
+
+<script type="text/javascript">
+var errxmlrequest = "系統無法執行你的操作，請重新操作。錯誤代碼："
+//set timeout option enable or disable
+_timeoutflag = 0;
+
+//search input value clear enable or disable
+var _clearsearchflag = 1;
+
+//window.open close time 10000 = 10 seconds
+opener_close_time = 10000;
+var gs32path="/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/";
+var openajaxmsg=0;
+var ajaxactdisp=0;
+var jstimer = 300
+var autocompurl = '/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getsquerystr'
+var autocomplist = [];
+var oldautocomplist = [];
+autocomplist[0] = '/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getsquerystr'
+oldautocomplist[0] = '/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getsquerystr'
+
+document.onkeypress = keyhandler;
+document.onkeyup = keyuphandler;
+
+
+//brwfield select onchange
+function brwstatus(formval, indval, buval, ckstr, selind)
+{
+var f = document.forms[formval]
+var ScanL = ckstr.split('||')
+var oaceslist =[oACDS0]
+//can't find field => user select to none field limit
+if (ScanL.indexOf(indval) == -1)
+{
+//ps("con-1");
+//initautocomplete()
+oaceslist[selind].scriptQueryAppend= "&cache="+(new Date()).getTime();
+try{f.elements[buval].disabled = true;}
+catch (e) {}
+
+}
+//find field => user select one field 
+else{
+oaceslist[selind].scriptQueryAppend= "&field="+ScanL[ScanL.indexOf(indval)]+"&selind="+selind+"&cache="+(new Date()).getTime()+"&";
+//autocomplist[selind] = autocompurl + "?&field="+ScanL[ScanL.indexOf(indval)]+"&selind="+selind+"&cache="+(new Date()).getTime()+"&";
+//ps("con-2", autocomplist[selind]);
+try{f.elements[buval].disabled = false;}
+catch (e) {}
+
+}
+//YAHOO.example.ACFlatData.init();
+}
+
+</script>
+<!-- tpec/_css.htm -->
+
+
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/style-min.css">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/myperson.css">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/tabview.css">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/tabview_flybase2007.css">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/module_tabs.css">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/calendar.css">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/menu.css">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/container.css">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/meta.css">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/reset.css">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/fontset.css">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/template2.css">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/etds.css">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/stdcdr.css">
+
+
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+
+
+<!-- _timeout.htm -->
+
+ 
+<script language="JavaScript1.1">
+
+var exitalerturl = "/gs32/stdcdr_ntnu/index.htm";
+exitalertmsg = "系統提示，由於您閒置時間超過40分鐘，行程已經結束。請按下〝確定〞回首頁，或按〝取消〞關閉此視窗。".replace('<br/>','\n');
+
+exiturl = "/gs32/stdcdr_ntnu//gs32/stdcdr_ntnu/timeoutpage.htm"; 
+sessionexiturl = "/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/exit";
+<!--
+	var secondsleft = 40 * 60;
+	var showntimeout = false; // has the alert been shown?
+	var timewin; // handle for the timeout warning window
+	var remind = 0 * 60; // remind user when this much time is left
+
+        orgsecs = secondsleft
+	function fsUnload() {
+		cleartimeout();
+		// BEGIN: FSPage plugin for the JS-onUnload() event.
+		
+		// END: FSPage plugin for the JS-onUnload() event.
+	}
+        // this browse onreload or close , excute this action
+	function cleartimeout() {
+		if ((timewin != null) && !(timewin.closed)){
+			timewin.close();
+                }
+	}
+	function showtimeout() {
+		if (secondsleft <= 0){
+                        //ps("no timie!", exiturl);
+                        //parWin = window.opener;
+                        //parWin.location.href = exiturl
+                        if (exiturl != ""){
+                        //window.location.href = exiturl;
+                        //force close session
+                        try{showInfo_htm('', sessionexiturl)}
+                        catch (err) {}
+
+                        if (exitalertmsg!=""){
+if (confirm(exitalertmsg)){
+window.location.href = exitalerturl;
+}
+else{
+window.close();
+}
+                        }
+                        else{
+                        parent.location.href = exiturl;
+                        }
+                        } 
+                        //self.close();
+			return;
+                }
+		if (showntimeout == false && secondsleft > 0 && secondsleft <= remind) {
+                        timeoutmsg('連線時間還剩：',40,'/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/browse','您的連線馬上就要結束','延長時間');
+			showntimeout = true;
+		}
+		var minutes = Math.floor (secondsleft / 60);
+		var seconds = secondsleft % 60;
+		if (seconds < 10)
+			seconds = "0" + seconds;
+
+                try{ 
+		if (_timeoutflag){
+
+                 rvs = toLatin("連線時間還剩：" + minutes + ":" + seconds);
+                 //window.status = rvs;
+                 try{ document.getElementById("timestatus").innerHTML = rvs;}
+                 catch(err) {
+                 window.status = rvs;  
+                 }  
+                 }
+                } catch (err) {}
+		var period = 1;
+		setTimeout("showtimeout()", period*1000);
+		secondsleft -= period;
+	}
+	// -->
+</script>
+<script language="JavaScript"> var _version = 1.0 </script>
+<script language="JavaScript1.1"> _version = 1.1 </script>
+<script language="JavaScript1.2"> _version = 1.2 </script>
+
+<script language="JavaScript1.1">
+function toLatin(x) {
+	if (_version >= 1.2 && ("zh" == "fr" || "zh" == "es")) {
+		var pattern = new RegExp("&#([0-9]+);");
+		while ((result = pattern.exec(x)) != null) {
+			x = x.replace(result[0], String.fromCharCode(RegExp.$1));
+		}
+		x = x.replace(/&nbsp;/g, ' ');
+	}
+	return (x);
+}
+</script>
+
+
+<script>
+try{
+var parWin = window.opener;
+parWin.secondsleft = orgsecs;
+}
+catch (err){}
+</script>
+
+
+
+</head>
+
+
+
+
+<body onload="showtimeout(); " onunload="fsUnload();closeopen();" class="yui-skin-sam" id="bodyid" style="font-size:10pt;"><!--字級大小控制-->
+
+
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/type_green.css" title="green" disabled="">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/type_blue.css" title="blue">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/type_tangerine.css" title="tangerine" disabled="">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/type_pink.css" title="pink" disabled="">
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/type_brown.css" title="brown" disabled="">
+<script type="text/javascript" src="./國立臺灣師範大學博碩士論文全文系統_files/styleswitcher.js"></script>
+
+
+
+
+<link rel="stylesheet" type="text/css" href="./國立臺灣師範大學博碩士論文全文系統_files/personal_5.css">
+
+
+
+
+<script>
+
+//Specify affected tags. Add or remove from list:
+//var tgs = new Array( 'div','td','tr');
+var tgs = new Array('');
+
+//Specify spectrum of different font sizes:
+//var szs = new Array( 'xx-small','x-small','small','medium','large','x-large','xx-large' );
+var addrange = 21;
+var szs = new Array('7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27');
+var startSz = 3;
+
+// 讀取cookie's fontsize 
+var cookie_fontsize = readCookie("fontsize");
+
+// 設定初使值font-size 及 切換index 開始位置
+for(c=0; c < szs.length; c++){
+if (szs[c] == cookie_fontsize){
+    startSz = c;
+    setfontsize(cookie_fontsize);
+    break
+}
+}
+
+// 預設的font size index IN szs
+//ps("startSz", startSz);
+
+function ts(inc) {
+	if (!document.getElementById) return
+	var sz = startSz,i,j,cTags;
+	
+	sz += inc;
+	if ( sz < 0 ) {
+            sz = 0;
+            alert("this is smallest!");
+        }
+
+	if ( sz > addrange ) {
+        sz = addrange;
+            alert("this is biggest!");
+        }
+
+	startSz = sz;
+        nowfontsize = szs[ sz ];
+        //ps("nowfontsize", nowfontsize);
+        setfontsize(nowfontsize)  
+}
+
+// 變更文字大小
+function setfontsize(thisfontsize){
+    var d = document,cEl = null
+    if (!(cEl = d.getElementById("body"))) {
+       cEl = d.getElementsByTagName("body")[0];}
+    cE1 = d.getElementById("bodyid")
+    //ps("thisfontsize", thisfontsize);
+    cEl.style.fontSize = thisfontsize+'pt'; 
+    createCookie("fontsize",thisfontsize, 365);
+
+    // 設定預設的font size index
+    for(c=0; c < szs.length; c++){
+       if (szs[c] == thisfontsize){
+           startSz = c;
+           break
+       }
+    }
+}
+
+</script>
+
+
+<!-- lastsearch() => combine last search observer --> 
+<!-- showtimeout();fsUnload() => javascript window's bottom menu display timer --> 
+<!-- closeopen() => close all window.open function -->
+<!-- bb_init() => store browser history --> 
+
+<script>
+function getScrollTop() {
+  if ( document.documentElement.scrollTop )
+    return document.documentElement.scrollTop;
+
+  return document.body.scrollTop;
+}
+
+function scrollHandler() {
+   var e = document.getElementById('loading');
+   e.style.top = getScrollTop();
+}
+
+window.onscroll = function () {
+   var elem = document.getElementById('loading');
+   if ( !elem.currentStyle || elem.currentStyle.position != 'absolute' ) {
+      window.onscroll = null;
+   } else {
+      window.onscroll = function () { elem.style.top = getScrollTop(); };
+      document.getElementById('loading').style.top = getScrollTop();
+   }
+}
+
+PX1 = 0;
+PX2 = 0;
+PY1 = 0;
+PY2 = 0;
+function refset() {
+  if (document.layers) {
+    PX1 = window.innerWidth - 100;
+    if (PX1 < 0) PX1 = 0;
+    PY1 = window.pageYOffset;
+    if (PY1 < 0) PY1 = 0;
+    if (PX1 != PX2) {
+      document.layers.loading.left = PX1;
+      PX2 = PX1;
+    }
+    if ( PY1 != PY2) {
+      document.layers.loading.top = PY1;
+      PY2=PY1;
+    }
+  } else {
+    PX1 = document.body.clientWidth - 100;
+    if (PX1 < 0) PX1 = 0;
+    PY1 = document.body.scrollTop;
+    if (PY1 < 0) PY1 = 0;
+    if(PX1 != PX2 || PY1 != PY2) {
+      document.all.loading.style.display = "none";
+      document.all.loading.style.left = PX1 + 50;
+      PX2 = PX1;
+      document.all.loading.style.top = PY1;
+      PY2 = PY1;
+      document.all.loading.style.display = "none";
+    }
+  }
+  setTimeout("refset()", 50);
+}
+</script>
+
+<div id="loading" style="position:absolute;display: none;">
+資料載入處理中...
+</div>
+
+
+<!-- _google_analysis.htm  -->
+
+
+
+<!-- HTM::nclcdr/searchresult.htm  -->
+<!-- session.pid:fb32__stdcdrntnu__--0ki4tz--1739 -->
+
+<form method="post" name="main" action="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/result">
+
+<!-- whereami=>stdcdr_nccu/nclcdr1_head.htm  -->
+
+
+
+<!-- whereami=>nclcdr/_basic_head.htm  -->
+
+
+<div class="etds_mainbd">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tbody><tr>
+      <td width="10" background="./國立臺灣師範大學博碩士論文全文系統_files/etds_mbg_l.gif"></td>
+      <td class="etds_mainct"> 
+        <div id="result">
+<!-- HTM::result.htm  -->
+
+<div id="sendmailmsg">
+</div>
+
+<a name="top">
+
+<script>
+try{document.getElementById("loading").style.display;}
+catch(err){}
+window.setTimeout(function (){hide_image();},1);
+</script>
+
+
+
+
+
+</a></div><table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tbody><tr>
+            <td height="100px;" valign="top"><div class="subnav">
+
+
+<!-- whereami=>stdcdr_nccu/nclcdr_headoption.htm  -->
+
+
+
+<table><tbody><tr><td>
+<!--
+<a href="/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/nclcdrsitemap" title="網站地圖">網站地圖</a>|
+-->
+<a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/webmge" title="首頁">首頁</a>|
+<!--
+<a href="/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/aboutnclcdr" title="收錄範圍">收錄範圍</a>|
+-->
+<!--
+<a href="/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/issueask?db=stdcdr" title="聯絡我們" target=_blank>聯絡我們</a>|
+-->
+<a href="http://www.lib.ntnu.edu.tw/" title="圖書館首頁" target="_blank">圖書館首頁</a>|
+<!--
+<a href="/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/fqasearch?&menuid=gsfqa" title="常見問題">常見問題</a>|
+-->
+<!--
+<a href="#" title="相關資源">相關資源</a>|
+-->
+<!--|-->
+<a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/result#" onclick="addProvider(&#39;/gs32/stdcdr_ntnu/cdropensearch.xml&#39;,&#39;false&#39;)" onkeypress="addProvider(&#39;/gs32/stdcdr_ntnu/cdropensearch.xml&#39;,&#39;false&#39;)" title="OpenSearch">OpenSearch</a>
+|
+<a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/webmge?switchlang=en" title="English">English</a>
+<!--|<a href="/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/mobsearch" title="Mobile">Mobile</a>-->
+</td></tr>
+</tbody></table>
+</div>
+               <div class="login_bar">
+               </div>
+              </td>
+          </tr>
+          <tr>
+            <td>
+               <div class="cc_bar">
+                <ul>
+                </ul>
+              </div>
+
+
+              <div class="nav">
+
+
+<ul class="version">
+
+    </ul>
+
+<!-- whereami=>stdcdr_nccu/_searchmodeswitch.htm  -->
+
+<ul class="mainnav">
+<li><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?mode=basic" title="簡易查詢">簡易查詢</a></li>
+<li><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?mode=advance" title="進階查詢">進階查詢</a></li>
+<li><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/browselevel?jump2firstbrw=1" title="論文瀏覽">論文瀏覽</a></li>
+<li><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/gsimpactbrw?init=1&amp;date=104" title="熱門排行">熱門排行</a></li>
+<li><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/registry" title="我的研究室">我的研究室</a></li>
+<li><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/thesislogin?" title="上傳論文">上傳論文</a></li>
+</ul>
+
+<div class="user_div" style="position:absolute; top:140px; left:680px;">
+帳號：guest(219.85.234.22)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/exit?exiturl=http://etds.lib.ntnu.edu.tw/gs32/stdcdr_ntnu/" title="離開系統">離開系統</a>
+
+</div>
+              </div></td>
+          </tr>
+          <tr>
+            <td>
+
+<div class="user_div">
+
+</div>
+
+
+
+<div class="fontsize_control">
+字體大小：
+<a href="javascript:ts(1);"><img src="./國立臺灣師範大學博碩士論文全文系統_files/etds_icon_fb.gif" alt="字級放大" align="absmiddle"></a>
+&nbsp;
+<a href="javascript:ts(-1);"><img src="./國立臺灣師範大學博碩士論文全文系統_files/etds_icon_fs.gif" alt="字級縮小" align="absmiddle"></a>
+&nbsp;
+<a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/result#XX" onclick="setfontsize(&#39;10&#39;);" onkeypress="setfontsize(&#39;10&#39;);" title="預設字形"><img src="./國立臺灣師範大學博碩士論文全文系統_files/etds_icon_fd.gif" alt="預設字形" border="0" align="absmiddle"></a>
+&nbsp;
+<script>setActiveStyleSheet('blue')</script>
+
+</div>
+</td>
+          </tr>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<tr>
+   <td>
+
+      <div style="float: left;width:26%;">
+
+
+
+
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="border_cube">
+
+    <tbody><tr> <td height="10"></td> </tr>
+
+<tr><td>
+
+
+<table width="96%" border="0" align="center" cellpadding="0" cellspacing="0">
+
+<tbody><tr><td>
+
+<script>
+YAHOO.example.outputresult = function() {
+   var myTabs = new YAHOO.widget.TabView('gs32_outputresult');
+     myTabs.on('contentReady', function() {
+    this.getTab(1).addListener('click', handleClick=function(e){
+showInfo_htm('keyarea','/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/refine_area', '資料載入處理中...')
+   });
+
+   });
+};
+
+YAHOO.example.outputresult();
+</script>
+
+
+<div id="gs32_outputresult" class="yui-navset yui-navset-top">
+
+<ul class="yui-nav">
+
+
+<li><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/result#XX" title=""><em>輸出管理</em></a></li><li class="selected" title="active"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/result#XX" title="result"><em>查詢結果分類</em></a></li></ul>
+
+<div class="yui-content">
+
+<div id="輸出管理" style="display: none;">
+<!-- nclcdr/_seloutput.htm -->
+
+
+
+<script>
+YAHOO.example.myinit = function() {
+   var myTabs = new YAHOO.widget.TabView('seloutputmenu');
+     myTabs.on('contentReady', function() { 
+
+ tab0 = myTabs.getTab(0);
+
+     function handleClick0(e) {
+     }
+         
+tab0.addListener('click', handleClick0);
+     });
+};
+
+YAHOO.example.myinit();
+</script>
+
+<style type="text/css">
+
+/* Tabmenu 包含整個(index tab)上方區塊 style */
+#seloutputmenu .yui-nav{
+border:solid #737374;
+border-width:0 0 3px 0;
+Xposition:relative;
+zoom:1;
+background:#FFFFFF;
+margin-top:2px;
+}
+/* Tabmenu (index tab)選項之間的間距 */
+#seloutputmenu .yui-nav li{
+margin:0px;
+padding:0 1px 0 0;
+print 'font-size:80%'
+}
+/* Tabmenu (index tab)選項 選擇後的效果 */
+#seloutputmenu .selected a, #seloutputmenu .selected a:focus, #seloutputmenu .selected a:hover
+{
+background: #D7D6D6 url('/gs32/images/cssgif/tabind003.gif') repeat-x bottom !important;
+}
+/* Tabmenu (index tab)選項 移過去 a:hover 效果 */
+#seloutputmenu a:hover{
+background:#C98F8F !important;
+margin:0px;
+padding:0px;
+}
+/* Table menu 下方的div 區塊 style */
+#seloutputmenu .yui-content {
+padding:1px;
+border:solid #808080;
+border-width: 0px;
+min-height:100px;
+/** 輸出區塊.設成0px.不能將此值設成important否則裡面的tabview border都會被設成此屬性 **/ 
+}
+
+</style>
+
+<table class="tmaintd" width="100%">
+
+<tbody><tr><td>
+
+<ul>
+
+     </ul><table width="100%" border="0" cellpadding="0" cellspacing="0">
+     <tbody><tr>
+     <td width="20" align="center" bgcolor="#f0ebe0">
+     <a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/result#"><img src="./國立臺灣師範大學博碩士論文全文系統_files/arrow-315-small.png" width="16" height="20" align="absbottom"></a></td>
+     <td align="left" bgcolor="#f0ebe0">輸出紀錄</td>
+     </tr>
+
+<tr><td align="center">&nbsp;</td>
+     <td align="left">
+      
+<input type="radio" name="crange" value="1" checked="">勾選紀錄(<span id="stenow">0</span>)筆
+
+     </td>
+     </tr>
+      
+
+     <tr><td align="center">&nbsp;</td>
+     <td align="left">
+      
+<input type="radio" name="crange" value="2">所有勾選紀錄(<span id="stetotal">0</span>)筆
+
+     </td>
+     </tr>
+      
+
+     <tr><td align="center">&nbsp;</td>
+     <td align="left">
+  
+<input type="radio" name="crange" value="3">此次策略紀錄(<span>28</span>)筆
+
+     </td>
+     </tr>
+  
+
+
+
+
+
+     <tr>
+     <td height="3" colspan="2"></td>
+     </tr>
+
+
+
+     <tr>
+     <td width="20" align="center" bgcolor="#f0ebe0">
+     <a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/result#"><img src="./國立臺灣師範大學博碩士論文全文系統_files/arrow-315-small.png" width="16" height="20" align="absbottom"></a></td>
+     <td align="left" bgcolor="#f0ebe0">輸出欄位</td>
+     </tr>
+
+
+
+     
+
+  <tr><td align="center">&nbsp;</td>
+  <td align="left">
+<input type="radio" name="cfield" value="1" checked="" onclick="onselectdivenable()">簡易書目
+  </td>
+  </tr>
+
+
+  <tr><td align="center">&nbsp;</td>
+  <td align="left">
+<input type="radio" name="cfield" value="2" onclick="onselectdivenable()">完整書目
+  </td>
+  </tr>
+
+
+ <tr><td align="center">&nbsp;</td>
+ <td align="left">
+<input type="radio" name="cfield" value="3" onclick="onselectdivenable()"><a href="javascript:openfsel(&#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/fieldsel&#39;)" class="mainlink">欄位選擇</a>
+ </td>
+ </tr>
+
+
+     <tr>
+     <td width="20" align="center" bgcolor="#f0ebe0">
+     <a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/result#"><img src="./國立臺灣師範大學博碩士論文全文系統_files/arrow-315-small.png" width="16" height="20" align="absbottom"></a></td>
+     <td align="left" bgcolor="#f0ebe0">書目資料輸出格式</td>
+     </tr>
+
+ <tr><td align="center">&nbsp;</td>
+ <td align="left">
+ <input type="radio" name="cfield" value="4" onclick="onselectdivdisable()"> APA Style
+ </td>
+ </tr> 
+  <tr><td align="center">&nbsp;</td>
+ <td align="left">
+ <input type="radio" name="cfield" value="5" onclick="onselectdivdisable()"> Chicago Style
+ </td>
+ </tr> 
+  <tr><td align="center">&nbsp;</td>
+ <td align="left">
+ <input type="radio" name="cfield" value="6" onclick="onselectdivdisable()"> MLA Style
+ </td>
+ </tr> 
+  <tr><td align="center">&nbsp;</td>
+ <td align="left">
+ <input type="radio" name="cfield" value="7" onclick="onselectdivdisable()"> CNS-13611 Style
+ </td>
+ </tr> 
+  <tr><td align="center">&nbsp;</td>
+ <td align="left">
+ <input type="radio" name="cfield" value="8" onclick="onselectdivdisable()"> EndNote Style
+ </td>
+ </tr> 
+  <tr><td align="center">&nbsp;</td>
+ <td align="left">
+ <input type="radio" name="cfield" value="9" onclick="onselectdivdisable()"> MARC21 機讀格式
+ </td>
+ </tr> 
+ 
+
+ <tr><td align="center">&nbsp;</td>
+ <td align="left">
+ <input type="radio" name="cfield" value="refworks" id="refworks" onclick="onselectdivdisable()"> RefWorks
+ </td>
+      
+
+
+     </tr><tr>
+     <td width="20" align="center" bgcolor="#f0ebe0">
+     <a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/result#"><img src="./國立臺灣師範大學博碩士論文全文系統_files/arrow-315-small.png" width="16" height="20" align="absbottom"></a></td>
+     <td align="left" bgcolor="#f0ebe0">輸出字碼</td>
+     </tr>
+   
+     <tr>
+<td align="center">&nbsp;</td>
+<td>
+<input type="radio" name="char_fmt" value="utf8" checked="">UTF-8<br>
+<input type="radio" name="char_fmt" value="big5">BIG5<br>
+<input type="radio" name="char_fmt" value="gb2312">GB2312
+     </td></tr>
+
+     <tr>
+     <td height="3" colspan="2"></td>
+     </tr>
+
+</tbody></table>
+
+<script>
+YAHOO.example.outmailbrw = function() {
+   var myTabs = new YAHOO.widget.TabView('gs32_outmailbrw');
+     myTabs.on('contentReady', function() {
+   });
+};
+
+YAHOO.example.outmailbrw();
+</script>
+
+
+<div id="gs32_outmailbrw" class="yui-navset yui-navset-top">
+    <ul class="yui-nav">
+
+<!---  seloutput LEVEL1 TITLE --->
+        
+<!---  seloutput LEVEL2 TITLE --->
+
+
+
+
+
+
+
+<!---  seloutput LEVEL3 TITLE --->
+        
+<!---  seloutput LEVEL4 TITLE 預覽 --->
+
+<!---  預覽及輸出 --->
+
+    <li class="selected" title="active"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/result#XX"><em>輸出</em></a></li><li><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/result#XX"><em>轉寄</em></a></li><li><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/result#XX"><em>預覽及輸出</em></a></li></ul>
+
+
+    <div class="yui-content">
+<!---  seloutput LEVEL1 TITLE --->
+        <div style="display: block;">
+
+<select name="outfmt" id="outfmt">
+<option value="txt">TXT檔
+</option><option value="xls">Excel
+<!-- <option value=csv>CSV 檔 -->
+</option><option value="htm">HTML檔
+</option><option value="xml">Xml
+<!--<option value=ncliso>iso2709-->
+</option></select>
+
+<input type="button" class="button" name="savefmt" value="儲存" onclick="savefmtfunc(0 , 6, &#39;無本次檢索勾選紀錄!&#39;, &#39;無所有勾選紀錄!&#39;, &#39;&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/resmage&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/history&#39;);">
+
+        </div>
+
+
+<!---  seloutput LEVEL2 TITLE --->
+
+
+
+<!---  seloutput LEVEL3 TITLE --->
+        <div style="display: none;">
+<span class="gs32sys_span01">Email地址:</span>
+<input type="text" name="eaddr" size="20"><br>
+<span class="gs32sys_span01">Email標題:</span>
+<input type="text" name="etitle" size="20"><br>
+<input type="button" class="button" name="sendmail" value="確定" onclick="mailfmtfunc(0, 6, &#39;無本次檢索勾選紀錄!&#39;, &#39;無所有勾選紀錄!&#39;, &#39;請輸入Email標題&#39;, &#39;請輸入Email地址&#39;, &#39;&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/resmage&#39;, &#39;信件已寄送&#39;)">
+
+        </div>
+
+<!---  seloutput LEVEL4 TITLE --->
+
+
+
+        <div style="display: none;">
+<input type="button" class="button" name="preview" value="全螢幕預覽" onclick="brwfmtfunc(0, 6, &#39;無本次檢索勾選紀錄!&#39;, &#39;無所有勾選紀錄!&#39;, &#39;&amp;outfmt=htm&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/previewsave&#39;)" onkeypress="brwfmtfunc(0, 6, &#39;無本次檢索勾選紀錄!&#39;, &#39;無所有勾選紀錄!&#39;, &#39;&amp;outfmt=htm&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/previewsave&#39;)">
+        </div>
+
+
+
+</div>
+
+</div>   <!-- _seloutput_resultbrw.htm -->
+
+<div id="retoutfmt">
+</div>
+
+
+</td></tr>
+</tbody></table>
+
+
+<div id="checker_buffer">
+<input type="hidden" name="stenownum" id="stenownum" value="0">
+<input type="hidden" name="stetotalnum" id="stetotalnum" value="0">
+</div>
+
+<script type="text/javascript">
+  YAHOO.namespace("example.container");
+  YAHOO.example.container.tt2 = new YAHOO.widget.Tooltip("tt2",
+   { context:"linkgrpins", text:"Scupio group Readme"});
+</script>
+
+</div>
+
+<div id="查詢結果分類" style="display: block;">
+<div id="keyarea" style="float:left;">
+<!-- whereami=>refine_area.htm  -->
+
+<div class="refined_switch">
+<div id="showswitch-kwc-menuab" class="showswitch-font" onclick="showhiddenswitchtext(&#39;showswitch-kwc-menuswitch&#39;, &#39;showswitch-kwc-menuab&#39;, &#39;&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small-expand.png alt=展開&gt;中文關鍵詞&lt;/span&gt;//&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small.png alt=收合&gt;中文關鍵詞&lt;/span&gt;&#39;)" onkeypress="showhiddenswitchtext(&#39;showswitch-kwc-menuswitch&#39;, &#39;showswitch-kwc-menuab&#39;, &#39;&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small-expand.png alt=展開&gt;中文關鍵詞&lt;/span&gt;//&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small.png alt=收合&gt;中文關鍵詞&lt;/span&gt;&#39;)"><span class="swsybfont_refined"><img src="./國立臺灣師範大學博碩士論文全文系統_files/toggle-small.png" alt="收合">中文關鍵詞</span></div>
+        
+<div id="showswitch-kwc-menuswitch" style="display:;" class="showswitch-kwc-div">
+        <table class="refine_table" width="100%"><tbody><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20kwc%3D%22%E8%89%B2%E5%BD%A9%22.&amp;searchmode=basic&amp;" title="色彩">色彩</a>(2)</td></tr><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20kwc%3D%22%E6%BC%AB%E7%95%AB%22.&amp;searchmode=basic&amp;" title="漫畫">漫畫</a>(2)</td></tr><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20kwc%3D%22%E6%A0%A1%E5%9C%92%E5%85%AC%E5%85%B1%E8%97%9D%E8%A1%93%22.&amp;searchmode=basic&amp;" title="校園公共藝術">校園公共藝術</a>(2)</td></tr><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20kwc%3D%22%E6%95%B8%E4%BD%8D%E5%85%A7%E5%AE%B9%22.&amp;searchmode=basic&amp;" title="數位內容">數位內容</a>(2)</td></tr><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20kwc%3D%22%E5%8B%95%E7%95%AB%E7%94%A2%E6%A5%AD%22.&amp;searchmode=basic&amp;" title="動畫產業">動畫產業</a>(2)</td></tr><tr><td colspan="2" class="refcol2" style="text-align:right;"><a href="javascript:;" onclick="showInfo_htm(&#39;keyarea&#39;,&#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/refine_area?fc=kwc:_15&amp;actpage=search&amp;actrecord=&#39;)">顯示更多...</a></td></tr></tbody></table>
+    </div>
+    </div>
+        
+<div class="refined_switch">
+<div id="showswitch-dp-menuab" class="showswitch-font" onclick="showhiddenswitchtext(&#39;showswitch-dp-menuswitch&#39;, &#39;showswitch-dp-menuab&#39;, &#39;&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small-expand.png alt=展開&gt;系所名稱&lt;/span&gt;//&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small.png alt=收合&gt;系所名稱&lt;/span&gt;&#39;)" onkeypress="showhiddenswitchtext(&#39;showswitch-dp-menuswitch&#39;, &#39;showswitch-dp-menuab&#39;, &#39;&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small-expand.png alt=展開&gt;系所名稱&lt;/span&gt;//&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small.png alt=收合&gt;系所名稱&lt;/span&gt;&#39;)"><span class="swsybfont_refined"><img src="./國立臺灣師範大學博碩士論文全文系統_files/toggle-small.png" alt="收合">系所名稱</span></div>
+        
+<div id="showswitch-dp-menuswitch" style="display:;" class="showswitch-dp-div">
+        <table class="refine_table" width="100%"><tbody><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20dp%3D%22%E7%BE%8E%E8%A1%93%E5%AD%B8%E7%B3%BB%22.&amp;searchmode=basic&amp;" title="美術學系">美術學系</a>(25)</td></tr><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20dp%3D%22%E7%A7%91%E6%8A%80%E6%87%89%E7%94%A8%E8%88%87%E4%BA%BA%E5%8A%9B%E8%B3%87%E6%BA%90%E7%99%BC%E5%B1%95%E5%AD%B8%E7%B3%BB%22.&amp;searchmode=basic&amp;" title="科技應用與人力資源發展學系">科技應用與人力資源發展學系</a>(3)</td></tr></tbody></table>
+    </div>
+    </div>
+        
+<div class="refined_switch">
+<div id="showswitch-adc-menuab" class="showswitch-font" onclick="showhiddenswitchtext(&#39;showswitch-adc-menuswitch&#39;, &#39;showswitch-adc-menuab&#39;, &#39;&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small-expand.png alt=展開&gt;指導教授姓名&lt;/span&gt;//&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small.png alt=收合&gt;指導教授姓名&lt;/span&gt;&#39;)" onkeypress="showhiddenswitchtext(&#39;showswitch-adc-menuswitch&#39;, &#39;showswitch-adc-menuab&#39;, &#39;&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small-expand.png alt=展開&gt;指導教授姓名&lt;/span&gt;//&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small.png alt=收合&gt;指導教授姓名&lt;/span&gt;&#39;)"><span class="swsybfont_refined"><img src="./國立臺灣師範大學博碩士論文全文系統_files/toggle-small.png" alt="收合">指導教授姓名</span></div>
+        
+<div id="showswitch-adc-menuswitch" style="display:;" class="showswitch-adc-div">
+        <table class="refine_table" width="100%"><tbody><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20adc%3D%22%E5%91%82%E6%B8%85%E5%A4%AB%22.&amp;searchmode=basic&amp;" title="呂清夫">呂清夫</a>(26)</td></tr><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20adc%3D%22%E9%BB%83%E8%88%88%E8%8A%B3%22.&amp;searchmode=basic&amp;" title="黃興芳">黃興芳</a>(1)</td></tr><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20adc%3D%22%E9%84%A7%E6%9C%89%E7%AB%8B%22.&amp;searchmode=basic&amp;" title="鄧有立">鄧有立</a>(1)</td></tr><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20adc%3D%22%E7%8E%8B%E5%93%B2%E9%9B%84%22.&amp;searchmode=basic&amp;" title="王哲雄">王哲雄</a>(1)</td></tr><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20adc%3D%22%E6%9E%97%E6%96%87%E6%98%8C%22.&amp;searchmode=basic&amp;" title="林文昌">林文昌</a>(1)</td></tr><tr><td colspan="2" class="refcol2" style="text-align:right;"><a href="javascript:;" onclick="showInfo_htm(&#39;keyarea&#39;,&#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/refine_area?fc=adc:_15&amp;actpage=search&amp;actrecord=&#39;)">顯示更多...</a></td></tr></tbody></table>
+    </div>
+    </div>
+        
+<div class="refined_switch">
+<div id="showswitch-yr-menuab" class="showswitch-font" onclick="showhiddenswitchtext(&#39;showswitch-yr-menuswitch&#39;, &#39;showswitch-yr-menuab&#39;, &#39;&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small-expand.png alt=展開&gt;畢業學年度&lt;/span&gt;//&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small.png alt=收合&gt;畢業學年度&lt;/span&gt;&#39;)" onkeypress="showhiddenswitchtext(&#39;showswitch-yr-menuswitch&#39;, &#39;showswitch-yr-menuab&#39;, &#39;&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small-expand.png alt=展開&gt;畢業學年度&lt;/span&gt;//&lt;span class=swsybfont_refined&gt;&lt;img src=images/toggle-small.png alt=收合&gt;畢業學年度&lt;/span&gt;&#39;)"><span class="swsybfont_refined"><img src="./國立臺灣師範大學博碩士論文全文系統_files/toggle-small.png" alt="收合">畢業學年度</span></div>
+        
+<div id="showswitch-yr-menuswitch" style="display:;" class="showswitch-yr-div">
+        <table class="refine_table" width="100%"><tbody><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20yr%3D%22105%22.&amp;searchmode=basic&amp;" title="105">105</a>(2)</td></tr><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20yr%3D%22104%22.&amp;searchmode=basic&amp;" title="104">104</a>(1)</td></tr><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20yr%3D%22102%22.&amp;searchmode=basic&amp;" title="102">102</a>(1)</td></tr><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20yr%3D%22101%22.&amp;searchmode=basic&amp;" title="101">101</a>(1)</td></tr><tr><td style="padding-left:10px;"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?s=(%231)%20and%20yr%3D%2299%22.&amp;searchmode=basic&amp;" title="99">99</a>(2)</td></tr><tr><td colspan="2" class="refcol2" style="text-align:right;"><a href="javascript:;" onclick="showInfo_htm(&#39;keyarea&#39;,&#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/refine_area?fc=yr:_15&amp;actpage=search&amp;actrecord=&#39;)">顯示更多...</a></td></tr></tbody></table>
+    </div>
+    </div>
+        
+</div><!--keyarea-->
+</div>
+</div>
+</div>
+
+</td></tr></tbody></table>
+
+
+</td></tr>
+
+    <tr> <td height="10"></td> </tr>
+
+</tbody></table>
+
+
+      </div>
+      <!--end of .cont_r2 -->
+
+
+
+
+
+
+
+
+      
+
+<div style="float: right;width:72%;">
+
+
+
+
+
+
+
+
+
+<!-- stdcdr/contentbrowse.htm -->
+
+<script>
+msg = ''; 
+if (msg){
+alert(msg.replace('<br/>','\n'));
+}
+
+// recommand use
+
+</script>
+
+
+<script>
+try{document.getElementById("loading").style.display;}
+catch(err){}
+window.setTimeout(function (){hide_image();},1);
+</script>
+
+
+
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="border_cube">
+                <tbody><tr>
+                  <td class="title_bg"><h3 class="title_n1"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/search?mode=basic" title="簡易檢索" class="wlink">簡易檢索</a></h3></td>
+                </tr>
+
+
+              <tr><td>
+
+
+
+
+  <table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
+     <tbody><tr>
+     <td colspan="2">
+<h3><img src="./國立臺灣師範大學博碩士論文全文系統_files/script.png" align="absmiddle">檢索結果
+  </h3>
+     </td>
+     </tr>
+
+  </tbody></table>
+
+
+<input type="hidden" name="gosort" value="">
+
+
+<table cellspacing="0" border="0" class="brwrestable">
+<tbody><tr>
+<td colspan="3">
+
+  </td></tr><tr>
+   <td width="25">&nbsp;</td>
+   <td>
+檢索策略：<span class="etd_e">"呂清夫".ad(精準)</span>；檢索結果共<span class="etd_e">&nbsp;28&nbsp;</span>筆資料
+<br>
+<!-- _researcharea.htm -->
+
+    <div id="researchdivid" style="">
+    
+
+    在搜尋的結果範圍內查詢：<input class="inputbox" name="research" id="research" size="20" onmouseover="this.select();this.focus();" onfocus="this.select();this.focus();">
+    
+<select name="researchfld">
+<option value="">不限欄位</option>
+<option value="ti">論文名稱</option>
+<option value="au">研究生</option>
+<option value="dp">系所名稱</option>
+<option value="ad">指導教授</option>
+<option value="kw">關鍵字</option>
+<option value="ab">摘要</option>
+<option value="rf">參考文獻</option>
+<option value="yr">畢業學年度</option>
+</select>
+<input type="submit" name="researchok" class="button" value="確定" onclick="return ckdomidexist(&#39;research&#39;, &#39;請輸入再檢索字串!&#39;)" onkeypress="evt = event || window.event; if (evt.keyCode == 13){return ckdomidexist(&#39;research&#39;, &#39;請輸入再檢索字串!&#39;)}">
+</div>
+</td>
+  </tr>
+
+</tbody></table>
+
+
+
+
+              </td></tr><tr>
+              </tr><tr><td align="center">
+ 
+
+<div class="search_bar">
+
+<table cellspacing="0" width="100%">
+<tbody><tr>
+<td align="center">
+
+</td><td align="center"><input type="hidden" name="switchfmt" id="switchfmt" value="">
+<select name="selchgfmt" onchange="switchfmtfunc()">
+<option value="1">表格式
+</option><option value="9" selected="">條列式
+</option></select>
+</td>
+
+<td align="center"><!--
+<input type=button class="button" id="ctx" name=bbrw value='檢視星狀圖' onclick="javascript:starshow('/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/scupiostar', 'star')" id="ctx">
+-->
+
+
+<script type="text/javascript">
+  YAHOO.namespace("example.container");
+  YAHOO.example.container.tt1 = new YAHOO.widget.Tooltip("tt1", 
+   { context:"ctx", text:"Scupio Star Readme" });
+</script>
+</td>
+
+<td>
+
+排序：
+<select name="sortby" onchange="this.form.submit()">
+  <option value="">請選擇排序欄位
+
+      </option><option value=".rule1">相關度(遞增)
+      </option><option value="-.rule1">相關度(遞減)
+          
+
+      </option><option value="auc" selected="">研究生中文姓名(遞增)
+      </option><option value="-auc">研究生中文姓名(遞減)
+          
+
+      </option><option value="aue">研究生英文姓名(遞增)
+      </option><option value="-aue">研究生英文姓名(遞減)
+          
+
+      </option><option value="tic">中文論文名稱(遞增)
+      </option><option value="-tic">中文論文名稱(遞減)
+          
+
+      </option><option value="sc">校院名稱(遞增)
+      </option><option value="-sc">校院名稱(遞減)
+          
+
+      </option><option value="dp">系所名稱(遞增)
+      </option><option value="-dp">系所名稱(遞減)
+          
+
+      </option><option value="lg">語文別(遞增)
+      </option><option value="-lg">語文別(遞減)
+          
+
+      </option><option value="yr">畢業學年度(遞增)
+      </option><option value="-yr">畢業學年度(遞減)
+          
+
+      </option><option value="pyr">出版年(遞增)
+      </option><option value="-pyr">出版年(遞減)
+          
+
+      </option><option value=".total_record">點閱(遞增)
+      </option><option value="-.total_record">點閱(遞減)
+          
+
+      </option><option value=".total_score">評分(遞增)
+      </option><option value="-.total_score">評分(遞減)
+          
+
+      </option><option value=".total_fulltext">下載(遞增)
+      </option><option value="-.total_fulltext">下載(遞減)
+          
+
+      </option><option value=".total_favority">收藏(遞增)
+      </option><option value="-.total_favority">收藏(遞減)
+          
+
+      </option><option value=".total_push">推薦(遞增)
+      </option><option value="-.total_push">推薦(遞減)
+          
+</option></select>
+
+
+</td>
+
+<td>
+<table><tbody><tr>
+<td><img src="./國立臺灣師範大學博碩士論文全文系統_files/gofirst_.gif" border="0" alt="第一頁"></td>
+<td><img src="./國立臺灣師範大學博碩士論文全文系統_files/goprev_.gif" border="0" alt="上一頁"></td>
+<td><img src="./國立臺灣師範大學博碩士論文全文系統_files/gonext_.gif" border="0" alt="下一頁"></td>
+<td><img src="./國立臺灣師範大學博碩士論文全文系統_files/golast_.gif" border="0" alt="最後一頁"></td>
+</tr></tbody></table>
+</td>
+<td align="center">
+<input type="submit" class="button" name="jumpfmt1page" value="跳至" title="點我換頁">
+<input type="text" name="jmpage" value="1" class="text_jpg">
+/1<font class="gs32sys_12pt">頁</font>
+</td><td align="center">
+<input type="hidden" id="SubmitChangePage" name="SubmitChangePage" value="">
+每頁顯示
+<select name="jpsize" onchange="document.getElementById(&#39;SubmitChangePage&#39;).value=&#39;1&#39;;this.form.submit();">
+<option value="10"> 10
+</option><option value="20"> 20
+</option><option value="30" selected="">30
+</option><option value="40"> 40
+</option><option value="50"> 50
+</option><option value="60"> 60
+</option><option value="70"> 70
+</option><option value="80"> 80
+</option><option value="90"> 90
+</option><option value="100"> 100
+</option></select>筆
+
+</td></tr></tbody></table>
+<input type="hidden" name="gofirst" value="">
+<input type="hidden" name="goprev" value="">
+<input type="hidden" name="gonext" value="">
+<input type="hidden" name="golast" value="">
+<input type="hidden" name="jpage" value="">
+<input type="hidden" name="psize" value="">
+<input type="hidden" name="chgfmt" value="">
+
+</div>
+
+              </td></tr><tr>
+
+
+              </tr><tr><td>
+
+<div id="dragDiv" class="Popup">
+  <div id="cntnt"></div>
+</div>
+
+
+
+
+<table cellspacing="0" cellpadding="1" align="center" id="tablefmt1">
+<!-- fmt1head.htm -->
+
+
+    <tbody><tr>
+    <th class="mainth1" nowrap="">
+<input type="button" class="button" id="search_flag_ckall" value="全選" onclick="schallchk(&#39;0&#39; ,&#39;searchlist&#39;, &#39;search_flag_ckall&#39;, &#39;&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;, &#39;全選&#39;, &#39;清除&#39;)">
+            </th>
+    <th class="mainth2">&nbsp;</th>
+    
+<th nowrap="" class="mainth" width="%">書目資料</th></tr>
+
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel1" value="1" onclick="checker(&#39;0&#39;, &#39;sel1&#39;,&#39;1&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">1.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=1&amp;h1=0" class="slink"><span class="etd_d">超級特展與衍生商品成效之關聯性研究─ 以「永遠的他鄉—高更」展為例</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系在職進修碩士班／99／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:支涵郁</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2014.7.26</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:145</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:13</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel2" value="1" onclick="checker(&#39;0&#39;, &#39;sel2&#39;,&#39;2&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">2.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=2&amp;h1=0" class="slink"><span class="etd_d">靜態電子影像對攝影本質的影響研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／工藝教育研究所／82／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:田名璋</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:39</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel3" value="1" onclick="checker(&#39;0&#39;, &#39;sel3&#39;,&#39;3&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">3.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=3&amp;h1=0" class="slink"><span class="etd_d">芙烈達卡蘿(Frida Kahlo,1907-1954)人生歷程與繪畫創作之關係研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系在職進修碩士班／92／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:江美玲</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2004.7.13</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:219</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:42</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel4" value="1" onclick="checker(&#39;0&#39;, &#39;sel4&#39;,&#39;4&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">4.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=4&amp;h1=0" class="slink"><span class="etd_d">虛構之家──分析普普藝術中的新家居意象(以David Hockney和Tom Wesselmann為例)</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系／96／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:江凌青</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font>／<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2010.8.14</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:64</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:1</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel5" value="1" onclick="checker(&#39;0&#39;, &#39;sel5&#39;,&#39;5&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">5.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=5&amp;h1=0" class="slink"><span class="etd_d">西螺老街區域活化研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系／104／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:何美慧</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2017/08/25</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:11</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:4</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel6" value="1" onclick="checker(&#39;0&#39;, &#39;sel6&#39;,&#39;6&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">6.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=6&amp;h1=0" class="slink"><span class="etd_d">~Devouring Love~以動態線條表達焦慮情緒之實驗動畫創作</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系／97／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:吳識鴻</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2009.8.27</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:58</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:1</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel7" value="1" onclick="checker(&#39;0&#39;, &#39;sel7&#39;,&#39;7&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">7.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=7&amp;h1=0" class="slink"><span class="etd_d">高中職校園公共藝術對學生美育之作用-南湖、大安學生對校園公共藝術反應之研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系在職進修碩士班／102／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:卓秋伶</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">(此全文20190104後開放瀏覽)</span>     </td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2019.1.4</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:99</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel8" value="1" onclick="checker(&#39;0&#39;, &#39;sel8&#39;,&#39;8&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">8.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=8&amp;h1=0" class="slink"><span class="etd_d">蒲添生孫中山立像研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系在職進修碩士班／97／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:林英斌</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2009.2.6</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:165</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:17</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel9" value="1" onclick="checker(&#39;0&#39;, &#39;sel9&#39;,&#39;9&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">9.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=9&amp;h1=0" class="slink"><span class="etd_d">台灣漫畫博覽會舉辦之初探-以參觀者觀點</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系／97／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:林靜宜</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2009.09.15</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:41</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:4</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel10" value="1" onclick="checker(&#39;0&#39;, &#39;sel10&#39;,&#39;10&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">10.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=10&amp;h1=0" class="slink"><span class="etd_d">2003年至2007年台灣新媒體藝術於拍賣市場成交成功關鍵要素之研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系在職進修碩士班／97／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:施耘心</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2009.2.17</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:107</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:4</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel11" value="1" onclick="checker(&#39;0&#39;, &#39;sel11&#39;,&#39;11&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">11.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=11&amp;h1=0" class="slink"><span class="etd_d">從展覽成效探討美術館之現代化管理─以台北市立美術館2006台北雙年展為例</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系在職進修碩士班／95／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:柳鳳儀</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2009.7.1</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:80</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:24</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel12" value="1" onclick="checker(&#39;0&#39;, &#39;sel12&#39;,&#39;12&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">12.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=12&amp;h1=0" class="slink"><span class="etd_d">「夢魘」-動畫的黑色美學</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系／97／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:徐書璟</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2014.8.24</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:66</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:3</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel13" value="1" onclick="checker(&#39;0&#39;, &#39;sel13&#39;,&#39;13&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">13.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=13&amp;h1=0" class="slink"><span class="etd_d">紙漿鑄紙的設計創作研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系／83／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:郭雪敏</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font>;康台生</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:133</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel14" value="1" onclick="checker(&#39;0&#39;, &#39;sel14&#39;,&#39;14&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">14.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=14&amp;h1=0" class="slink"><span class="etd_d">國小學童對於性別色彩認知之研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系在職進修碩士班／92／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:陳信博</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font>／王哲雄／李天任／林文昌</td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2004.7.1</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:193</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:33</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel15" value="1" onclick="checker(&#39;0&#39;, &#39;sel15&#39;,&#39;15&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">15.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=15&amp;h1=0" class="slink"><span class="etd_d">波依斯社會雕塑之研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系／105／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:陳思橋</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2017/07/22</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:5</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:3</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel16" value="1" onclick="checker(&#39;0&#39;, &#39;sel16&#39;,&#39;16&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">16.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=16&amp;h1=0" class="slink"><span class="etd_d">臺北市政府文化局所屬藝文館所委外經營模式之研究-以市長官邸藝文沙龍為例</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系在職進修碩士班／97／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:傅彗倫</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">(此全文未開放授權)</span>     </td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：不公開</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:97</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel17" value="1" onclick="checker(&#39;0&#39;, &#39;sel17&#39;,&#39;17&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">17.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=17&amp;h1=0" class="slink"><span class="etd_d">數位攝影與傳統攝影之比較研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／工業科技教育學系／88／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:曾敏雲</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font>教授</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:68</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel18" value="1" onclick="checker(&#39;0&#39;, &#39;sel18&#39;,&#39;18&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">18.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=18&amp;h1=0" class="slink"><span class="etd_d">台灣原住民當代藝術之初探：以視覺與造形藝術為例</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系在職進修碩士班／101／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:曾瓊慧</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2013.8.22</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:26</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:3</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel19" value="1" onclick="checker(&#39;0&#39;, &#39;sel19&#39;,&#39;19&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">19.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=19&amp;h1=0" class="slink"><span class="etd_d">台灣政府扶植動畫產業之政策研究與分析</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系／97／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:黃貞維</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font>／鄧有立</td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2014.8.25</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:272</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:20</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel20" value="1" onclick="checker(&#39;0&#39;, &#39;sel20&#39;,&#39;20&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">20.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=20&amp;h1=0" class="slink"><span class="etd_d">雕塑中的負空間與失序性：瑞秋．懷特雷的作品研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系／96／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:黃慕怡</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2008.8.28</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:223</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:5</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel21" value="1" onclick="checker(&#39;0&#39;, &#39;sel21&#39;,&#39;21&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">21.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=21&amp;h1=0" class="slink"><span class="etd_d">超現實主義的圖像研究-以達利與馬格利特為例</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系／105／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:虞慧欣</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">(此全文20200831後開放瀏覽)</span>     </td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2020/08/31</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:4</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:4</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel22" value="1" onclick="checker(&#39;0&#39;, &#39;sel22&#39;,&#39;22&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">22.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=22&amp;h1=0" class="slink"><span class="etd_d">〈荷〉生命意象－中國工筆繪畫在動畫創作之應用</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系／97／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:管育伶</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font>／黃興芳</td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2009.8.24</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:33</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:2</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel23" value="1" onclick="checker(&#39;0&#39;, &#39;sel23&#39;,&#39;23&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">23.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=23&amp;h1=0" class="slink"><span class="etd_d">大學校園公共藝術對美感教育之影響─以國立中央大學為例</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系在職進修碩士班／99／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:劉怡彣</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2011.1.12</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:85</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:6</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel24" value="1" onclick="checker(&#39;0&#39;, &#39;sel24&#39;,&#39;24&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">24.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=24&amp;h1=0" class="slink"><span class="etd_d">全球化下台灣動畫產業發展與策略之研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系／97／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:蔡承汀</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font>／周立倫／施令紅</td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2010.8.20</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:134</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:13</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel25" value="1" onclick="checker(&#39;0&#39;, &#39;sel25&#39;,&#39;25&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">25.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=25&amp;h1=0" class="slink"><span class="etd_d">現代人的生活與焦慮– Han Hoogerbrugge網路互動動畫藝術之研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系／96／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:薛孟珊</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font> 博士</td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">含(全文檔)</span></td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：2009.8.26</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:76</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:3</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel26" value="1" onclick="checker(&#39;0&#39;, &#39;sel26&#39;,&#39;26&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">26.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=26&amp;h1=0" class="slink"><span class="etd_d">盛期文藝復興《最後晚餐》之繪畫比較研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系在職進修碩士班／96／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:鍾美月</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">(此全文未開放授權)</span>     </td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：不公開</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:63</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel27" value="1" onclick="checker(&#39;0&#39;, &#39;sel27&#39;,&#39;27&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">27.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=27&amp;h1=0" class="slink"><span class="etd_d">漫畫的視覺戲劇性與分格表現之探討</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／美術學系／97／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:藍聖傑</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td class="std2" colspan="2"><span class="etd_e">(此全文未開放授權)</span>     </td></tr><tr>
+    <td class="std2" colspan="2">全文檔開放日期：不公開</td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:59</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+<tr><td class="tdfmt1-first"><input type="checkbox" name="sel28" value="1" onclick="checker(&#39;0&#39;, &#39;sel28&#39;,&#39;28&#39;, &#39;/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/getchecker&#39;)"></td><td nowrap="" class="tdfmt1-second">28.</td>
+    <td class="tdfmt1-content"><div class="divtabout_simplefmt1"><div class="leftdiv"><table class="tableoutsimplefmt2"><tbody><tr>
+    <td class="std2" colspan="2"><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/record?r1=28&amp;h1=0" class="slink"><span class="etd_d">台灣地區收藏傳統婦女服飾色彩之研究</span></a></td></tr><tr>
+    <td class="std2" colspan="2">國立臺灣師範大學／工業科技教育學系／84／碩士</td></tr><tr>
+    <td class="std2" colspan="2">研究生中文姓名:魏小芳</td></tr><tr>
+    <td class="std2" colspan="2">指導教授姓名:<font class="inverse">呂清夫</font></td></tr><tr>
+    <td colspan="2">
+<!-- totalfunc-start -->
+<ul class="hotarea_ul"><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/push.png" alt="推薦" class="hotsortfocusimg">推薦:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/target.png" alt="點閱" class="hotsortfocusimg">點閱:163</li><li class="starli"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star.png" alt="評分" class="hotsortfocusimg">評分:<img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"><img src="./國立臺灣師範大學博碩士論文全文系統_files/star-small-empty.png" width="8" align="absmiddle" alt="*"></li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/icon_review.gif" alt="下載" class="hotsortfocusimg">下載:0</li><li><img src="./國立臺灣師範大學博碩士論文全文系統_files/folder-horizontal-open.png" alt="收藏" class="hotsortfocusimg">收藏:0</li></ul>
+<!-- totalfunc-end -->
+</td></tr>
+</tbody></table></div><div class="rightdiv"></div></div></td>
+
+</tr>
+
+</tbody></table>
+
+
+
+<table cellspacing="0" width="100%">
+<tbody><tr><td width="100%" align="right">
+<table><tbody><tr><td>
+  
+</td><td><img src="./國立臺灣師範大學博碩士論文全文系統_files/gofirst_.gif" border="0" alt="第一頁"></td>
+<td><img src="./國立臺灣師範大學博碩士論文全文系統_files/goprev_.gif" border="0" alt="上一頁"></td>
+<td><img src="./國立臺灣師範大學博碩士論文全文系統_files/gonext_.gif" border="0" alt="下一頁"></td>
+<td><img src="./國立臺灣師範大學博碩士論文全文系統_files/golast_.gif" border="0" alt="最後一頁"></td>
+<td><a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/result#top" title="top">top</a></td>
+</tr></tbody></table>
+</td></tr></tbody></table>
+
+
+<input type="hidden" name="searchlist" value="1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28">
+<input type="hidden" name="r1" value="1">
+<input type="hidden" name="d1" value="0">
+<input type="hidden" name="h1" value="0">
+
+<input type="hidden" name="option" value="">
+
+
+
+</td></tr>
+
+</tbody></table>
+
+
+
+
+      </div>
+      <!--end of .cont_r4 -->
+
+
+
+
+
+
+   </td>
+</tr>
+
+
+<input type="hidden" name="opt" value="m">
+
+
+
+          <tr>
+            <td><div class="footnav">
+			<table border="0" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td>&nbsp;</td>
+    <td><img src="./國立臺灣師範大學博碩士論文全文系統_files/etds_footnav_l.gif" alt="*" width="22" height="22"></td>
+    <td bgcolor="#BABABA">
+<a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/fqasearch?menuid=gsfqa" title="上傳須知">上傳須知</a>&nbsp;|
+<a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/dwareasearch?" title="表單下載">表單下載</a>&nbsp;|
+<a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/webresearch?" title="相關資源">相關資源</a>&nbsp;|
+<a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/aboutnclcdr" title="收錄範圍">收錄範圍</a>&nbsp;|
+<a href="http://etds.lib.ntnu.edu.tw/cgi-bin/gs32/gsweb.cgi/ccd=0ki4tz/thesislogin?admin=1" title="管理/審核者登入">管理/審核者登入</a>
+<br>
+</td>
+    <td><img src="./國立臺灣師範大學博碩士論文全文系統_files/etds_footnav_r.gif" alt="*" width="22" height="22"></td>
+  </tr>
+</tbody></table>
+</div></td>
+          </tr>
+          <tr>
+            <td>
+
+
+
+
+<div class="footer">
+本系統<!--(Web)-->共收集：論文電子全文：<span class="etd_e">26389</span> 筆、電子摘要：<span class="etd_e">32600</span> 筆<br>目前上線人數：<span class="etd_e" title="__">34</span>&nbsp;／&nbsp;訪客人次（自104年05月）：<span class="etd_e">2799028</span><br>國立臺灣師範大學圖書館著作權聲明 Copyright © 2014 All rights reserved.<br>本館地址：106 臺北市和平東路1段129號師大圖書館 <br>電子郵件：<a href="mailto:libread@etd@deps.ntnu.edu.tw">etd@deps.ntnu.edu.tw</a><br>本網站最佳瀏覽解析度為 1024 x 768
+
+
+<!--
+<br>
+<a href="##" title="無障礙網站"><img src="/gs32/stdcdr_ntnu/image/aplus.jpg" border="0" width="88" height="31" alt="無障礙網站"></a>
+-->
+    
+</div>
+
+</td>
+          </tr>
+        </tbody></table></td>
+      <td width="10" background="./國立臺灣師範大學博碩士論文全文系統_files/etds_mbg_r.gif" alt="*"></td>
+    </tr>
+    <tr>
+      <td width="10" height="11"><img src="./國立臺灣師範大學博碩士論文全文系統_files/etds_mbg_lb.gif" width="10" alt="*" height="11"></td>
+      <td height="11" background="./國立臺灣師範大學博碩士論文全文系統_files/etds_mbg_b.gif" alt="*"></td>
+      <td width="10" height="11"><img src="./國立臺灣師範大學博碩士論文全文系統_files/etds_mbg_rb.gif" width="10" height="11" alt="*"></td>
+    </tr>
+  </tbody></table>
+</div><!--end of .etds_mainbd --> 
+
+<input type="hidden" name="_status_" value="searchresult">
+</form>
+
+<iframe name="splink" id="splink" title="" width="0" height="0" style="visibility: hidden; inline: none;">
+</iframe>
+<div id="gs32sysids">
+</div>
+
+
+<div id="tt2" class=" yui-module yui-overlay yui-tt" style="z-index: 0;"><div class="bd">Scupio group Readme</div></div><iframe id="_yuiResizeMonitor" style="visibility: visible; width: 10em; height: 10em; position: absolute; top: -133px; left: -133px; border-style: none; border-width: 0px; opacity: 0;"></iframe><div id="tt1" class=" yui-module yui-overlay yui-tt" style="z-index: 0;"><div class="bd">Scupio Star Readme</div></div></body></html>

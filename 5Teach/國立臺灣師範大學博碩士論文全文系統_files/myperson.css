@@ -1,0 +1,25 @@
+/*****評論顯示的table styles(mycmdball.htm)*********/
+.table_mycmd_format0{
+width:100%;
+height:100%;
+background-color: #FFFFFF;
+border-collapse: collapse;
+border: 1px solid #828282;
+/****padding:10px 10px 10px 10px;****/
+}
+.table_mycmd_format0 tr{
+width:700px;
+}
+
+.table_mycmd_format0 td{
+padding: 2px;
+}
+
+/**************
+.table_mycmd_format0 th{
+width:50px;
+text-align:left;
+text-valign:center;
+padding: 2px;
+}
+*****************/

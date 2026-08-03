@@ -1,0 +1,88 @@
+<xml xmlns:v="urn:schemas-microsoft-com:vml"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:p="urn:schemas-microsoft-com:office:powerpoint"
+ xmlns:oa="urn:schemas-microsoft-com:office:activation">
+ <p:presentation sizeof="screen" gridspacingx="46448" gridspacingy="46448">
+  <p:master id="4" slidesn="1C6C037,ED14DEA0" type="main" href="master04.htm"
+   xmlhref="master04.xml" template="8_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+   <p:tag name="___PPT12" type="binary" datasize="9" dataoffset="6"/>
+  </p:master>
+  <p:master id="5" slidesn="1C6C037,ED14DEA0" type="main" href="master05.htm"
+   xmlhref="master05.xml" template="9_數位藍色設計範本" preserved="t"
+   layout="title_body" slots="title,body,dateTime,footer,slideNumber">
+   <p:schemes>
+    <p:colorscheme
+     colors="#ffffff,#000000,#333333,#000000,#c0c0c0,#808080,#4d4d4d,#f8f8f8"/>
+    <p:colorscheme
+     colors="#ffffff,#006699,#808080,#000000,#b1cfe7,#ccccff,#4274be,#af67ff"/>
+    <p:colorscheme
+     colors="#def6f1,#003366,#969696,#003366,#ffffff,#9ccaf0,#0066cc,#5f5f5f"/>
+    <p:colorscheme
+     colors="#ffffd9,#003366,#777777,#336699,#ecf9fe,#2569a7,#0099cc,#ff9900"/>
+    <p:colorscheme
+     colors="#ebf1f7,#336699,#005a58,#5f5f5f,#b2c7d6,#698ccb,#dfefff,#003399"/>
+    <p:colorscheme
+     colors="#0058b8,#006699,#005a58,#336699,#98bed8,#6d6fc7,#ccecff,#0033cc"/>
+    <p:colorscheme
+     colors="#c0c0c0,#336699,#5c1f00,#49718d,#dddddd,#be7960,#65a0bd,#d3a219"/>
+    <p:colorscheme
+     colors="#000066,#0099cc,#336699,#336699,#336699,#dddddd,#7ac3ec,#d7eaff"/>
+    <p:colorscheme
+     colors="#566272,#2846a4,#777777,#004b70,#9ca5aa,#88b2d2,#ffcc66,#e9dcb9"/>
+    <p:colorscheme
+     colors="#ffffff,#003366,#808080,#003366,#b7d6e7,#24446a,#518fb1,#333333"/>
+    <p:colorscheme
+     colors="#ffffff,#336699,#969696,#003399,#ccecff,#6a90ba,#cc3300,#336699"/>
+    <p:colorscheme
+     colors="#666699,#4d4d4d,#3e3e5c,#36587e,#90afcc,#2170ab,#a8ccf0,#dddddd"/>
+    <p:colorscheme
+     colors="#e0eaf4,#2d5c8b,#2d2015,#35648b,#92a4b0,#8f5f2f,#eadf7a,#003366"/>
+   </p:schemes>
+   <p:tag name="___PPT12" type="binary" datasize="9" dataoffset="7"/>
+  </p:master>
+  <p:slide id="2" slidesn="1D22AA6,97D14DE0" href="slide0002.htm"
+   xmlhref="slide0002.xml" masterhref="master05.htm" layout="title_body"
+   slots="title,body"/>
+  <p:viewstate type="slideView" scale="66" restoredleft="156" restoredtop="946"
+   hideoutlineicons="t"/>
+  <p:font name="Arial" charset="0" type="4"/>
+  <p:font name="新細明體" charset="136" type="4" family="18"/>
+  <p:font name="Arial Black" charset="0" type="6" family="34"/>
+  <p:font name="華康儷粗黑" charset="136" type="6" family="49"/>
+  <p:font name="華康新儷粗黑" charset="136" type="6" family="34"/>
+  <p:headersfooters noheader="t"/>
+  <p:pptdocumentsettings framecolors="WhiteTextOnBlack" hideslideanimation="t"
+   browsersupport="v4"/>
+ </p:presentation>
+ <o:shapedefaults v:ext="edit" spidmax="9230" style='mso-wrap-style:none'>
+  <o:colormru v:ext="edit" colors="blue,yellow"/>
+ </o:shapedefaults></xml>

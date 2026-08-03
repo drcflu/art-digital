@@ -1,0 +1,224 @@
+<html>
+<head>
+    <title>Aesthetic Measurement</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!--
+http://www.sanwebe.com/2013/03/addremove-input-fields-dynamically-with-jquery 
+http://jsfiddle.net/drx7K/
+-->
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript"> 
+$(document).ready(function() {
+    var max_fields      = 20; //maximum input boxes allowed
+    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
+    var add_button      = $(".add_field_button"); //Add button ID
+   
+    var count = 0; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(count+1 < max_fields){ //max input box allowed
+            count++; //text box increment
+            $(wrapper).append('\
+                <div>'+(count+1)+')\
+                  <input type="text" class="hue'+count+'" size=3>\
+                  <select class="hueclass'+count+'">\
+                    <option value="0">Y</option>\
+                    <option value="10">GY</option>\
+                    <option value="20">G</option>\
+                    <option value="30">BG</option>\
+                    <option value="40">B</option>\
+                    <option value="50">PB</option>\
+                    <option value="60">P</option>\
+                    <option value="70">RP</option>\
+                    <option value="80">R</option>\
+                    <option value="90">YR</option>\
+                    <option value="-1">N</option>\
+                  </select>\
+                  <input type="text" class="value'+count+'" size=3>/\
+                  <input type="text" class="Chroma'+count+'" size=3>\
+                </div>');
+
+//            $(wrapper).append('<div><input type="text" name="mytext[]"/><a href="#" class="remove_field">Remove</a></div>'); //add input box
+
+/**	   	    $(wrapper).append('<div><input type="text" name="mytext[]"/></div>'); //add input box
+
+            $("<div/>", {
+                "class": "MyClass",
+                "id": "MyID",
+                "text": "Here is Div innerHTML"
+            }).appendTo(wrapper);*/
+        }
+    });
+   
+    $("#getButtonValue").click(function () {        
+            O=0;
+            C=0;
+            M=0;
+
+            HuePair =0;
+            ValuePair=0;
+            ChromaPair=0;
+
+            var RArray = new Array();
+            var MunsellArray = new Array();
+            ODiff=0;  //for debug
+
+            //兩兩比較
+            console.log("count="+count);
+            for(i=0;i<count;i++) {
+              for(j=i+1;j<=count;j++) {
+                //色相差
+                tempOi = +$('.hue' + i).val() + +$('.hueclass' + i).val();
+                tempOj = +$('.hue' + j).val() + +$('.hueclass' + j).val();                
+                var HDiff=0;    
+                // console.log("tempOi="+tempOi+",TempOj="+tempOj+",HDiff="+HDiff);
+                c1 = +$('.Chroma' + i).val();
+                c2 = +$('.Chroma' + j).val();
+                ODiff=O;  ///debug
+                if ($('.hueclass' + i).val()== -1 && $('.hueclass' + j).val()==-1)
+                  O+=1.0;
+                else if ($('.hueclass' + i).val()!= -1 && $('.hueclass' + j).val()!=-1) { 
+                  HDiff = Math.abs(tempOi - tempOj);
+                  if (HDiff>0) HuePair++;  
+                  if (HDiff>50) HDiff=100-HDiff;  
+
+                  if (HDiff>=28 && HDiff<=50) 
+                    O+=1.7;
+                  else if (HDiff>=12 && HDiff<28) 
+                    O+=0.7;
+                  else if (HDiff>=7 && HDiff<12) 
+                    O+=1.1;
+                  else if (HDiff>=0 && HDiff<2/(c1+c2))
+                    O+=1.5;   
+                }         
+                console.log("HDiff="+HDiff + ",O="+(+O- +ODiff));
+
+                //明度差
+                v1 = +$('.value' + i).val();
+                v2 = +$('.value' + j).val();
+                VDiff = Math.abs(v1-v2);
+                if (VDiff>0) ValuePair++;
+                ODiff=O;  ///debug
+                if (VDiff>=2.5 && VDiff<=10) 
+                  O +=3.7;
+                else if (VDiff>=1.5 && VDiff<2.5)
+                  O -=0.2;
+                else if (VDiff>=0.5 && VDiff<1.5)
+                  O +=0.7;
+                else if (VDiff>=0.05 && VDiff<0.5)
+                  O -=1.0;
+                else if (VDiff>=0 && VDiff<0.05)
+                  O -=1.3;
+                console.log("VDiff="+VDiff+ ",O="+(+O- +ODiff));
+
+                //彩度差
+                c1 = +$('.Chroma' + i).val();
+                c2 = +$('.Chroma' + j).val();
+                CDiff = Math.abs (c1-c2);
+                if (CDiff>0) ChromaPair++;
+                ODiff=O;  ///debug
+                if (CDiff>=7) 
+                  O += 0.4;
+                else if (CDiff >=3 && CDiff<5)
+                  O += 0.1;
+                else if (CDiff >=0 && CDiff<0.1)
+                  O += 0.8;
+                console.log("CDiff="+CDiff+ ",O="+(+O- +ODiff)+"\n");
+              }
+
+              //面積
+              c = +$('.Chroma' + i).val();
+              v = +$('.value' + i).val();
+              RArray[i]=Math.sqrt(c*c+64*(v-5)*(v-5));
+              console.log("R"+i+"="+RArray[i]);
+
+              //Munsell面積
+              MunsellArray[i] = 1/(v*c);
+              console.log("MunsellArray"+i+"="+MunsellArray[i]);
+            }
+            c = +$('.Chroma' + count).val();
+            v = +$('.value' + count).val();
+            RArray[count]=Math.sqrt(c*c+64*(v-5)*(v-5));
+            console.log("R"+count+"="+RArray[count]);
+
+            MunsellArray[count]=1/(v*c);
+            console.log("MunsellArray"+i+"="+MunsellArray[i]);
+
+            //輸出結果
+            var msg = '';
+/*            for(i=0; i<=count; i++){
+                msg += "\n " + $('.hue' + i).val();
+                msg += $('.hueclass' + i).val();
+                msg += $('.value' + i).val();
+                msg += $('.Chroma' + i).val();
+            }*/
+            CSum = +count + +1 + HuePair + ValuePair + ChromaPair;
+            console.log("count="+ (+count+ +1)+",HuePair="+HuePair+",ValuePair="+ValuePair+",ChromaPair="+ChromaPair);
+            msg += "O = "+O.toFixed(3);
+            msg += "\nC = "+CSum;
+            msg += "\nM = "+(O/CSum).toFixed(3);
+
+            msg += "\n\nSpace ratio (area ratio):\n";
+            for (index=0;index<count;index++) {
+              msg += "S"+(index+1)+":";  
+            }
+            msg += "S"+(count+1)+" = 1";
+
+            for (index=1;index<=count;index++) {
+              msg += " :"+ (RArray[0]/RArray[index]).toFixed(3);  
+            }
+
+            msg += "\n\nMunsell method:\n";
+            for (index=0;index<count;index++) {
+              msg += "S"+(index+1)+":";  
+            }     
+            msg += "S"+(count+1)+" = 1";
+            for (index=1;index<=count;index++) {
+              msg += " :"+ (MunsellArray[index]/MunsellArray[0]).toFixed(3);  
+            }
+
+            //alert(msg);
+
+
+            // $('body').append("</P><HR><H0>Results</h0></P>");
+            msg = msg.replace(/((?:(?:^|[\n\r]+)[\t ]*-[\t ]*[^\n\r]*)+)/g, "\n<ul>\n$1\n</ul>");
+            msg = msg.replace(/[\n\r]+[\t ]*-[\t ]*([^\n\r]*)/g, "\n  <li>$1</li>");
+            $("#output").html("<hr><h2>Results:</h2>")
+            $("#output").append(msg);
+    });
+
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+    })
+});
+</SCRIPT>
+</head>
+
+<body>
+<h1>Aesthetic Measurement</h1>
+<hr>
+<form class="input_fields_wrap">
+    <button class="add_field_button">Add More Fields</button>
+    <input type='button' value='Get Value' id='getButtonValue'></P>
+    <div> 1)
+        <input type="text" class="hue0" size=3>
+        <select class="hueclass0">
+          <option value="0">Y</option>
+          <option value="10">GY</option>
+          <option value="20">G</option>
+          <option value="30">BG</option>
+          <option value="40">B</option>
+          <option value="50">PB</option>                    
+          <option value="60">P</option>
+          <option value="70">RP</option>
+          <option value="80">R</option>
+          <option value="90">YR</option>
+          <option value="-1">N</option>
+        </select>
+        <input type="text" class="value0" size=3>/
+        <input type="text" class="Chroma0" size=3>
+    </div>
+</form>
+<pre id="output"></pre>
+</body>
+</html>
